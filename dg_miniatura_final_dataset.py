@@ -1,3 +1,5 @@
+import sys
+sys.path.insert(1, 'D:\IBL\Documents\IBL-PAN-Python')
 import requests
 from tqdm import tqdm
 import numpy as np
@@ -21,8 +23,6 @@ import geopandas as gpd
 import geoplot
 import geoplot.crs as gcrs
 from shapely.geometry import shape, Point
-import sys
-sys.path.insert(1, 'C:/Users/Cezary/Documents/IBL-PAN-Python')
 from geonames_accounts import geonames_users
 
 #%%
@@ -431,7 +431,7 @@ df_authors = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'autho
 
 authors_ids = [e for e in df_authors['wikidataID'].to_list() if isinstance(e, str)]
 
-def get_wikidata_label_for_prize(wikidata_id, pref_langs = ['de', 'en']):
+def get_wikidata_label_for_de(wikidata_id, pref_langs = ['de', 'en']):
     # wikidata_id = 'Q130690218'
     url = f'https://www.wikidata.org/wiki/Special:EntityData/{wikidata_id}.json'
     try:
@@ -459,7 +459,7 @@ def harvest_wikidata_author_for_prize(wikidata_id):
         for a in awards:
             # a = awards[3]
             prize_id = a.get('mainsnak').get('datavalue').get('value').get('id')
-            prize_name = get_wikidata_label_for_prize(prize_id)
+            prize_name = get_wikidata_label_for_de(prize_id)
             try:
                 year = a.get('qualifiers').get('P585')[0].get('datavalue').get('value').get('time')[1:5]
             except TypeError:
@@ -480,6 +480,57 @@ for author in tqdm(authors_ids):
         prizes_final_results.extend(prize_for_person_result)
     
 prizes_df = pd.DataFrame(prizes_final_results) 
+
+prize_df = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'prizes')
+#
+person_prize_dict = {}
+for i, row in prize_df.iterrows():
+    person_prize_dict.setdefault(row['person_id'], []).append(row['prize_id'])
+
+person_prize_dict = {k:'|'.join(v) for k,v in person_prize_dict.items()}
+prizes_df = pd.DataFrame.from_dict(person_prize_dict, orient='index', columns=['value']).reset_index()
+
+#
+prize_df = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'prizes')
+person_prize_dict = {}
+for i, row in prize_df.iterrows():
+    person_prize_dict.setdefault(row['wikidata_person_id'], []).append(row['prize_id'])
+
+person_prize_dict = {k:'|'.join(v) for k,v in person_prize_dict.items()}
+prizes_df = pd.DataFrame.from_dict(person_prize_dict, orient='index', columns=['value']).reset_index()
+
+#%% places from publishers
+
+df_institutions = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'publishers')
+
+institutions_wikidata = [e for e in df_institutions['wikidataID'].to_list() if isinstance(e, str)]
+
+places_for_publishers = []
+for wikidata_id in tqdm(institutions_wikidata):
+    # wikidata_id = institutions_wikidata[0]
+    # wikidata_id = 'Q7050'
+    
+    url = f'https://www.wikidata.org/wiki/Special:EntityData/{wikidata_id}.json'
+    result = requests.get(url).json()
+    try:
+        placeLabel_value = get_wikidata_label_for_de(result.get('entities').get(wikidata_id).get('claims').get('P159')[0].get('mainsnak').get('datavalue').get('value').get('id'))
+    except TypeError:
+        placeLabel_value = None
+    try:
+        place_value = result.get('entities').get(wikidata_id).get('claims').get('P159')[0].get('mainsnak').get('datavalue').get('value').get('id')
+    except TypeError:
+        place_value = None
+    temp_dict = {'wikidataID': wikidata_id,
+                 'place_label': placeLabel_value,
+                 'place_id': place_value}
+    places_for_publishers.append(temp_dict)
+
+df_places_for_publishers = pd.DataFrame(places_for_publishers)
+
+new_places = [e for e in df_places_for_publishers['place_id'].to_list() if e]
+old_places = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'places')['wikidata_id'].to_list()
+
+[e for e in new_places if e not in old_places]
 
 
 

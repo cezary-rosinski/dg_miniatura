@@ -1,0 +1,1028 @@
+@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/rechtsextremismusInstitution/i1> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p45> ;
+    schema1:name "Albino Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/313420914>,
+        wdt:Q21036317 .
+
+<https://example.org/rechtsextremismusInstitution/i10> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p98> ;
+    schema1:name "btb" ;
+    owl:sameAs <http://viaf.org/viaf/313259816>,
+        wdt:Q51349024 .
+
+<https://example.org/rechtsextremismusInstitution/i11> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p98> ;
+    schema1:name "C.H. Beck Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/1439159234574903371999>,
+        wdt:Q896837 .
+
+<https://example.org/rechtsextremismusInstitution/i12> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p98> ;
+    schema1:name "Carl Hanser Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/129591979>,
+        wdt:Q896783 .
+
+<https://example.org/rechtsextremismusInstitution/i13> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p45> ;
+    schema1:name "Claassen Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/161713367>,
+        wdt:Q1094612 .
+
+<https://example.org/rechtsextremismusInstitution/i14> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p63> ;
+    schema1:name "Diogenes Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/145850446>,
+        wdt:Q1226810 .
+
+<https://example.org/rechtsextremismusInstitution/i15> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p34> ;
+    schema1:name "Dittrich Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/313442163>,
+        wdt:Q1230422 .
+
+<https://example.org/rechtsextremismusInstitution/i16> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p14> ;
+    schema1:name "Dressler Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/12146822251507381775>,
+        wdt:Q1052418 .
+
+<https://example.org/rechtsextremismusInstitution/i17> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p98> ;
+    schema1:name "Droemer Knaur Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/143152160>,
+        wdt:Q122655 .
+
+<https://example.org/rechtsextremismusInstitution/i18> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p98> ;
+    schema1:name "Droemer Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/143152160>,
+        wdt:Q122655 .
+
+<https://example.org/rechtsextremismusInstitution/i19> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p98> ;
+    schema1:name "dtv" ;
+    owl:sameAs <http://viaf.org/viaf/132612512>,
+        wdt:Q1205382 .
+
+<https://example.org/rechtsextremismusInstitution/i2> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p98> ;
+    schema1:name "Albrecht Knaus Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/311359726>,
+        wdt:Q2639862 .
+
+<https://example.org/rechtsextremismusInstitution/i20> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p34> ;
+    schema1:name "DuMont Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/159527631>,
+        wdt:Q1262296 .
+
+<https://example.org/rechtsextremismusInstitution/i21> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p14> ;
+    schema1:name "Eden Books, Edel Germany" ;
+    owl:sameAs <http://viaf.org/viaf/313421853>,
+        wdt:Q108471635 .
+
+<https://example.org/rechtsextremismusInstitution/i22> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p14> ;
+    schema1:name "Edition Nautilus" ;
+    owl:sameAs <http://viaf.org/viaf/138351848>,
+        wdt:Q1285306 .
+
+<https://example.org/rechtsextremismusInstitution/i23> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p34> ;
+    schema1:name "Eichborn Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/142590481>,
+        wdt:Q1301287 .
+
+<https://example.org/rechtsextremismusInstitution/i24> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p73> ;
+    schema1:name "Frankfurter Verlagsanstalt" ;
+    owl:sameAs <http://viaf.org/viaf/151867128>,
+        wdt:Q1445052 .
+
+<https://example.org/rechtsextremismusInstitution/i25> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p14> ;
+    schema1:name "Friedrich Oetinger Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/139031277>,
+        wdt:Q2516812 .
+
+<https://example.org/rechtsextremismusInstitution/i26> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p63> ;
+    schema1:name "Haffmans Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/311359660>,
+        wdt:Q1568071 .
+
+<https://example.org/rechtsextremismusInstitution/i27> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p45> ;
+    schema1:name "Hanser Berlin" ;
+    owl:sameAs <http://viaf.org/viaf/313446255> .
+
+<https://example.org/rechtsextremismusInstitution/i28> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p73> ;
+    schema1:name "Hansisches Dr.- und Verl.-Haus" ;
+    owl:sameAs <http://viaf.org/viaf/313424156> .
+
+<https://example.org/rechtsextremismusInstitution/i29> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p17> ;
+    schema1:name "Haymon Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/296273419>,
+        wdt:Q1320244 .
+
+<https://example.org/rechtsextremismusInstitution/i3> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p14> ;
+    schema1:name "Argument Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/264415885>,
+        wdt:Q651401 .
+
+<https://example.org/rechtsextremismusInstitution/i30> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p98> ;
+    schema1:name "Heyne Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/314870007>,
+        wdt:Q1617004 .
+
+<https://example.org/rechtsextremismusInstitution/i31> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p45> ;
+    schema1:name "Implex Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/313451919> .
+
+<https://example.org/rechtsextremismusInstitution/i32> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p45> ;
+    schema1:name "Kanon Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/7829165573937937800005>,
+        wdt:Q108799484 .
+
+<https://example.org/rechtsextremismusInstitution/i33> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p98> ;
+    schema1:name "Karl Blessing Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/313439204>,
+        wdt:Q105758515 .
+
+<https://example.org/rechtsextremismusInstitution/i34> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p63> ;
+    schema1:name "Kein & Aber" ;
+    owl:sameAs <http://viaf.org/viaf/149893809>,
+        wdt:Q1737967 .
+
+<https://example.org/rechtsextremismusInstitution/i35> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p34> ;
+    schema1:name "Kiepenheuer und Witsch Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/157755656>,
+        wdt:Q878427 .
+
+<https://example.org/rechtsextremismusInstitution/i36> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p97> ;
+    schema1:name "Klett-Cotta Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/4695145856915022920320>,
+        wdt:Q1444698 .
+
+<https://example.org/rechtsextremismusInstitution/i37> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p63> ;
+    schema1:name "Limmat Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/242052302>,
+        wdt:Q1493202 .
+
+<https://example.org/rechtsextremismusInstitution/i38> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p69> ;
+    schema1:name "Literaturverlag Droschl" ;
+    owl:sameAs <http://viaf.org/viaf/311352605>,
+        wdt:Q1516991 .
+
+<https://example.org/rechtsextremismusInstitution/i39> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p98> ;
+    schema1:name "Luchterhand Literaturverlag" ;
+    owl:sameAs <http://viaf.org/viaf/245413440>,
+        wdt:Q1564874 .
+
+<https://example.org/rechtsextremismusInstitution/i4> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p45> ;
+    schema1:name "Aufbau Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/169604505>,
+        wdt:Q316922 .
+
+<https://example.org/rechtsextremismusInstitution/i40> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p50> ;
+    schema1:name "Maro Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/313423283>,
+        wdt:Q1902317 .
+
+<https://example.org/rechtsextremismusInstitution/i41> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p98> ;
+    schema1:name "Mixtvision" ;
+    owl:sameAs <http://viaf.org/viaf/313434164>,
+        wdt:Q1940898 .
+
+<https://example.org/rechtsextremismusInstitution/i42> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p14> ;
+    schema1:name "Osburg Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/313457837>,
+        wdt:Q105199601 .
+
+<https://example.org/rechtsextremismusInstitution/i43> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p46> ;
+    schema1:name "Otto Müller Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/311114379>,
+        wdt:Q2040037 .
+
+<https://example.org/rechtsextremismusInstitution/i44> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p98> ;
+    schema1:name "Penguin Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/313263556>,
+        wdt:Q27116259 .
+
+<https://example.org/rechtsextremismusInstitution/i45> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p87> ;
+    schema1:name "Peter Hammer Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/142540430>,
+        wdt:Q2075443 .
+
+<https://example.org/rechtsextremismusInstitution/i46> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p98> ;
+    schema1:name "Piper Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/141694452>,
+        wdt:Q1385440 .
+
+<https://example.org/rechtsextremismusInstitution/i47> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p19> ;
+    schema1:name "Rowohlt Berlin Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/6529151353539752720005>,
+        wdt:Q646071 .
+
+<https://example.org/rechtsextremismusInstitution/i48> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p19> ;
+    schema1:name "Rowohlt Taschenbuch Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/242745905>,
+        wdt:Q646071 .
+
+<https://example.org/rechtsextremismusInstitution/i49> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p19> ;
+    schema1:name "Rowohlt Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/133535929>,
+        wdt:Q646071 .
+
+<https://example.org/rechtsextremismusInstitution/i5> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p45> ;
+    schema1:name "Avant Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/313444984>,
+        wdt:Q23017698 .
+
+<https://example.org/rechtsextremismusInstitution/i50> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p73> ;
+    schema1:name "S. Fischer Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/156449954>,
+        wdt:Q481576 .
+
+<https://example.org/rechtsextremismusInstitution/i51> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p73> ;
+    schema1:name "Schöffling und Co. Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/154981768>,
+        wdt:Q2258589 .
+
+<https://example.org/rechtsextremismusInstitution/i52> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p47> ;
+    schema1:name "Steidl Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/143537276>,
+        wdt:Q324876 .
+
+<https://example.org/rechtsextremismusInstitution/i53> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p73> ;
+    schema1:name "Suhrkamp Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/150718921>,
+        wdt:Q301609 .
+
+<https://example.org/rechtsextremismusInstitution/i54> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p45> ;
+    schema1:name "Transit Buchverlag" ;
+    owl:sameAs <http://viaf.org/viaf/313264147>,
+        wdt:Q1532741 .
+
+<https://example.org/rechtsextremismusInstitution/i55> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p97> ;
+    schema1:name "Tropen Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/313443835>,
+        wdt:Q114860012 .
+
+<https://example.org/rechtsextremismusInstitution/i56> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p45> ;
+    schema1:name "Ullstein Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/148593416>,
+        wdt:Q451462 .
+
+<https://example.org/rechtsextremismusInstitution/i57> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p45> ;
+    schema1:name "Verbrecher Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/305388168>,
+        wdt:Q1533203 .
+
+<https://example.org/rechtsextremismusInstitution/i58> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p47> ;
+    schema1:name "Wallstein Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/304174980>,
+        wdt:Q1378263 .
+
+<https://example.org/rechtsextremismusInstitution/i59> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p59> ;
+    schema1:name "Zsolnay Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/135887158>,
+        wdt:Q176169 .
+
+<https://example.org/rechtsextremismusInstitution/i6> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p83> ;
+    schema1:name "Beltz & Gelberg" ;
+    owl:sameAs <http://viaf.org/viaf/244158937>,
+        wdt:Q816214 .
+
+<https://example.org/rechtsextremismusInstitution/i7> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p62> ;
+    schema1:name "Bergischer Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/313465207> .
+
+<https://example.org/rechtsextremismusInstitution/i8> a schema:Organization ;
+    schema1:areaServed "regionalne" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p45> ;
+    schema1:name "Blumenbar Verlag" ;
+    owl:sameAs <http://viaf.org/viaf/71149233603776512137>,
+        wdt:Q886206 .
+
+<https://example.org/rechtsextremismusInstitution/i9> a schema:Organization ;
+    schema1:areaServed "ogólnokrajowe" ;
+    schema1:location <https://example.org/rechtsextremismusPlace/p14> ;
+    schema1:name "BoD - Books on Demand" ;
+    owl:sameAs <http://viaf.org/viaf/125747047>,
+        wdt:Q831576 .
+
+<https://example.org/rechtsextremismusPlace/p1> a schema:Place ;
+    schema1:name "Dan" ;
+    owl:sameAs wdt:Q991372 ;
+    geo1:lat "33.240277777778"^^xsd:float ;
+    geo1:long "35.653055555556"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p10> a schema:Place ;
+    schema1:name "Istanbul" ;
+    owl:sameAs wdt:Q406 ;
+    geo1:lat "41.01"^^xsd:float ;
+    geo1:long "28.960277777778"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p100> a schema:Place ;
+    schema1:name "Višegrad" ;
+    owl:sameAs wdt:Q239266 ;
+    geo1:lat "43.7825"^^xsd:float ;
+    geo1:long "19.2925"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p101> a schema:Place ;
+    schema1:name "Tübingen" ;
+    owl:sameAs wdt:Q3806 ;
+    geo1:lat "48.52"^^xsd:float ;
+    geo1:long "9.0555555555556"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p102> a schema:Place ;
+    schema1:name "Sankt Petersburg" ;
+    owl:sameAs wdt:Q656 ;
+    geo1:lat "59.95"^^xsd:float ;
+    geo1:long "30.316666666667"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p11> a schema:Place ;
+    schema1:name "Kiel" ;
+    owl:sameAs wdt:Q1707 ;
+    geo1:lat "54.323333333333"^^xsd:float ;
+    geo1:long "10.139444444444"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p12> a schema:Place ;
+    schema1:name "Schwäbisch Gmünd" ;
+    owl:sameAs wdt:Q4037 ;
+    geo1:lat "48.8"^^xsd:float ;
+    geo1:long "9.8"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p13> a schema:Place ;
+    schema1:name "Zehdenick" ;
+    owl:sameAs wdt:Q184481 ;
+    geo1:lat "52.983055555556"^^xsd:float ;
+    geo1:long "13.333055555556"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p15> a schema:Place ;
+    schema1:name "Rostock" ;
+    owl:sameAs wdt:Q2861 ;
+    geo1:lat "54.083333333333"^^xsd:float ;
+    geo1:long "12.133333333333"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p16> a schema:Place ;
+    schema1:name "Riesa" ;
+    owl:sameAs wdt:Q8775 ;
+    geo1:lat "51.308055555556"^^xsd:float ;
+    geo1:long "13.293888888889"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p18> a schema:Place ;
+    schema1:name "Bonn" ;
+    owl:sameAs wdt:Q586 ;
+    geo1:lat "50.735277777777775"^^xsd:float ;
+    geo1:long "7.102222222222222"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p2> a schema:Place ;
+    schema1:name "Bielefeld" ;
+    owl:sameAs wdt:Q2112 ;
+    geo1:lat "52.016666666667"^^xsd:float ;
+    geo1:long "8.5333333333333"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p20> a schema:Place ;
+    schema1:name "Jaffna" ;
+    owl:sameAs wdt:Q215277 ;
+    geo1:lat "9.6647222222222"^^xsd:float ;
+    geo1:long "80.016666666667"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p21> a schema:Place ;
+    schema1:name "Szklary Górne" ;
+    owl:sameAs wdt:Q7664745 ;
+    geo1:lat "51.433333333333"^^xsd:float ;
+    geo1:long "16.083333333333"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p22> a schema:Place ;
+    schema1:name "Villingen-Schwenningen" ;
+    owl:sameAs wdt:Q3865 ;
+    geo1:lat "48.063152"^^xsd:float ;
+    geo1:long "8.4929618"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p23> a schema:Place ;
+    schema1:name "Heilbronn" ;
+    owl:sameAs wdt:Q715 ;
+    geo1:lat "49.140428"^^xsd:float ;
+    geo1:long "9.217953"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p24> a schema:Place ;
+    schema1:name "Borna" ;
+    owl:sameAs wdt:Q10744 ;
+    geo1:lat "51.116666666667"^^xsd:float ;
+    geo1:long "12.5"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p25> a schema:Place ;
+    schema1:name "Anklam" ;
+    owl:sameAs wdt:Q488513 ;
+    geo1:lat "53.85"^^xsd:float ;
+    geo1:long "13.683333333333334"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p26> a schema:Place ;
+    schema1:name "Freie Stadt Danzig" ;
+    owl:sameAs wdt:Q216173 ;
+    geo1:lat "54.4"^^xsd:float ;
+    geo1:long "18.66"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p27> a schema:Place ;
+    schema1:name "Heidelberg" ;
+    owl:sameAs wdt:Q2966 ;
+    geo1:lat "49.412222222222"^^xsd:float ;
+    geo1:long "8.71"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p28> a schema:Place ;
+    schema1:name "Jasienica, Lower Silesian Voivodeship" ;
+    owl:sameAs wdt:Q6161475 ;
+    geo1:lat "50.65861111"^^xsd:float ;
+    geo1:long "17.07694444"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p29> a schema:Place ;
+    schema1:name "Limburg an der Lahn" ;
+    owl:sameAs wdt:Q16026 ;
+    geo1:lat "50.38333333333333"^^xsd:float ;
+    geo1:long "8.066666666666666"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p3> a schema:Place ;
+    schema1:name "Dorsten" ;
+    owl:sameAs wdt:Q3886 ;
+    geo1:lat "51.66"^^xsd:float ;
+    geo1:long "6.9641666666667"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p30> a schema:Place ;
+    schema1:name "Ludwigsburg" ;
+    owl:sameAs wdt:Q622 ;
+    geo1:lat "48.8975"^^xsd:float ;
+    geo1:long "9.1919444444444"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p31> a schema:Place ;
+    schema1:name "Bochum" ;
+    owl:sameAs wdt:Q2103 ;
+    geo1:lat "51.483333333333"^^xsd:float ;
+    geo1:long "7.2166666666667"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p32> a schema:Place ;
+    schema1:name "Linz" ;
+    owl:sameAs wdt:Q41329 ;
+    geo1:lat "48.30583333333333"^^xsd:float ;
+    geo1:long "14.286388888888888"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p33> a schema:Place ;
+    schema1:name "Leipzig" ;
+    owl:sameAs wdt:Q2079 ;
+    geo1:lat "51.3406321"^^xsd:float ;
+    geo1:long "12.3747329"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p35> a schema:Place ;
+    schema1:name "Fulda" ;
+    owl:sameAs wdt:Q3963 ;
+    geo1:lat "50.552777777778"^^xsd:float ;
+    geo1:long "9.6775"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p36> a schema:Place ;
+    schema1:name "Kochel am See" ;
+    owl:sameAs wdt:Q256533 ;
+    geo1:lat "47.6586"^^xsd:float ;
+    geo1:long "11.3682"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p37> a schema:Place ;
+    schema1:name "Hermeskeil" ;
+    owl:sameAs wdt:Q519344 ;
+    geo1:lat "49.657222222222"^^xsd:float ;
+    geo1:long "6.9488888888889"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p38> a schema:Place ;
+    schema1:name "Hagen" ;
+    owl:sameAs wdt:Q2871 ;
+    geo1:lat "51.359444444444"^^xsd:float ;
+    geo1:long "7.475"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p39> a schema:Place ;
+    schema1:name "Datteln" ;
+    owl:sameAs wdt:Q14940 ;
+    geo1:lat "51.653888888889"^^xsd:float ;
+    geo1:long "7.3416666666667"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p4> a schema:Place ;
+    schema1:name "Zaxo" ;
+    owl:sameAs wdt:Q167800 ;
+    geo1:lat "37.143611111111"^^xsd:float ;
+    geo1:long "42.681911111111"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p40> a schema:Place ;
+    schema1:name "Räckelwitz" ;
+    owl:sameAs wdt:Q32721172 ;
+    geo1:lat "51.25"^^xsd:float ;
+    geo1:long "14.2333"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p41> a schema:Place ;
+    schema1:name "Konstanz" ;
+    owl:sameAs wdt:Q3834 ;
+    geo1:lat "47.663333333333"^^xsd:float ;
+    geo1:long "9.1752777777778"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p42> a schema:Place ;
+    schema1:name "Pforzheim" ;
+    owl:sameAs wdt:Q3046 ;
+    geo1:lat "48.8908846"^^xsd:float ;
+    geo1:long "8.7029532"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p43> a schema:Place ;
+    schema1:name "Hennigsdorf" ;
+    owl:sameAs wdt:Q583462 ;
+    geo1:lat "52.637777777778"^^xsd:float ;
+    geo1:long "13.203611111111"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p44> a schema:Place ;
+    schema1:name "Dortmund" ;
+    owl:sameAs wdt:Q1295 ;
+    geo1:lat "51.513888888889"^^xsd:float ;
+    geo1:long "7.4652777777778"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p48> a schema:Place ;
+    schema1:name "Dresden" ;
+    owl:sameAs wdt:Q1731 ;
+    geo1:lat "51.05"^^xsd:float ;
+    geo1:long "13.74"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p49> a schema:Place ;
+    schema1:name "Spremberg" ;
+    owl:sameAs wdt:Q572559 ;
+    geo1:lat "51.571666666667"^^xsd:float ;
+    geo1:long "14.379444444444"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p5> a schema:Place ;
+    schema1:name "Frankfurt (Oder)" ;
+    owl:sameAs wdt:Q4024 ;
+    geo1:lat "52.342083333333335"^^xsd:float ;
+    geo1:long "14.551666666666666"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p51> a schema:Place ;
+    schema1:name "Plön" ;
+    owl:sameAs wdt:Q497060 ;
+    geo1:lat "54.162222222222"^^xsd:float ;
+    geo1:long "10.421388888889"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p52> a schema:Place ;
+    schema1:name "Tönning" ;
+    owl:sameAs wdt:Q21018 ;
+    geo1:lat "54.317222222222"^^xsd:float ;
+    geo1:long "8.9427777777778"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p53> a schema:Place ;
+    schema1:name "Magdeburg" ;
+    owl:sameAs wdt:Q1733 ;
+    geo1:lat "52.1315889"^^xsd:float ;
+    geo1:long "11.6399609"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p54> a schema:Place ;
+    schema1:name "Bad Nauheim" ;
+    owl:sameAs wdt:Q16105 ;
+    geo1:lat "50.36666666666667"^^xsd:float ;
+    geo1:long "8.75"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p55> a schema:Place ;
+    schema1:name "Husum" ;
+    owl:sameAs wdt:Q21159 ;
+    geo1:lat "54.476944444444"^^xsd:float ;
+    geo1:long "9.0511111111111"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p56> a schema:Place ;
+    schema1:name "Eberswalde" ;
+    owl:sameAs wdt:Q9306 ;
+    geo1:lat "52.833055555556"^^xsd:float ;
+    geo1:long "13.833055555556"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p57> a schema:Place ;
+    schema1:name "Oberbilk" ;
+    owl:sameAs wdt:Q8249663 ;
+    geo1:lat "51.2161"^^xsd:float ;
+    geo1:long "6.80361"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p58> a schema:Place ;
+    schema1:name "Kiew" ;
+    owl:sameAs wdt:Q1899 ;
+    geo1:lat "50.45"^^xsd:float ;
+    geo1:long "30.523611111111"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p6> a schema:Place ;
+    schema1:name "Breslau" ;
+    owl:sameAs wdt:Q1799 ;
+    geo1:lat "51.11"^^xsd:float ;
+    geo1:long "17.0325"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p60> a schema:Place ;
+    schema1:name "Weimar" ;
+    owl:sameAs wdt:Q3955 ;
+    geo1:lat "50.98111111111111"^^xsd:float ;
+    geo1:long "11.329444444444444"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p61> a schema:Place ;
+    schema1:name "Rotenburg an der Fulda" ;
+    owl:sameAs wdt:Q558631 ;
+    geo1:lat "50.995"^^xsd:float ;
+    geo1:long "9.7272222222222"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p64> a schema:Place ;
+    schema1:name "Wismar" ;
+    owl:sameAs wdt:Q7030 ;
+    geo1:lat "53.8925"^^xsd:float ;
+    geo1:long "11.465"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p65> a schema:Place ;
+    schema1:name "Weida" ;
+    owl:sameAs wdt:Q519751 ;
+    geo1:lat "50.766666666667"^^xsd:float ;
+    geo1:long "12.066666666667"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p66> a schema:Place ;
+    schema1:name "Spandau" ;
+    owl:sameAs wdt:Q158083 ;
+    geo1:lat "52.55"^^xsd:float ;
+    geo1:long "13.2"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p67> a schema:Place ;
+    schema1:name "Stockelsdorf" ;
+    owl:sameAs wdt:Q551818 ;
+    geo1:lat "53.883333333333"^^xsd:float ;
+    geo1:long "10.65"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p68> a schema:Place ;
+    schema1:name "Wolfratshausen" ;
+    owl:sameAs wdt:Q503160 ;
+    geo1:lat "47.913333333333"^^xsd:float ;
+    geo1:long "11.427777777778"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p7> a schema:Place ;
+    schema1:name "Wiesbaden" ;
+    owl:sameAs wdt:Q1721 ;
+    geo1:lat "50.0825"^^xsd:float ;
+    geo1:long "8.24"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p70> a schema:Place ;
+    schema1:name "Celle" ;
+    owl:sameAs wdt:Q3933 ;
+    geo1:lat "52.625555555556"^^xsd:float ;
+    geo1:long "10.0825"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p71> a schema:Place ;
+    schema1:name "Lübeck" ;
+    owl:sameAs wdt:Q2843 ;
+    geo1:lat "53.869722222222"^^xsd:float ;
+    geo1:long "10.686388888889"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p72> a schema:Place ;
+    schema1:name "Mautern in Steiermark" ;
+    owl:sameAs wdt:Q258162 ;
+    geo1:lat "47.4"^^xsd:float ;
+    geo1:long "14.833333333333"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p74> a schema:Place ;
+    schema1:name "Norderstedt" ;
+    owl:sameAs wdt:Q3928 ;
+    geo1:lat "53.706388888889"^^xsd:float ;
+    geo1:long "10.010277777778"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p75> a schema:Place ;
+    schema1:name "Teheran" ;
+    owl:sameAs wdt:Q3616 ;
+    geo1:lat "35.68888888888889"^^xsd:float ;
+    geo1:long "51.389722222222225"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p76> a schema:Place ;
+    schema1:name "Potsdam" ;
+    owl:sameAs wdt:Q1711 ;
+    geo1:lat "52.4"^^xsd:float ;
+    geo1:long "13.066666666667"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p77> a schema:Place ;
+    schema1:name "Wittlich" ;
+    owl:sameAs wdt:Q559514 ;
+    geo1:lat "49.986944444444"^^xsd:float ;
+    geo1:long "6.8897222222222"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p78> a schema:Place ;
+    schema1:name "Bad Salzungen" ;
+    owl:sameAs wdt:Q502662 ;
+    geo1:lat "50.811666666667"^^xsd:float ;
+    geo1:long "10.233333333333"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p79> a schema:Place ;
+    schema1:name "Erfurt" ;
+    owl:sameAs wdt:Q1729 ;
+    geo1:lat "50.97805555555556"^^xsd:float ;
+    geo1:long "11.028888888888888"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p8> a schema:Place ;
+    schema1:name "Gera" ;
+    owl:sameAs wdt:Q3750 ;
+    geo1:lat "50.87818"^^xsd:float ;
+    geo1:long "12.08242"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p80> a schema:Place ;
+    schema1:name "Laas" ;
+    owl:sameAs wdt:Q118352511 ;
+    geo1:lat "46.94278"^^xsd:float ;
+    geo1:long "13.07694"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p81> a schema:Place ;
+    schema1:name "Braunschweig" ;
+    owl:sameAs wdt:Q2773 ;
+    geo1:lat "52.269166666667"^^xsd:float ;
+    geo1:long "10.521111111111"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p82> a schema:Place ;
+    schema1:name "Rheinfelden (Baden)" ;
+    owl:sameAs wdt:Q16077 ;
+    geo1:lat "47.561111111111"^^xsd:float ;
+    geo1:long "7.7916666666667"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p84> a schema:Place ;
+    schema1:name "Halle (Saale)" ;
+    owl:sameAs wdt:Q2814 ;
+    geo1:lat "51.48277777777778"^^xsd:float ;
+    geo1:long "11.969722222222222"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p85> a schema:Place ;
+    schema1:name "Bad Segeberg" ;
+    owl:sameAs wdt:Q496050 ;
+    geo1:lat "53.93611111111111"^^xsd:float ;
+    geo1:long "10.309722222222222"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p86> a schema:Place ;
+    schema1:name "Kupfermühle" ;
+    owl:sameAs wdt:Q317658 ;
+    geo1:lat "54.83694444"^^xsd:float ;
+    geo1:long "9.41416667"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p88> a schema:Place ;
+    schema1:name "Karlsruhe" ;
+    owl:sameAs wdt:Q1040 ;
+    geo1:lat "49.016666666667"^^xsd:float ;
+    geo1:long "8.4"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p89> a schema:Place ;
+    schema1:name "Nürnberg" ;
+    owl:sameAs wdt:Q2090 ;
+    geo1:lat "49.45388888888889"^^xsd:float ;
+    geo1:long "11.0775"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p9> a schema:Place ;
+    schema1:name "Çayırlı" ;
+    owl:sameAs wdt:Q272722 ;
+    geo1:lat "39.804444444444"^^xsd:float ;
+    geo1:long "40.037222222222"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p90> a schema:Place ;
+    schema1:name "Basel" ;
+    owl:sameAs wdt:Q78 ;
+    geo1:lat "47.560555555556"^^xsd:float ;
+    geo1:long "7.5905555555556"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p91> a schema:Place ;
+    schema1:name "Sarajevo" ;
+    owl:sameAs wdt:Q11194 ;
+    geo1:lat "43.85638888888889"^^xsd:float ;
+    geo1:long "18.413055555555555"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p92> a schema:Place ;
+    schema1:name "Wolgograd" ;
+    owl:sameAs wdt:Q914 ;
+    geo1:lat "48.70861111111111"^^xsd:float ;
+    geo1:long "44.514722222222225"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p93> a schema:Place ;
+    schema1:name "Schwerin" ;
+    owl:sameAs wdt:Q1709 ;
+    geo1:lat "53.62888888888889"^^xsd:float ;
+    geo1:long "11.415"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p94> a schema:Place ;
+    schema1:name "Mainz" ;
+    owl:sameAs wdt:Q1720 ;
+    geo1:lat "49.99944444444444"^^xsd:float ;
+    geo1:long "8.27361111111111"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p95> a schema:Place ;
+    schema1:name "Bremen" ;
+    owl:sameAs wdt:Q24879 ;
+    geo1:lat "53.075833333333335"^^xsd:float ;
+    geo1:long "8.807222222222222"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p96> a schema:Place ;
+    schema1:name "Hannover" ;
+    owl:sameAs wdt:Q1715 ;
+    geo1:lat "52.374444444444"^^xsd:float ;
+    geo1:long "9.7386111111111"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p99> a schema:Place ;
+    schema1:name "Thun" ;
+    owl:sameAs wdt:Q68978 ;
+    geo1:lat "46.759"^^xsd:float ;
+    geo1:long "7.63"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p17> a schema:Place ;
+    schema1:name "Innsbruck" ;
+    owl:sameAs wdt:Q1735 ;
+    geo1:lat "47.268333333333"^^xsd:float ;
+    geo1:long "11.393333333333"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p46> a schema:Place ;
+    schema1:name "Salzburg" ;
+    owl:sameAs wdt:Q34713 ;
+    geo1:lat "47.8"^^xsd:float ;
+    geo1:long "13.045"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p50> a schema:Place ;
+    schema1:name "Augsburg" ;
+    owl:sameAs wdt:Q2749 ;
+    geo1:lat "48.36888888888889"^^xsd:float ;
+    geo1:long "10.897777777777778"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p59> a schema:Place ;
+    schema1:name "Wien" ;
+    owl:sameAs wdt:Q1741 ;
+    geo1:lat "48.208333333333336"^^xsd:float ;
+    geo1:long "16.3725"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p62> a schema:Place ;
+    schema1:name "Remscheid" ;
+    owl:sameAs wdt:Q3097 ;
+    geo1:lat "51.1798706"^^xsd:float ;
+    geo1:long "7.1943544"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p69> a schema:Place ;
+    schema1:name "Graz" ;
+    owl:sameAs wdt:Q13298 ;
+    geo1:lat "47.07083333333333"^^xsd:float ;
+    geo1:long "15.438611111111111"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p83> a schema:Place ;
+    schema1:name "Weinheim" ;
+    owl:sameAs wdt:Q7050 ;
+    geo1:lat "49.556111111111"^^xsd:float ;
+    geo1:long "8.6697222222222"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p87> a schema:Place ;
+    schema1:name "Wuppertal" ;
+    owl:sameAs wdt:Q2107 ;
+    geo1:lat "51.266666666667"^^xsd:float ;
+    geo1:long "7.1833333333333"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p47> a schema:Place ;
+    schema1:name "Göttingen" ;
+    owl:sameAs wdt:Q3033 ;
+    geo1:lat "51.533888888889"^^xsd:float ;
+    geo1:long "9.9355555555556"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p97> a schema:Place ;
+    schema1:name "Stuttgart" ;
+    owl:sameAs wdt:Q1022 ;
+    geo1:lat "48.7775"^^xsd:float ;
+    geo1:long "9.18"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p19> a schema:Place ;
+    schema1:name "Reinbek" ;
+    owl:sameAs wdt:Q516405 ;
+    geo1:lat "53.508888888889"^^xsd:float ;
+    geo1:long "10.248333333333"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p34> a schema:Place ;
+    schema1:name "Köln" ;
+    owl:sameAs wdt:Q365 ;
+    geo1:lat "50.942222222222"^^xsd:float ;
+    geo1:long "6.9577777777778"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p63> a schema:Place ;
+    schema1:name "Zürich" ;
+    owl:sameAs wdt:Q72 ;
+    geo1:lat "47.37444444444444"^^xsd:float ;
+    geo1:long "8.54111111111111"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p73> a schema:Place ;
+    schema1:name "Frankfurt am Main" ;
+    owl:sameAs wdt:Q1794 ;
+    geo1:lat "50.11055555555556"^^xsd:float ;
+    geo1:long "8.682222222222222"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p14> a schema:Place ;
+    schema1:name "Hamburg" ;
+    owl:sameAs wdt:Q1055 ;
+    geo1:lat "53.55"^^xsd:float ;
+    geo1:long "10.0"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p45> a schema:Place ;
+    schema1:name "Berlin" ;
+    owl:sameAs wdt:Q64 ;
+    geo1:lat "52.516666666667"^^xsd:float ;
+    geo1:long "13.383333333333"^^xsd:float .
+
+<https://example.org/rechtsextremismusPlace/p98> a schema:Place ;
+    schema1:name "München" ;
+    owl:sameAs wdt:Q1726 ;
+    geo1:lat "48.1375"^^xsd:float ;
+    geo1:long "11.575"^^xsd:float .
+
