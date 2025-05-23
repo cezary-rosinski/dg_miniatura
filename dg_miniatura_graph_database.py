@@ -23,11 +23,9 @@ geo = Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#")
 bibo = Namespace("http://purl.org/ontology/bibo/")
 schema = Namespace("http://schema.org/")
 WDT = Namespace("http://www.wikidata.org/entity/")
-DATA_PATH = "data/DG_miniatura_powieści_final.xlsx"
-OUTPUT_TTL = "data/rechtsextremismus.ttl"
+OUTPUT_TTL = "rechtsextremismus.ttl"
 
 #%% --- LOAD ---
-xls = pd.ExcelFile(DATA_PATH)
 df_novels     = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'novels')
 df_people    = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'authors')
 df_places     = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'places')
@@ -41,7 +39,7 @@ g.bind("dcterms", dcterms)
 g.bind("fabio", FABIO)
 g.bind("geo", geo)
 g.bind("bibo", bibo)
-g.bind("schema", schema)
+g.bind("sch", schema)
 g.bind("biro", BIRO)
 g.bind("foaf", FOAF)
 g.bind("wdt", WDT)
@@ -85,23 +83,41 @@ def add_institution(row):
 for _, r in df_institutions.iterrows():
     add_institution(r)    
 
-for _, r in df_publishers.iterrows():
-    iid = str(r["institution_id"])
-    u = EX[f"Institution/{iid}"]
-    g.add((u, RDF.type, EX.Institution))
-    name = r.get("displayForm") or r.get("searchName")
-    if pd.notnull(name):
-        g.add((u, EX.name, Literal(name)))
-    if pd.notnull(r.get("wikidataID")):
-        g.add((u, EX.wikidataID, WDT[r["wikidataID"]]))
-    if pd.notnull(r.get("location_name")):
-        # relation Institution->Place
-        place_id = str(r["location_name"])
-        g.add((u, EX.locatedIn, EX[f"Place/{place_id}"]))
-    if pd.notnull(r.get("size")):
-        g.add((u, EX.size, Literal(r["size"])))
-
 # 3) Person (authors)
+def add_person(row):
+    pid = str(r["author_id"])
+    person = RECH[f"Person/{pid}"]
+    g.add((person, RDF.type, URIRef('https://schema.org/Person')))
+    g.add((person, schema.name, Literal(r["searchName"])))
+    if pd.notnull(row["wikidataID"]):
+        g.add((person, OWL.sameAs, WDT[row["wikidataID"]]))
+    if pd.notnull(row["viafid"]):
+        g.add((person, OWL.sameAs, VIAF[row["viafid"]]))
+    if pd.notnull(row['birthdate']):
+        year = str(row['birthdate'])[:4]
+        g.add((person, schema.birthDate, Literal(year, datatype=XSD.gYear)))
+    if pd.notnull(row['deathdate']):
+        year = str(row['deathdate'])[:4]
+        g.add((person, schema.deathDate, Literal(year, datatype=XSD.gYear)))
+    if pd.notnull(r["birthplace"]):
+        # relation Person->Place
+        place_id = str(row["birthplace"])
+        g.add((person, schema.birthPlace, RECH[f"Place/{place_id}"]))
+    if pd.notnull(r["deathplace"]):
+        # relation Person->Place
+        place_id = str(row["deathplace"])
+        g.add((person, schema.deathPlace, RECH[f"Place/{place_id}"]))
+    if pd.notnull(row['sex']):
+        g.add((person, schema.gender, Literal(row["sex"])))
+        
+    #occupation, historical background
+        
+        
+        
+
+    
+
+
 for _, r in df_authors.iterrows():
     aid = str(r["author_id"])
     u = EX[f"Person/{aid}"]
