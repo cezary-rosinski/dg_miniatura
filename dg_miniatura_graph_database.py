@@ -1,7 +1,8 @@
 import sys
-sys.path.insert(1, 'D:\IBL\Documents\IBL-PAN-Python')
+# sys.path.insert(1, 'D:\IBL\Documents\IBL-PAN-Python')
+sys.path.insert(1, 'C:/Users/Cezary/Documents/IBL-PAN-Python')
 import pandas as pd
-from rdflib import Graph, Namespace, URIRef, Literal
+from rdflib import Graph, Namespace, URIRef, Literal, BNode
 from rdflib.namespace import RDF, RDFS, XSD, FOAF, OWL
 import datetime
 import regex as re
@@ -13,7 +14,7 @@ def slugify(s: str) -> str:
     return re.sub(r'\W+', '_', s).strip('_')
 #%%
 # --- CONFIG ---
-RECH = Namespace('https://example.org/rechtsextremismus')
+RECH = Namespace('https://example.org/rechtsextremismus/')
 dcterms = Namespace("http://purl.org/dc/terms/")
 rdf = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 FABIO = Namespace("http://purl.org/spar/fabio/")
@@ -44,6 +45,22 @@ g.bind("biro", BIRO)
 g.bind("foaf", FOAF)
 g.bind("wdt", WDT)
 g.bind("owl", OWL)
+
+# # new class
+# def add_literary_prize_class(g: Graph):
+#     RECH = Namespace('https://example.org/rechtsextremismus/')
+#     schema = Namespace("http://schema.org/")
+#     # URI klasy LiteraryPrize
+#     cls = RECH.LiteraryPrize
+#     # dodaj trójki:
+#     # ex:LiteraryPrize a rdfs:Class .
+#     g.add((cls, RDF.type, RDFS.Class))
+#     # ex:LiteraryPrize rdfs:subClassOf bibo:Award .
+#     g.add((cls, RDFS.subClassOf, schema.Award))
+#     # ex:LiteraryPrize rdfs:label "Literary Prize" .
+#     g.add((cls, RDFS.label, Literal("Literary Prize")))
+
+# add_literary_prize_class(g)
 
 # 1) Place nodes
 def add_place(row):
@@ -82,8 +99,23 @@ def add_institution(row):
     
 for _, r in df_institutions.iterrows():
     add_institution(r)    
+    
+# 3) Prize nodes + Author->Prize relations
+# create Prize nodes
 
-# 3) Person (authors)
+def add_prize(row):
+    pid = str(r["prize_id"]) 
+    prize = RECH[f"Prize/{pid}"]
+    g.add((prize, RDF.type, schema.Award))
+    g.add((prize, schema.name, Literal(row["prize_name"])))
+    g.add((prize, schema.temporalCoverage, Literal(row["prize_year"], datatype=XSD.gYear)))
+    if pd.notnull(row["prize_wikidata"]):
+        g.add((prize, OWL.sameAs, WDT[row["prize_wikidata"]]))
+
+for _, r in df_prizes.iterrows():
+    add_prize(r)       
+
+# 4) Person (authors)
 def add_person(row):
     pid = str(r["author_id"])
     person = RECH[f"Person/{pid}"]
@@ -109,68 +141,36 @@ def add_person(row):
         g.add((person, schema.deathPlace, RECH[f"Place/{place_id}"]))
     if pd.notnull(row['sex']):
         g.add((person, schema.gender, Literal(row["sex"])))
-        
-    #occupation, historical background
-        
-        
-        
+    if pd.notnull(row['occupation']):
+        for o in row['occupation'].split('❦'):
+            g.add((person, schema.hasOccupation, Literal(o.strip())))
+    pv  = BNode()
+    g.add((person, schema.additionalProperty, pv))
+    if pd.notnull(row['historical background']):
+        for hb in row['historical background'].split(','):
+            g.add((pv, RDF.type, schema.PropertyValue))
+            g.add((pv, schema.propertyID, Literal("historical background")))
+            g.add((pv, schema.value, Literal(hb.strip())))
+    if pd.notnull(row['prize_id']):
+        for pr in row['prize_id'].split('|'):
+            g.add((person, schema.award, RECH[f"Prize/{pr}"]))
 
-    
-
-
-for _, r in df_authors.iterrows():
-    aid = str(r["author_id"])
-    u = EX[f"Person/{aid}"]
-    g.add((u, RDF.type, EX.Person))
-
-    # name
-    if pd.notnull(r.get("displayForm")):
-        g.add((u, EX.name, Literal(r["displayForm"])))
-
-    # wikidata
-    if pd.notnull(r.get("wikidataID")):
-        g.add((u, EX.wikidataID, WDT[r["wikidataID"]]))
-
-    # --- dates (birthdate i deathdate) ---
-    for col, prop in [("birthdate", EX.birthDate), ("deathdate", EX.deathDate)]:
-        val = r.get(col)
-        if pd.notnull(val):
-            # jeżeli pandas.Timestamp lub datetime → dokładna data
-            if isinstance(val, (pd.Timestamp, datetime.datetime)):
-                lit = Literal(val.date().isoformat(), datatype=XSD.date)
-            else:
-                # inaczej traktujemy to jako rok
-                rok = int(val[:4] if isinstance(val, str) else val)
-                lit = Literal(str(rok), datatype=XSD.gYear)
-            g.add((u, prop, lit))
-
-    # places
-    for col,pred in [("birthplace","bornIn"),("deathplace","diedIn")]:
-        if pd.notnull(r.get(col)):
-            g.add((u, EX[pred], EX[f"Place/{r[col]}"]))
-
-    # gender, occupation, background
-    if pd.notnull(r.get("sex")):
-        g.add((u, EX.gender, Literal(r["sex"])))
-    if pd.notnull(r.get("occupation")):
-        g.add((u, EX.occupation, Literal(r["occupation"])))
-    if pd.notnull(r.get("historical background")):
-        g.add((u, EX.historicalBackground, Literal(r["historical background"])))
-
-# 4) Prize nodes + Author->Prize relations
-# create Prize nodes
-for _, r in df_prizes.iterrows():
-    pid = r["prize_id.1"]  # wikidata ID
-    u = WDT[pid]
-    if (u, None, None) not in g:
-        g.add((u, RDF.type, EX.Prize))
-        g.add((u, EX.name, Literal(r["prize_name"])))
-        g.add((u, EX.yearAwarded, Literal(int(r["prize_year"]), datatype=XSD.gYear)))
-    # relation to person
-    per = r["person_id"]
-    g.add((EX[f"Person/{per}"], EX.receivedPrize, u))
+for _, r in df_people.iterrows():
+    add_person(r)       
 
 # 5) Text (novels)
+def add_text(row):
+    tid = str(row["novel_id"])
+    text = RECH[f"Text/{tid}"]
+    g.add((text, RDF.type, schema.Text))
+    g.add((text, schema.title, Literal(row["title"])))
+    if pd.notnull(row["link"]):
+        g.add((text, OWL.sameAs, URIRef(row["link"])))
+    for a in row['author_id'].split(';'):
+        g.add((text, schema.author, RECH[f"Person/{a.strip()}"]))
+    
+    URIRef("https://literarybibliography.eu/")
+    
 for _, r in df_novels.iterrows():
     nid = str(r["novel_id"])
     u = EX[f"Text/{nid}"]
