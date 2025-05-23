@@ -49,7 +49,7 @@ g.bind("owl", OWL)
 def add_place(row):
     pid = str(row["place_id"])
     place = RECH[f"Place/{pid}"]
-    g.add((place, RDF.type, URIRef('https://schema.org/Place')))
+    g.add((place, RDF.type, schema.Place))
     g.add((place, schema.name, Literal(row["name"])))
     if pd.notnull(row["wikidata_id"]):
         g.add((place, OWL.sameAs, WDT[row["wikidata_id"]]))
@@ -66,8 +66,8 @@ for _, r in df_places.iterrows():
 def add_institution(row):
     #PAMIĘTAĆ -- info, że publisher to w relacji dopiero
     iid = str(r["institution_id"])
-    institution = RECH[f"Institution/{iid}"]
-    g.add((institution, RDF.type, URIRef('https://schema.org/Organization')))
+    institution = RECH[f"Organization/{iid}"]
+    g.add((institution, RDF.type, schema.Organization))
     g.add((institution, schema.name, Literal(row["searchName"])))
     if pd.notnull(row["wikidataID"]):
         g.add((institution, OWL.sameAs, WDT[row["wikidataID"]]))
@@ -87,7 +87,7 @@ for _, r in df_institutions.iterrows():
 def add_person(row):
     pid = str(r["author_id"])
     person = RECH[f"Person/{pid}"]
-    g.add((person, RDF.type, URIRef('https://schema.org/Person')))
+    g.add((person, RDF.type, schema.Person))
     g.add((person, schema.name, Literal(r["searchName"])))
     if pd.notnull(row["wikidataID"]):
         g.add((person, OWL.sameAs, WDT[row["wikidataID"]]))
