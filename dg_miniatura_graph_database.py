@@ -7,11 +7,8 @@ from rdflib.namespace import RDF, RDFS, XSD, FOAF, OWL
 import datetime
 import regex as re
 from my_functions import gsheet_to_df
+from ast import literal_eval
 
-#%%
-def slugify(s: str) -> str:
-    # zamienia wszystkie nie-alfanumeryczne na podkreślenie
-    return re.sub(r'\W+', '_', s).strip('_')
 #%%
 # --- CONFIG ---
 RECH = Namespace('https://example.org/rechtsextremismus/')
@@ -160,6 +157,7 @@ for _, r in df_people.iterrows():
 
 # 5) Text (novels)
 def add_text(row):
+# for _, row in df_novels.iterrows():
     tid = str(row["novel_id"])
     text = RECH[f"Text/{tid}"]
     g.add((text, RDF.type, schema.Text))
@@ -168,92 +166,82 @@ def add_text(row):
         g.add((text, OWL.sameAs, URIRef(row["link"])))
     for a in row['author_id'].split(';'):
         g.add((text, schema.author, RECH[f"Person/{a.strip()}"]))
-    
-    URIRef("https://literarybibliography.eu/")
-    
+    g.add((text, dcterms.publisher, RECH[f"Organization/{row['institution_id']}"]))
+    g.add((text, schema.datePublished, Literal(row['year'], datatype=XSD.gYear)))
+    g.add((text, schema.gendre, Literal(row['genre'])))
+    g.add((text, schema.inLanguage, Literal(row['language'])))
+    g.add((text, RECH.whichNovel, Literal(row['debut novel/further novel'])))
+    g.add((text, schema.about, Literal(row['subject'])))
+    if pd.notnull(row['reason for violence']):
+        for rfv in row['reason for violence'].split(','):
+            g.add((text, RECH.reasonForViolence, Literal(rfv.strip())))
+    if pd.notnull(row['art of violence']):
+        for afv in row['art of violence'].split(','):
+            g.add((text, RECH.reasonForViolence, Literal(afv.strip())))
+    if pd.notnull(row['klappentext']):
+        g.add((text, schema.description, Literal(row['klappentext'])))
+    if pd.notnull(row['rezensionsnotiz']):
+        try:
+            rec = literal_eval(row['rezensionsnotiz'])
+            for r in rec:
+                g.add((text, schema.review, Literal(r)))
+        except SyntaxError:
+            g.add((text, schema.review, Literal(row['rezensionsnotiz'])))
+        
 for _, r in df_novels.iterrows():
-    nid = str(r["novel_id"])
-    u = EX[f"Text/{nid}"]
-    g.add((u, RDF.type, EX.Text))
-    g.add((u, EX.title, Literal(r["title"])))
-    # author
-    g.add((u, EX.hasAuthor, EX[f"Person/{r['author_id']}"]))
-    # publisher & place
-    g.add((u, EX.publishedBy, EX[f"Institution/{r['publisher']}"]))
-    g.add((u, EX.publishedIn, EX[f"Place/{r['place_id']}"]))
-    # year, genre, language, type, debut/further
-    for col,pred,dt in [
-        ("year","year",XSD.gYear),
-        ("genre","genre",None),
-        ("language","language",None),
-        ("type","textType",None),
-        ("debut novel/further novel","debutStatus",None),
-        ("subject","subject",None),
-        ("reason for violence","violenceReason",None),
-        ("art of violence","violenceArt",None),
-    ]:
-        if pd.notnull(r.get(col)):
-            lit = Literal(r[col], datatype=dt) if dt else Literal(r[col])
-            g.add((u, EX[pred], lit))
-    # keywords: split on commas or pipes
-    for keycol in ["keywords2","keywords","stichworter"]:
-        if pd.notnull(r.get(keycol)):
-            for kw in str(r[keycol]).split(";"):
-                kw = kw.strip()
-                if kw:
-                    g.add((u, EX.hasKeyword, Literal(kw)))
+    add_text(r)    
 
 # --- EXPORT ---
 g.serialize(destination=OUTPUT_TTL, format="turtle")
 print(f"RDF triples written to {OUTPUT_TTL}")
 
-# testy
-for subj, pred, obj in g:
-    print(subj, pred, obj)
+# # testy
+# for subj, pred, obj in g:
+#     print(subj, pred, obj)
 
-turtle_str = g.serialize(format="turtle")
-# print(turtle_str)
+# turtle_str = g.serialize(format="turtle")
+# # print(turtle_str)
 
-#%%
-#places
-from rdflib import Namespace, RDF
+#%% testy i sprawdzenia
+# #places
+# from rdflib import Namespace, RDF
 
-EX = Namespace("http://example.org/dg/")
+# EX = Namespace("http://example.org/dg/")
 
-# otwieramy plik do zapisu (nadpisze istniejący)
-with open("data/places_info.txt", "w", encoding="utf-8") as f:
-    # iterujemy po wszystkich subject w grafie
-    for place in g.subjects():
-        # filtrujemy tylko te, które są typu Place
-        if (place, RDF.type, EX.Place) in g:
-            # zapisujemy linię nagłówkową
-            f.write(f"--- Place node: {place}\n")
-            # zapisujemy wszystkie predykaty i obiekty tego noda
-            for p, o in g.predicate_objects(subject=place):
-                f.write(f"    {p} → {o}\n")
-            # dodatkowy pusty wiersz dla czytelności
-            f.write("\n")
+# # otwieramy plik do zapisu (nadpisze istniejący)
+# with open("data/places_info.txt", "w", encoding="utf-8") as f:
+#     # iterujemy po wszystkich subject w grafie
+#     for place in g.subjects():
+#         # filtrujemy tylko te, które są typu Place
+#         if (place, RDF.type, EX.Place) in g:
+#             # zapisujemy linię nagłówkową
+#             f.write(f"--- Place node: {place}\n")
+#             # zapisujemy wszystkie predykaty i obiekty tego noda
+#             for p, o in g.predicate_objects(subject=place):
+#                 f.write(f"    {p} → {o}\n")
+#             # dodatkowy pusty wiersz dla czytelności
+#             f.write("\n")
 
-#novels
-from rdflib import Namespace, RDF
+# #novels
+# from rdflib import Namespace, RDF
 
-EX = Namespace("http://example.org/dg/")
+# EX = Namespace("http://example.org/dg/")
 
-# otwieramy plik do zapisu (nadpisze istniejący)
-with open("data/novels_info.txt", "w", encoding="utf-8") as f:
-    # iterujemy po wszystkich subject w grafie
-    for novel in g.subjects():
-        # filtrujemy tylko te, które są typu Text (powieści)
-        if (novel, RDF.type, EX.Text) in g:
-            # zapisujemy linię nagłówkową
-            f.write(f"--- Novel node: {novel}\n")
-            # zapisujemy wszystkie predykaty i obiekty tego noda
-            for p, o in g.predicate_objects(subject=novel):
-                f.write(f"    {p} → {o}\n")
-            # dodatkowy pusty wiersz dla czytelności
-            f.write("\n")
+# # otwieramy plik do zapisu (nadpisze istniejący)
+# with open("data/novels_info.txt", "w", encoding="utf-8") as f:
+#     # iterujemy po wszystkich subject w grafie
+#     for novel in g.subjects():
+#         # filtrujemy tylko te, które są typu Text (powieści)
+#         if (novel, RDF.type, EX.Text) in g:
+#             # zapisujemy linię nagłówkową
+#             f.write(f"--- Novel node: {novel}\n")
+#             # zapisujemy wszystkie predykaty i obiekty tego noda
+#             for p, o in g.predicate_objects(subject=novel):
+#                 f.write(f"    {p} → {o}\n")
+#             # dodatkowy pusty wiersz dla czytelności
+#             f.write("\n")
 
-print("Zapisano informacje o węzłach Novel do data/novels_info.txt")
+# print("Zapisano informacje o węzłach Novel do data/novels_info.txt")
 
 
 

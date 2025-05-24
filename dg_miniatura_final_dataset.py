@@ -24,6 +24,7 @@ import geoplot
 import geoplot.crs as gcrs
 from shapely.geometry import shape, Point
 from geonames_accounts import geonames_users
+from ast import literal_eval
 
 #%%
 def viaf_autosuggest(query):
@@ -531,6 +532,81 @@ new_places = [e for e in df_places_for_publishers['place_id'].to_list() if e]
 old_places = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'places')['wikidata_id'].to_list()
 
 [e for e in new_places if e not in old_places]
+
+#%% keywords merging
+
+df_novels = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'novels')
+
+keywords_list = []
+for i, row in tqdm(df_novels.iterrows(), total=df_novels.shape[0]):
+    # i = 33
+    # row = df_novels.loc[i]
+    k1 = list(literal_eval(row['keywords1'])) if isinstance(row['keywords1'], str) else []
+    k2 = [e.lower().strip() for e in row['keywords2'].split(',')] if isinstance(row['keywords2'], str) else []
+    k3 = [e.lower().strip() for e in row['keywords3'].split(',')] if isinstance(row['keywords3'], str) else []
+    temp_k = '|'.join([e for e in set(k1 + k2 + k3) if e])
+    keywords_list.append({'novel_id': row['novel_id'], 'keywords': temp_k})
+    
+df_keywords = pd.DataFrame(keywords_list)
+df_keywords.to_csv('dane/keywords.csv', index=False)
+
+#%% occupation in german; historical background in german
+occupation_translation_dict = {'writer': 'Schriftsteller:in',
+                               'journalist': 'Journalist:in',
+                               'activist - politically/civically engaged person': 'Aktivist:in',
+                               'playwright/screenwright': 'Drehbuchautor:in',
+                               'academic/scientist': 'Akademiker:in/Wissenschaftler:in',
+                               'musician/stage artist': 'Musiker:in/Bühnenkünstler:in',
+                               'other': 'Andere',
+                               'poet/songwriter': 'Dichter:in/Liedermacher:in',
+                               'visual artist': 'Bildende:r Künstler:in',
+                               'teacher/educator': 'Lehrkraft/Erzieher:in',
+                               'artist': 'Künstler:in',
+                               'director': 'Regisseur:in'}
+
+df_authors = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'authors')
+occupation = [e.split('❦') for e in df_authors['occupation'].to_list()]
+occupation = ['❦'.join([occupation_translation_dict.get(el) for el in e]) for e in occupation]
+occupation_df = pd.DataFrame(occupation)
+
+hb_dict = {'Austria/Switzerland': 'Österreich/Schweiz',
+           'Western Germany': 'Westdeutschland',
+           'Eastern Germany': 'Ostdeutschland',
+           'Third Reich': 'Drittes Reich',
+           'Federal Republic': 'Bundesrepublik Deutschland',
+           'Eastern Berlin': 'Ost-Berlin',
+           'Western Berlin': 'West-Berlin',
+           'Weimar Republic': 'Weimarer Republik',
+           'not Germany': 'nicht Deutschland'
+}
+df_authors = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'authors')
+hb = [e.split(',') for e in df_authors['historical background'].to_list()]
+hb = [','.join([hb_dict.get(el.strip()) for el in e]) for e in hb]
+hb_df = pd.DataFrame(hb)
+
+rfv_dict = {
+    'political': 'politisch',
+    'racism': 'rassistisch',
+    'subculture': 'subkulturell',
+    'sexual': 'sexuell'
+}
+df_novels = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'novels')
+rfv = [e.split(',') if isinstance (e, str) else [] for e in df_novels['reason for violence'].to_list()]
+rfv = [','.join([rfv_dict.get(el.strip()) for el in e]) for e in rfv]
+rfv_df = pd.DataFrame(rfv)
+
+
+aov_dict = {
+    'physical': 'physisch',
+    'verbal': 'verbal',
+    'other': 'andere',
+    'sexual': 'sexuell'
+}
+df_novels = gsheet_to_df('1iU-u4xjotqa3ZLijF5bMU7xWv-Hxgq1n8N3i-7UCdfU', 'novels')
+aov = [e.split(',') if isinstance (e, str) else [] for e in df_novels['art of violence'].to_list()]
+aov = [','.join([aov_dict.get(el.strip()) for el in e]) for e in aov]
+aov_df = pd.DataFrame(aov)
+
 
 
 
