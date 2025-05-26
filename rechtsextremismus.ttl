@@ -3165,21 +3165,18 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         wdt:Q831576 .
 
 <https://example.org/rechtsextremismus/Person/a1> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "nicht Deutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p75> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Drehbuchautor:in",
         "Schriftsteller:in" ;
     sch:name "Amir Gudarzi" ;
     owl:sameAs <http://viaf.org/viaf/9900164479578326210001>,
-        wdt:Q122308265 .
+        wdt:Q122308265 ;
+    rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a10> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Österreich/Schweiz" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1942"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p80> ;
     sch:gender "männlich" ;
@@ -3187,12 +3184,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Werner Thuswaldner" ;
     owl:sameAs <http://viaf.org/viaf/42705151>,
-        wdt:Q61108517 .
+        wdt:Q61108517 ;
+    rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a100> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1986"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p27> ;
     sch:gender "weiblich" ;
@@ -3201,22 +3197,20 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Yandé Seck" ;
     owl:sameAs <http://viaf.org/viaf/5981170011266984810005>,
-        wdt:Q130267014 .
+        wdt:Q130267014 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a101> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1986"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p23> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
-    sch:name "Cihan Acar" .
+    sch:name "Cihan Acar" ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a102> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr282> ;
     sch:birthDate "1986"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p88> ;
@@ -3225,12 +3219,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Journalist:in" ;
     sch:name "Fatma Aydemir" ;
     owl:sameAs <http://viaf.org/viaf/6948148705720737080000>,
-        wdt:Q29097798 .
+        wdt:Q29097798 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a103> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "nicht Deutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1986"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p58> ;
     sch:gender "männlich" ;
@@ -3238,12 +3231,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Dmitrij Kapitelman" ;
     owl:sameAs <http://viaf.org/viaf/80147266734735481386>,
-        wdt:Q29604211 .
+        wdt:Q29604211 ;
+    rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a104> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "nicht Deutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1987"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p4> ;
     sch:gender "weiblich" ;
@@ -3251,36 +3243,33 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Karosh Taha" ;
     owl:sameAs <http://viaf.org/viaf/2183152200819514400002>,
-        wdt:Q50517367 .
+        wdt:Q50517367 ;
+    rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a105> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1987"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p44> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Pascal Richmann" ;
     owl:sameAs <http://viaf.org/viaf/316503969>,
-        wdt:Q106559813 .
+        wdt:Q106559813 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a106> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1987"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p53> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Domenico Müllensiefen" ;
     owl:sameAs <http://viaf.org/viaf/47146332962018732539>,
-        wdt:Q115346392 .
+        wdt:Q115346392 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a107> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr283>,
         <https://example.org/rechtsextremismus/Prize/pr284> ;
     sch:birthDate "1988"^^xsd:gYear ;
@@ -3289,12 +3278,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Drehbuchautor:in" ;
     sch:name "Lars Werner" ;
     owl:sameAs <http://viaf.org/viaf/17152023692003312906>,
-        wdt:Q112519211 .
+        wdt:Q112519211 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a108> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1988"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p39> ;
     sch:gender "männlich" ;
@@ -3302,12 +3290,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Necati Öziri" ;
     owl:sameAs <http://viaf.org/viaf/2874155769088427880007>,
-        wdt:Q107208009 .
+        wdt:Q107208009 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a109> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr285> ;
     sch:birthDate "1988"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p73> ;
@@ -3315,13 +3302,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Deniz Ohde" ;
     owl:sameAs <http://viaf.org/viaf/2492159820939114000002>,
-        wdt:Q98456349 .
+        wdt:Q98456349 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a11> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Drittes Reich",
-                "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr44>,
         <https://example.org/rechtsextremismus/Prize/pr45>,
         <https://example.org/rechtsextremismus/Prize/pr46>,
@@ -3339,12 +3324,12 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Bernhard Schlink" ;
     owl:sameAs <http://viaf.org/viaf/59157273>,
-        wdt:Q76699 .
+        wdt:Q76699 ;
+    rechtsextremismus:historicalBackground "Drittes Reich",
+        "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a110> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1988"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p33> ;
     sch:gender "männlich" ;
@@ -3352,12 +3337,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Hendrik Bolz" ;
     owl:sameAs <http://viaf.org/viaf/3164536645832022753>,
-        wdt:Q19160444 .
+        wdt:Q19160444 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a111> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr286> ;
     sch:birthDate "1988"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p37> ;
@@ -3365,25 +3349,22 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Shida Bazyar" ;
     owl:sameAs <http://viaf.org/viaf/154145542439596640387>,
-        wdt:Q23908659 .
+        wdt:Q23908659 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a112> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1989"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p48> ;
     sch:gender "weiblich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Paula Irmschler" ;
     owl:sameAs <http://viaf.org/viaf/9992157527306027300009>,
-        wdt:Q103907864 .
+        wdt:Q103907864 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a113> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Bundesrepublik Deutschland",
-                "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1990"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p7> ;
     sch:gender "weiblich" ;
@@ -3392,38 +3373,35 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Cemile Sahin" ;
     owl:sameAs <http://viaf.org/viaf/2572157162097178980003>,
-        wdt:Q98961495 .
+        wdt:Q98961495 ;
+    rechtsextremismus:historicalBackground "Bundesrepublik Deutschland",
+        "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a114> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Bundesrepublik Deutschland",
-                "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1990"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p89> ;
     sch:gender "weiblich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Annegret Liepold" ;
-    owl:sameAs <http://viaf.org/viaf/4370174228446511670005> .
+    owl:sameAs <http://viaf.org/viaf/4370174228446511670005> ;
+    rechtsextremismus:historicalBackground "Bundesrepublik Deutschland",
+        "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a115> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Bundesrepublik Deutschland",
-                "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1991"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p97> ;
     sch:gender "weiblich" ;
     sch:hasOccupation "Andere",
         "Schriftsteller:in" ;
     sch:name "Theresa Pleitner" ;
-    owl:sameAs <http://viaf.org/viaf/70147370697941442042> .
+    owl:sameAs <http://viaf.org/viaf/70147370697941442042> ;
+    rechtsextremismus:historicalBackground "Bundesrepublik Deutschland",
+        "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a116> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Bundesrepublik Deutschland",
-                "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1991"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p11> ;
     sch:gender "divers" ;
@@ -3431,37 +3409,34 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Hengameh Yaghoobifarah" ;
     owl:sameAs <http://viaf.org/viaf/105147481518849242772>,
-        wdt:Q61735940 .
+        wdt:Q61735940 ;
+    rechtsextremismus:historicalBackground "Bundesrepublik Deutschland",
+        "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a117> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Österreich/Schweiz" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1992"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p63> ;
     sch:gender "weiblich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Nora Osagiobare" ;
-    owl:sameAs wdt:Q133824492 .
+    owl:sameAs wdt:Q133824492 ;
+    rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a118> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Bundesrepublik Deutschland",
-                "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1992"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p30> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Markus Thielemann" ;
     owl:sameAs <http://viaf.org/viaf/1312164357944513250000>,
-        wdt:Q129406964 .
+        wdt:Q129406964 ;
+    rechtsextremismus:historicalBackground "Bundesrepublik Deutschland",
+        "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a119> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Bundesrepublik Deutschland",
-                "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1992"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p101> ;
     sch:gender "männlich" ;
@@ -3469,13 +3444,12 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Luca Kieser" ;
     owl:sameAs <http://viaf.org/viaf/1610158675984227500008>,
-        wdt:Q121755353 .
+        wdt:Q121755353 ;
+    rechtsextremismus:historicalBackground "Bundesrepublik Deutschland",
+        "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a12> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Drittes Reich",
-                "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr51>,
         <https://example.org/rechtsextremismus/Prize/pr52>,
         <https://example.org/rechtsextremismus/Prize/pr53>,
@@ -3494,25 +3468,24 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Christoph Hein" ;
     owl:sameAs <http://viaf.org/viaf/109434331>,
-        wdt:Q77497 .
+        wdt:Q77497 ;
+    rechtsextremismus:historicalBackground "Drittes Reich",
+        "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a120> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Bundesrepublik Deutschland",
-                "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1994"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p40> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Lukas Rietzschel" ;
     owl:sameAs <http://viaf.org/viaf/6004153653254155900001>,
-        wdt:Q56597291 .
+        wdt:Q56597291 ;
+    rechtsextremismus:historicalBackground "Bundesrepublik Deutschland",
+        "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a13> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr61> ;
     sch:birthDate "1951"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p78> ;
@@ -3520,22 +3493,20 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Journalist:in" ;
     sch:name "Hans-Ulrich Jörges" ;
     owl:sameAs <http://viaf.org/viaf/44993085>,
-        wdt:Q1578232 .
+        wdt:Q1578232 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a14> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Österreich/Schweiz" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1951"^^xsd:gYear ;
     sch:gender "männlich" ;
     sch:hasOccupation "Drehbuchautor:in",
         "Schriftsteller:in" ;
-    sch:name "Niklaus Stöckli" .
+    sch:name "Niklaus Stöckli" ;
+    rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a15> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1952"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p98> ;
     sch:gender "männlich" ;
@@ -3544,12 +3515,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Wolfgang Bortlik" ;
     owl:sameAs <http://viaf.org/viaf/201739819>,
-        wdt:Q19959042 .
+        wdt:Q19959042 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a16> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr62>,
         <https://example.org/rechtsextremismus/Prize/pr63>,
         <https://example.org/rechtsextremismus/Prize/pr64>,
@@ -3569,12 +3539,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Reinhard Jirgl" ;
     owl:sameAs <http://viaf.org/viaf/9891285>,
-        wdt:Q71640 .
+        wdt:Q71640 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a17> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr74>,
         <https://example.org/rechtsextremismus/Prize/pr75>,
         <https://example.org/rechtsextremismus/Prize/pr76>,
@@ -3585,12 +3554,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Peter Wawerzinek" ;
     owl:sameAs <http://viaf.org/viaf/37056116>,
-        wdt:Q95991 .
+        wdt:Q95991 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a18> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr78>,
         <https://example.org/rechtsextremismus/Prize/pr79>,
         <https://example.org/rechtsextremismus/Prize/pr80> ;
@@ -3601,12 +3569,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Stephan Krawczyk" ;
     owl:sameAs <http://viaf.org/viaf/37746012>,
-        wdt:Q2343462 .
+        wdt:Q2343462 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a19> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr81> ;
     sch:birthDate "1956"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p14> ;
@@ -3615,22 +3582,20 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Joachim Lottmann" ;
     owl:sameAs <http://viaf.org/viaf/262441334>,
-        wdt:Q78360 .
+        wdt:Q78360 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a2> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1947"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p45> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
-    sch:name "Jürgen Kasten" .
+    sch:name "Jürgen Kasten" ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a20> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr82>,
         <https://example.org/rechtsextremismus/Prize/pr83>,
         <https://example.org/rechtsextremismus/Prize/pr84>,
@@ -3646,12 +3611,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Kurt Drawert" ;
     owl:sameAs <http://viaf.org/viaf/111089206>,
-        wdt:Q1793472 .
+        wdt:Q1793472 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a21> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Österreich/Schweiz" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1957"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p59> ;
     sch:deathDate "2023"^^xsd:gYear ;
@@ -3661,12 +3625,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Erwin Riess" ;
     owl:sameAs <http://viaf.org/viaf/39602213>,
-        wdt:Q89277 .
+        wdt:Q89277 ;
+    rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a22> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Österreich/Schweiz" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr91>,
         <https://example.org/rechtsextremismus/Prize/pr92> ;
     sch:birthDate "1957"^^xsd:gYear ;
@@ -3675,24 +3638,22 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Walter Grond" ;
     owl:sameAs <http://viaf.org/viaf/110739887>,
-        wdt:Q1380011 .
+        wdt:Q1380011 ;
+    rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a23> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1957"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p22> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Veit Heinichen" ;
     owl:sameAs <http://viaf.org/viaf/17509071>,
-        wdt:Q87074 .
+        wdt:Q87074 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a24> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1959"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p98> ;
     sch:gender "weiblich" ;
@@ -3700,12 +3661,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Journalist:in" ;
     sch:name "Christiane Tramitz" ;
     owl:sameAs <http://viaf.org/viaf/10502465>,
-        wdt:Q1082850 .
+        wdt:Q1082850 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a26> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1959"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p35> ;
     sch:gender "männlich" ;
@@ -3713,12 +3673,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Robert Brack" ;
     owl:sameAs <http://viaf.org/viaf/72227889>,
-        wdt:Q2156593 .
+        wdt:Q2156593 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a27> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1960"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p95> ;
     sch:gender "männlich" ;
@@ -3726,12 +3685,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Jörg-Uwe Albig" ;
     owl:sameAs <http://viaf.org/viaf/30389467>,
-        wdt:Q15448734 .
+        wdt:Q15448734 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a28> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr100>,
         <https://example.org/rechtsextremismus/Prize/pr101>,
         <https://example.org/rechtsextremismus/Prize/pr102>,
@@ -3755,12 +3713,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Ingo Schulze" ;
     owl:sameAs <http://viaf.org/viaf/14917294>,
-        wdt:Q66213 .
+        wdt:Q66213 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a29> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr114>,
         <https://example.org/rechtsextremismus/Prize/pr115>,
         <https://example.org/rechtsextremismus/Prize/pr116>,
@@ -3776,13 +3733,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Dirk Kurbjuweit" ;
     owl:sameAs <http://viaf.org/viaf/17400129>,
-        wdt:Q1227937 .
+        wdt:Q1227937 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a3> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland",
-                "Weimarer Republik" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr1>,
         <https://example.org/rechtsextremismus/Prize/pr2>,
         <https://example.org/rechtsextremismus/Prize/pr3>,
@@ -3796,12 +3751,12 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Edgar Hilsenrath" ;
     owl:sameAs <http://viaf.org/viaf/59113482>,
-        wdt:Q77037 .
+        wdt:Q77037 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland",
+        "Weimarer Republik" .
 
 <https://example.org/rechtsextremismus/Person/a30> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1962"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p66> ;
     sch:gender "männlich" ;
@@ -3811,12 +3766,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Bela B Felsenheimer" ;
     owl:sameAs <http://viaf.org/viaf/10158446>,
-        wdt:Q77462 .
+        wdt:Q77462 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a32> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr122> ;
     sch:birthDate "1963"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p81> ;
@@ -3825,12 +3779,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Johannes Groschupf" ;
     owl:sameAs <http://viaf.org/viaf/50332470>,
-        wdt:Q95333864 .
+        wdt:Q95333864 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a33> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr123>,
         <https://example.org/rechtsextremismus/Prize/pr124>,
         <https://example.org/rechtsextremismus/Prize/pr125>,
@@ -3862,12 +3815,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Lutz Seiler" ;
     owl:sameAs <http://viaf.org/viaf/103616694>,
-        wdt:Q1477082 .
+        wdt:Q1477082 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a34> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr147>,
         <https://example.org/rechtsextremismus/Prize/pr148> ;
     sch:birthDate "1964"^^xsd:gYear ;
@@ -3878,12 +3830,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Dörte Hansen" ;
     owl:sameAs <http://viaf.org/viaf/314857969>,
-        wdt:Q23561941 .
+        wdt:Q23561941 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a36> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr149>,
         <https://example.org/rechtsextremismus/Prize/pr150> ;
     sch:birthDate "1965"^^xsd:gYear ;
@@ -3895,12 +3846,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Oliver Bottini" ;
     owl:sameAs <http://viaf.org/viaf/78802951>,
-        wdt:Q1230877 .
+        wdt:Q1230877 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a37> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1965"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p49> ;
     sch:gender "weiblich" ;
@@ -3911,24 +3861,22 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Regisseur:in" ;
     sch:name "Grit Lemke" ;
     owl:sameAs <http://viaf.org/viaf/37840225>,
-        wdt:Q77399406 .
+        wdt:Q77399406 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a38> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1965"^^xsd:gYear ;
     sch:gender "männlich" ;
     sch:hasOccupation "Andere",
         "Drehbuchautor:in",
         "Schriftsteller:in" ;
     sch:name "Andreas Götz" ;
-    owl:sameAs wdt:Q124608987 .
+    owl:sameAs wdt:Q124608987 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a39> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "nicht Deutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr151> ;
     sch:birthDate "1965"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p9> ;
@@ -3939,13 +3887,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Yade Kara" ;
     owl:sameAs <http://viaf.org/viaf/51924621>,
-        wdt:Q71379 .
+        wdt:Q71379 ;
+    rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a4> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland",
-                "nicht Deutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr10>,
         <https://example.org/rechtsextremismus/Prize/pr11>,
         <https://example.org/rechtsextremismus/Prize/pr12>,
@@ -3988,12 +3934,12 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Günter Grass" ;
     owl:sameAs <http://viaf.org/viaf/102319859>,
-        wdt:Q6538 .
+        wdt:Q6538 ;
+    rechtsextremismus:historicalBackground "Westdeutschland",
+        "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a40> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "nicht Deutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1966"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p10> ;
     sch:gender "männlich" ;
@@ -4001,24 +3947,22 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Regisseur:in" ;
     sch:name "Su Turhan" ;
     owl:sameAs <http://viaf.org/viaf/107658086>,
-        wdt:Q2361318 .
+        wdt:Q2361318 ;
+    rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a41> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1967"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p45> ;
     sch:gender "weiblich" ;
     sch:hasOccupation "Journalist:in",
         "Schriftsteller:in" ;
     sch:name "Abini Zöllner" ;
-    owl:sameAs <http://viaf.org/viaf/27296526> .
+    owl:sameAs <http://viaf.org/viaf/27296526> ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a42> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr152>,
         <https://example.org/rechtsextremismus/Prize/pr153>,
         <https://example.org/rechtsextremismus/Prize/pr154>,
@@ -4039,12 +3983,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Jenny Erpenbeck" ;
     owl:sameAs <http://viaf.org/viaf/118307965>,
-        wdt:Q85361 .
+        wdt:Q85361 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a43> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr165> ;
     sch:birthDate "1967"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p51> ;
@@ -4055,12 +3998,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Merle Kröger" ;
     owl:sameAs <http://viaf.org/viaf/47827073>,
-        wdt:Q2779173 .
+        wdt:Q2779173 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a44> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr166>,
         <https://example.org/rechtsextremismus/Prize/pr167>,
         <https://example.org/rechtsextremismus/Prize/pr168>,
@@ -4074,24 +4016,22 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Andreas Maier" ;
     owl:sameAs <http://viaf.org/viaf/85489006>,
-        wdt:Q320400 .
+        wdt:Q320400 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a45> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1968"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p61> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Musiker:in/Bühnenkünstler:in",
         "Schriftsteller:in" ;
     sch:name "M. G. Burgheim" ;
-    owl:sameAs <http://viaf.org/viaf/117987886> .
+    owl:sameAs <http://viaf.org/viaf/117987886> ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a46> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1968"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p85> ;
     sch:gender "männlich" ;
@@ -4100,24 +4040,22 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Regisseur:in",
         "Schriftsteller:in" ;
     sch:name "Jörg Isermeyer" ;
-    owl:sameAs <http://viaf.org/viaf/306360722> .
+    owl:sameAs <http://viaf.org/viaf/306360722> ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a47> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1968"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p96> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Peer Anders Martin" ;
     owl:sameAs <http://viaf.org/viaf/6413002>,
-        wdt:Q112507294 .
+        wdt:Q112507294 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a48> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr173>,
         <https://example.org/rechtsextremismus/Prize/pr174> ;
     sch:birthDate "1968"^^xsd:gYear ;
@@ -4127,13 +4065,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Gregor Sander" ;
     owl:sameAs <http://viaf.org/viaf/64229871>,
-        wdt:Q1545155 .
+        wdt:Q1545155 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a5> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland",
-                "Weimarer Republik" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr35> ;
     sch:birthDate "1928"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p79> ;
@@ -4143,12 +4079,12 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Andere" ;
     sch:name "Gert Schramm" ;
     owl:sameAs <http://viaf.org/viaf/169650819>,
-        wdt:Q106167 .
+        wdt:Q106167 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland",
+        "Weimarer Republik" .
 
 <https://example.org/rechtsextremismus/Person/a50> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr180>,
         <https://example.org/rechtsextremismus/Prize/pr181> ;
     sch:birthDate "1970"^^xsd:gYear ;
@@ -4161,12 +4097,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Dietmar Dath" ;
     owl:sameAs <http://viaf.org/viaf/17508106>,
-        wdt:Q98782 .
+        wdt:Q98782 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a52> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr183> ;
     sch:birthDate "1970"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p52> ;
@@ -4177,12 +4112,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Sven Stricker" ;
     owl:sameAs <http://viaf.org/viaf/262254940>,
-        wdt:Q2371371 .
+        wdt:Q2371371 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a53> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1970"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p34> ;
     sch:gender "männlich" ;
@@ -4190,12 +4124,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Moritz von Uslar" ;
     owl:sameAs <http://viaf.org/viaf/49512945>,
-        wdt:Q1948139 .
+        wdt:Q1948139 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a55> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Österreich/Schweiz" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr186>,
         <https://example.org/rechtsextremismus/Prize/pr187>,
         <https://example.org/rechtsextremismus/Prize/pr188>,
@@ -4220,12 +4153,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Kathrin Röggla" ;
     owl:sameAs <http://viaf.org/viaf/85085985>,
-        wdt:Q1732908 .
+        wdt:Q1732908 ;
+    rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a56> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Österreich/Schweiz" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr199>,
         <https://example.org/rechtsextremismus/Prize/pr200>,
         <https://example.org/rechtsextremismus/Prize/pr201>,
@@ -4244,24 +4176,22 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Lukas Bärfuss" ;
     owl:sameAs <http://viaf.org/viaf/268527978>,
-        wdt:Q118973 .
+        wdt:Q118973 ;
+    rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a57> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1971"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p24> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Patrick Hofmann" ;
     owl:sameAs <http://viaf.org/viaf/42917275>,
-        wdt:Q93361256 .
+        wdt:Q93361256 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a58> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1972"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p12> ;
     sch:gender "weiblich" ;
@@ -4270,25 +4200,22 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Dilek Güngör" ;
     owl:sameAs <http://viaf.org/viaf/64291490>,
-        wdt:Q1225463 .
+        wdt:Q1225463 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a59> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1973"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p48> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Peter Richter" ;
     owl:sameAs <http://viaf.org/viaf/8449549>,
-        wdt:Q2077841 .
+        wdt:Q2077841 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a6> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Drittes Reich",
-                "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr36>,
         <https://example.org/rechtsextremismus/Prize/pr37>,
         <https://example.org/rechtsextremismus/Prize/pr38> ;
@@ -4302,12 +4229,12 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Frederik Hetmann" ;
     owl:sameAs <http://viaf.org/viaf/59216337>,
-        wdt:Q1453110 .
+        wdt:Q1453110 ;
+    rechtsextremismus:historicalBackground "Drittes Reich",
+        "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a60> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Österreich/Schweiz" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr210> ;
     sch:birthDate "1974"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p90> ;
@@ -4315,12 +4242,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Zoe Jenny" ;
     owl:sameAs <http://viaf.org/viaf/95148416>,
-        wdt:Q116676 .
+        wdt:Q116676 ;
+    rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a61> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "nicht Deutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1974"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p1> ;
     sch:gender "männlich" ;
@@ -4328,12 +4254,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Tomer Gardi" ;
     owl:sameAs <http://viaf.org/viaf/249531577>,
-        wdt:Q26214502 .
+        wdt:Q26214502 ;
+    rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a62> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr211> ;
     sch:birthDate "1974"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p14> ;
@@ -4341,12 +4266,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Lucy Fricke" ;
     owl:sameAs <http://viaf.org/viaf/170557131>,
-        wdt:Q1873764 .
+        wdt:Q1873764 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a63> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr212>,
         <https://example.org/rechtsextremismus/Prize/pr213>,
         <https://example.org/rechtsextremismus/Prize/pr214> ;
@@ -4359,46 +4283,42 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Manja Präkels" ;
     owl:sameAs <http://viaf.org/viaf/67546602>,
-        wdt:Q1365965 .
+        wdt:Q1365965 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a65> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1974"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p14> ;
     sch:gender "weiblich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Elisabeth Wellershaus" ;
-    owl:sameAs <http://viaf.org/viaf/27167621812203341162> .
+    owl:sameAs <http://viaf.org/viaf/27167621812203341162> ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a66> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1975"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p38> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Simon Urban" ;
     owl:sameAs <http://viaf.org/viaf/42706020>,
-        wdt:Q2287857 .
+        wdt:Q2287857 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a67> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1975"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p45> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Christian Mackrodt" ;
-    owl:sameAs <http://viaf.org/viaf/306377041> .
+    owl:sameAs <http://viaf.org/viaf/306377041> ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a68> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr235> ;
     sch:birthDate "1975"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p50> ;
@@ -4406,13 +4326,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Kathrin Schrocke" ;
     owl:sameAs <http://viaf.org/viaf/35526713>,
-        wdt:Q1736522 .
+        wdt:Q1736522 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a7> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Drittes Reich",
-                "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr39>,
         <https://example.org/rechtsextremismus/Prize/pr40>,
         <https://example.org/rechtsextremismus/Prize/pr41>,
@@ -4425,12 +4343,12 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Ulrich Ritzel" ;
     owl:sameAs <http://viaf.org/viaf/275334867>,
-        wdt:Q107382 .
+        wdt:Q107382 ;
+    rechtsextremismus:historicalBackground "Drittes Reich",
+        "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a70> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr236> ;
     sch:birthDate "1976"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p24> ;
@@ -4439,24 +4357,22 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Jana Hensel" ;
     owl:sameAs <http://viaf.org/viaf/85409293>,
-        wdt:Q1682497 .
+        wdt:Q1682497 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a71> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1976"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p45> ;
     sch:gender "weiblich" ;
     sch:hasOccupation "Bildende:r Künstler:in",
         "Lehrkraft/Erzieher:in" ;
     sch:name "Sandra Rummler" ;
-    owl:sameAs <http://viaf.org/viaf/2169858852978002017> .
+    owl:sameAs <http://viaf.org/viaf/2169858852978002017> ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a72> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "nicht Deutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1977"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p75> ;
     sch:gender "männlich" ;
@@ -4464,12 +4380,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Behzad Karim Khani" ;
     owl:sameAs <http://viaf.org/viaf/1893165272449210690002>,
-        wdt:Q112122649 .
+        wdt:Q112122649 ;
+    rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a73> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr237>,
         <https://example.org/rechtsextremismus/Prize/pr238>,
         <https://example.org/rechtsextremismus/Prize/pr239> ;
@@ -4480,12 +4395,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Thilo Krause" ;
     owl:sameAs <http://viaf.org/viaf/295753875>,
-        wdt:Q18019737 .
+        wdt:Q18019737 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a74> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr240> ;
     sch:birthDate "1977"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p3> ;
@@ -4494,12 +4408,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Kevin Vennemann" ;
     owl:sameAs <http://viaf.org/viaf/32295639>,
-        wdt:Q91041 .
+        wdt:Q91041 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a76> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr247>,
         <https://example.org/rechtsextremismus/Prize/pr248> ;
     sch:birthDate "1977"^^xsd:gYear ;
@@ -4508,12 +4421,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Heike Geißler" ;
     owl:sameAs <http://viaf.org/viaf/85329147>,
-        wdt:Q1594513 .
+        wdt:Q1594513 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a77> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1978"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p67> ;
     sch:gender "männlich" ;
@@ -4521,12 +4433,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Philip Schlaffer" ;
     owl:sameAs <http://viaf.org/viaf/3038158982595856190006>,
-        wdt:Q64750625 .
+        wdt:Q64750625 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a79> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr261> ;
     sch:birthDate "1978"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p31> ;
@@ -4536,25 +4447,23 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Jana Scheerer" ;
     owl:sameAs <http://viaf.org/viaf/39635114>,
-        wdt:Q1573073 .
+        wdt:Q1573073 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a8> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Drittes Reich",
-                "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1941"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p86> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Harald Tondern" ;
     owl:sameAs <http://viaf.org/viaf/85446095>,
-        wdt:Q1584786 .
+        wdt:Q1584786 ;
+    rechtsextremismus:historicalBackground "Drittes Reich",
+        "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a80> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr262> ;
     sch:birthDate "1979"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p76> ;
@@ -4563,12 +4472,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Journalist:in" ;
     sch:name "Daniel Schulz" ;
     owl:sameAs <http://viaf.org/viaf/2288164298360308630004>,
-        wdt:Q63609648 .
+        wdt:Q63609648 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a81> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1979"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p5> ;
     sch:gender "männlich" ;
@@ -4577,12 +4485,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Regisseur:in" ;
     sch:name "Christian Bangel" ;
     owl:sameAs <http://viaf.org/viaf/6610150749019616420005>,
-        wdt:Q72782693 .
+        wdt:Q72782693 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a82> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr263>,
         <https://example.org/rechtsextremismus/Prize/pr264>,
         <https://example.org/rechtsextremismus/Prize/pr265>,
@@ -4594,12 +4501,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Judith Zander" ;
     owl:sameAs <http://viaf.org/viaf/125088062>,
-        wdt:Q1711091 .
+        wdt:Q1711091 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a83> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "nicht Deutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr267>,
         <https://example.org/rechtsextremismus/Prize/pr268> ;
     sch:birthDate "1981"^^xsd:gYear ;
@@ -4609,24 +4515,22 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Lena Gorelik" ;
     owl:sameAs <http://viaf.org/viaf/51966423>,
-        wdt:Q1817278 .
+        wdt:Q1817278 ;
+    rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a85> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Österreich/Schweiz" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1982"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p32> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Dominik Barta" ;
     owl:sameAs <http://viaf.org/viaf/316763990>,
-        wdt:Q113224926 .
+        wdt:Q113224926 ;
+    rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a86> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1982"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p34> ;
     sch:gender "weiblich" ;
@@ -4634,12 +4538,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Jasmina Kuhnke" ;
     owl:sameAs <http://viaf.org/viaf/7114160001847230300003>,
-        wdt:Q99078959 .
+        wdt:Q99078959 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a87> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr270>,
         <https://example.org/rechtsextremismus/Prize/pr271>,
         <https://example.org/rechtsextremismus/Prize/pr272> ;
@@ -4652,12 +4555,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Marc-Uwe Kling" ;
     owl:sameAs <http://viaf.org/viaf/86124119>,
-        wdt:Q104199 .
+        wdt:Q104199 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a88> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1982"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p94> ;
     sch:gender "männlich" ;
@@ -4665,12 +4567,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Paul Bokowski" ;
     owl:sameAs <http://viaf.org/viaf/81831639>,
-        wdt:Q15709547 .
+        wdt:Q15709547 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a89> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr273>,
         <https://example.org/rechtsextremismus/Prize/pr274>,
         <https://example.org/rechtsextremismus/Prize/pr275> ;
@@ -4681,13 +4582,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Martin Kordic" ;
     owl:sameAs <http://viaf.org/viaf/306280900>,
-        wdt:Q29048575 .
+        wdt:Q29048575 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a9> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Drittes Reich",
-                "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr43> ;
     sch:birthDate "1942"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p21> ;
@@ -4695,12 +4594,12 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Ludwig Homann" ;
     owl:sameAs <http://viaf.org/viaf/24763010>,
-        wdt:Q1874574 .
+        wdt:Q1874574 ;
+    rechtsextremismus:historicalBackground "Drittes Reich",
+        "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a90> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ost-Berlin" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1983"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p45> ;
     sch:gender "weiblich" ;
@@ -4708,12 +4607,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Journalist:in",
         "Schriftsteller:in" ;
     sch:name "Patricia Hempel" ;
-    owl:sameAs <http://viaf.org/viaf/8150645022510620871> .
+    owl:sameAs <http://viaf.org/viaf/8150645022510620871> ;
+    rechtsextremismus:historicalBackground "Ost-Berlin" .
 
 <https://example.org/rechtsextremismus/Person/a91> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1983"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p76> ;
     sch:gender "männlich" ;
@@ -4721,12 +4619,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "David Blum" ;
     owl:sameAs <http://viaf.org/viaf/304672190>,
-        wdt:Q95315083 .
+        wdt:Q95315083 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a92> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr276>,
         <https://example.org/rechtsextremismus/Prize/pr277> ;
     sch:birthDate "1983"^^xsd:gYear ;
@@ -4737,22 +4634,20 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Andere" ;
     sch:name "Pia Klemp" ;
     owl:sameAs <http://viaf.org/viaf/4182154741645653110002>,
-        wdt:Q63532999 .
+        wdt:Q63532999 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a93> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1983"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p84> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Schriftsteller:in" ;
-    sch:name "Lorenz Just" .
+    sch:name "Lorenz Just" ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a94> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "nicht Deutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr278>,
         <https://example.org/rechtsextremismus/Prize/pr279>,
         <https://example.org/rechtsextremismus/Prize/pr280> ;
@@ -4762,12 +4657,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Senthuran Varatharajah" ;
     owl:sameAs <http://viaf.org/viaf/2749145856893122920331>,
-        wdt:Q23965558 .
+        wdt:Q23965558 ;
+    rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a95> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1984"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p45> ;
     sch:gender "weiblich" ;
@@ -4775,12 +4669,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Elsa Koester" ;
     owl:sameAs <http://viaf.org/viaf/10159939417125252085>,
-        wdt:Q105725050 .
+        wdt:Q105725050 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a96> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1985"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p60> ;
     sch:gender "weiblich" ;
@@ -4789,12 +4682,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Olivia Wenzel" ;
     owl:sameAs <http://viaf.org/viaf/264012157>,
-        wdt:Q85111269 .
+        wdt:Q85111269 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a98> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1986"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p64> ;
     sch:gender "weiblich" ;
@@ -4803,19 +4695,19 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Anne Rabe" ;
     owl:sameAs <http://viaf.org/viaf/92149294337480521998>,
-        wdt:Q565714 .
+        wdt:Q565714 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a99> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1986"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p89> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Andere",
         "Schriftsteller:in" ;
     sch:name "Frank Siller" ;
-    owl:sameAs <http://viaf.org/viaf/7162236724213541973> .
+    owl:sameAs <http://viaf.org/viaf/7162236724213541973> ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Place/p1> a sch:Place ;
     sch:name "Dan" ;
@@ -6812,9 +6704,7 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         wdt:Q176169 .
 
 <https://example.org/rechtsextremismus/Person/a31> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr121> ;
     sch:birthDate "1963"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p34> ;
@@ -6823,12 +6713,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Max Annas" ;
     owl:sameAs <http://viaf.org/viaf/1925634>,
-        wdt:Q19296043 .
+        wdt:Q19296043 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a35> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1964"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p73> ;
     sch:deathDate "2013"^^xsd:gYear ;
@@ -6838,12 +6727,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Jakob Arjouni" ;
     owl:sameAs <http://viaf.org/viaf/59136142>,
-        wdt:Q71443 .
+        wdt:Q71443 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a49> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr175>,
         <https://example.org/rechtsextremismus/Prize/pr176>,
         <https://example.org/rechtsextremismus/Prize/pr177>,
@@ -6857,12 +6745,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Uwe Tellkamp" ;
     owl:sameAs <http://viaf.org/viaf/76575924>,
-        wdt:Q62892 .
+        wdt:Q62892 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a51> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr182> ;
     sch:birthDate "1970"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p68> ;
@@ -6870,12 +6757,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Claudia Klischat" ;
     owl:sameAs <http://viaf.org/viaf/44579135>,
-        wdt:Q1097549 .
+        wdt:Q1097549 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a54> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr184>,
         <https://example.org/rechtsextremismus/Prize/pr185> ;
     sch:birthDate "1971"^^xsd:gYear ;
@@ -6887,24 +6773,22 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Mithu M. Sanyal" ;
     owl:sameAs <http://viaf.org/viaf/81706994>,
-        wdt:Q1939634 .
+        wdt:Q1939634 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a69> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:birthDate "1976"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p41> ;
     sch:gender "weiblich" ;
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Donata Rigg" ;
     owl:sameAs <http://viaf.org/viaf/128615499>,
-        wdt:Q1240597 .
+        wdt:Q1240597 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a75> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Ostdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr241>,
         <https://example.org/rechtsextremismus/Prize/pr242>,
         <https://example.org/rechtsextremismus/Prize/pr243>,
@@ -6919,12 +6803,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Clemens Meyer" ;
     owl:sameAs <http://viaf.org/viaf/32285623>,
-        wdt:Q104844 .
+        wdt:Q104844 ;
+    rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a78> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "nicht Deutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr249>,
         <https://example.org/rechtsextremismus/Prize/pr250>,
         <https://example.org/rechtsextremismus/Prize/pr251>,
@@ -6943,12 +6826,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Sasa Stanisic" ;
     owl:sameAs <http://viaf.org/viaf/85113757>,
-        wdt:Q77319 .
+        wdt:Q77319 ;
+    rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a84> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "nicht Deutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr269> ;
     sch:birthDate "1981"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p91> ;
@@ -6956,12 +6838,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     sch:hasOccupation "Schriftsteller:in" ;
     sch:name "Tijan Sila" ;
     owl:sameAs <http://viaf.org/viaf/3926148753691741320008>,
-        wdt:Q60303315 .
+        wdt:Q60303315 ;
+    rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a97> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "nicht Deutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr281> ;
     sch:birthDate "1985"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p92> ;
@@ -6971,7 +6852,8 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Sasha Marianna Salzmann" ;
     owl:sameAs <http://viaf.org/viaf/169206062>,
-        wdt:Q107039 .
+        wdt:Q107039 ;
+    rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Place/p18> a sch:Place ;
     sch:name "Bonn" ;
@@ -7068,9 +6950,7 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         wdt:Q27116259 .
 
 <https://example.org/rechtsextremismus/Person/a25> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr93>,
         <https://example.org/rechtsextremismus/Prize/pr94>,
         <https://example.org/rechtsextremismus/Prize/pr95>,
@@ -7084,12 +6964,11 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Friedrich Ani" ;
     owl:sameAs <http://viaf.org/viaf/221161125>,
-        wdt:Q123281 .
+        wdt:Q123281 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a64> a sch:Person ;
-    sch:additionalProperty [ a sch:PropertyValue ;
-            sch:propertyID "historical background" ;
-            sch:value "Westdeutschland" ] ;
+    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr215>,
         <https://example.org/rechtsextremismus/Prize/pr216>,
         <https://example.org/rechtsextremismus/Prize/pr217>,
@@ -7117,7 +6996,8 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Schriftsteller:in" ;
     sch:name "Juli Zeh" ;
     owl:sameAs <http://viaf.org/viaf/118980053>,
-        wdt:Q76324 .
+        wdt:Q76324 ;
+    rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Place/p19> a sch:Place ;
     sch:name "Reinbek" ;

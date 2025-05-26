@@ -1,6 +1,6 @@
 import sys
-# sys.path.insert(1, 'D:\IBL\Documents\IBL-PAN-Python')
-sys.path.insert(1, 'C:/Users/Cezary/Documents/IBL-PAN-Python')
+sys.path.insert(1, 'D:\IBL\Documents\IBL-PAN-Python')
+# sys.path.insert(1, 'C:/Users/Cezary/Documents/IBL-PAN-Python')
 import pandas as pd
 from rdflib import Graph, Namespace, URIRef, Literal, BNode
 from rdflib.namespace import RDF, RDFS, XSD, FOAF, OWL
@@ -145,9 +145,7 @@ def add_person(row):
     g.add((person, schema.additionalProperty, pv))
     if pd.notnull(row['historical background']):
         for hb in row['historical background'].split(','):
-            g.add((pv, RDF.type, schema.PropertyValue))
-            g.add((pv, schema.propertyID, Literal("historical background")))
-            g.add((pv, schema.value, Literal(hb.strip())))
+            g.add((person, RECH.historicalBackground, Literal(hb.strip())))
     if pd.notnull(row['prize_id']):
         for pr in row['prize_id'].split('|'):
             g.add((person, schema.award, RECH[f"Prize/{pr}"]))
@@ -187,6 +185,9 @@ def add_text(row):
                 g.add((text, schema.review, Literal(r)))
         except SyntaxError:
             g.add((text, schema.review, Literal(row['rezensionsnotiz'])))
+    if pd.notnull(row['keywords']):
+        for k in row['keywords'].split('|'):
+            g.add((text, schema.keywords, Literal(k)))
         
 for _, r in df_novels.iterrows():
     add_text(r)    
