@@ -3165,7 +3165,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         wdt:Q831576 .
 
 <https://example.org/rechtsextremismus/Person/a1> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p75> ;
     sch:gender "männlich" ;
     sch:hasOccupation "Drehbuchautor:in",
@@ -3176,7 +3175,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a10> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1942"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p80> ;
     sch:gender "männlich" ;
@@ -3188,7 +3186,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a100> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1986"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p27> ;
     sch:gender "weiblich" ;
@@ -3201,7 +3198,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a101> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1986"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p23> ;
     sch:gender "männlich" ;
@@ -3210,7 +3206,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a102> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr282> ;
     sch:birthDate "1986"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p88> ;
@@ -3223,7 +3218,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a103> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1986"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p58> ;
     sch:gender "männlich" ;
@@ -3235,7 +3229,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a104> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1987"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p4> ;
     sch:gender "weiblich" ;
@@ -3247,7 +3240,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a105> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1987"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p44> ;
     sch:gender "männlich" ;
@@ -3258,7 +3250,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a106> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1987"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p53> ;
     sch:gender "männlich" ;
@@ -3269,7 +3260,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a107> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr283>,
         <https://example.org/rechtsextremismus/Prize/pr284> ;
     sch:birthDate "1988"^^xsd:gYear ;
@@ -3282,7 +3272,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a108> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1988"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p39> ;
     sch:gender "männlich" ;
@@ -3294,7 +3283,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a109> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr285> ;
     sch:birthDate "1988"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p73> ;
@@ -3306,7 +3294,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a11> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr44>,
         <https://example.org/rechtsextremismus/Prize/pr45>,
         <https://example.org/rechtsextremismus/Prize/pr46>,
@@ -3329,7 +3316,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a110> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1988"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p33> ;
     sch:gender "männlich" ;
@@ -3341,7 +3327,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a111> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr286> ;
     sch:birthDate "1988"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p37> ;
@@ -3353,7 +3338,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a112> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1989"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p48> ;
     sch:gender "weiblich" ;
@@ -3364,7 +3348,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a113> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1990"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p7> ;
     sch:gender "weiblich" ;
@@ -3378,7 +3361,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a114> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1990"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p89> ;
     sch:gender "weiblich" ;
@@ -3389,7 +3371,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a115> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1991"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p97> ;
     sch:gender "weiblich" ;
@@ -3401,7 +3382,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a116> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1991"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p11> ;
     sch:gender "divers" ;
@@ -3414,7 +3394,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a117> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1992"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p63> ;
     sch:gender "weiblich" ;
@@ -3424,7 +3403,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a118> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1992"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p30> ;
     sch:gender "männlich" ;
@@ -3436,7 +3414,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a119> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1992"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p101> ;
     sch:gender "männlich" ;
@@ -3449,7 +3426,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a12> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr51>,
         <https://example.org/rechtsextremismus/Prize/pr52>,
         <https://example.org/rechtsextremismus/Prize/pr53>,
@@ -3473,7 +3449,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a120> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1994"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p40> ;
     sch:gender "männlich" ;
@@ -3485,7 +3460,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a13> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr61> ;
     sch:birthDate "1951"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p78> ;
@@ -3497,7 +3471,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a14> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1951"^^xsd:gYear ;
     sch:gender "männlich" ;
     sch:hasOccupation "Drehbuchautor:in",
@@ -3506,7 +3479,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a15> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1952"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p98> ;
     sch:gender "männlich" ;
@@ -3519,7 +3491,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a16> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr62>,
         <https://example.org/rechtsextremismus/Prize/pr63>,
         <https://example.org/rechtsextremismus/Prize/pr64>,
@@ -3543,7 +3514,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a17> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr74>,
         <https://example.org/rechtsextremismus/Prize/pr75>,
         <https://example.org/rechtsextremismus/Prize/pr76>,
@@ -3558,7 +3528,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a18> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr78>,
         <https://example.org/rechtsextremismus/Prize/pr79>,
         <https://example.org/rechtsextremismus/Prize/pr80> ;
@@ -3573,7 +3542,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a19> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr81> ;
     sch:birthDate "1956"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p14> ;
@@ -3586,7 +3554,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a2> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1947"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p45> ;
     sch:gender "männlich" ;
@@ -3595,7 +3562,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a20> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr82>,
         <https://example.org/rechtsextremismus/Prize/pr83>,
         <https://example.org/rechtsextremismus/Prize/pr84>,
@@ -3615,7 +3581,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a21> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1957"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p59> ;
     sch:deathDate "2023"^^xsd:gYear ;
@@ -3629,7 +3594,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a22> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr91>,
         <https://example.org/rechtsextremismus/Prize/pr92> ;
     sch:birthDate "1957"^^xsd:gYear ;
@@ -3642,7 +3606,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a23> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1957"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p22> ;
     sch:gender "männlich" ;
@@ -3653,7 +3616,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a24> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1959"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p98> ;
     sch:gender "weiblich" ;
@@ -3665,7 +3627,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a26> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1959"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p35> ;
     sch:gender "männlich" ;
@@ -3677,7 +3638,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a27> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1960"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p95> ;
     sch:gender "männlich" ;
@@ -3689,7 +3649,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a28> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr100>,
         <https://example.org/rechtsextremismus/Prize/pr101>,
         <https://example.org/rechtsextremismus/Prize/pr102>,
@@ -3717,7 +3676,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a29> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr114>,
         <https://example.org/rechtsextremismus/Prize/pr115>,
         <https://example.org/rechtsextremismus/Prize/pr116>,
@@ -3737,7 +3695,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a3> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr1>,
         <https://example.org/rechtsextremismus/Prize/pr2>,
         <https://example.org/rechtsextremismus/Prize/pr3>,
@@ -3756,7 +3713,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Weimarer Republik" .
 
 <https://example.org/rechtsextremismus/Person/a30> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1962"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p66> ;
     sch:gender "männlich" ;
@@ -3770,7 +3726,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a32> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr122> ;
     sch:birthDate "1963"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p81> ;
@@ -3783,7 +3738,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a33> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr123>,
         <https://example.org/rechtsextremismus/Prize/pr124>,
         <https://example.org/rechtsextremismus/Prize/pr125>,
@@ -3819,7 +3773,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a34> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr147>,
         <https://example.org/rechtsextremismus/Prize/pr148> ;
     sch:birthDate "1964"^^xsd:gYear ;
@@ -3834,7 +3787,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a36> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr149>,
         <https://example.org/rechtsextremismus/Prize/pr150> ;
     sch:birthDate "1965"^^xsd:gYear ;
@@ -3850,7 +3802,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a37> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1965"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p49> ;
     sch:gender "weiblich" ;
@@ -3865,7 +3816,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a38> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1965"^^xsd:gYear ;
     sch:gender "männlich" ;
     sch:hasOccupation "Andere",
@@ -3876,7 +3826,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a39> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr151> ;
     sch:birthDate "1965"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p9> ;
@@ -3891,7 +3840,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a4> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr10>,
         <https://example.org/rechtsextremismus/Prize/pr11>,
         <https://example.org/rechtsextremismus/Prize/pr12>,
@@ -3939,7 +3887,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a40> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1966"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p10> ;
     sch:gender "männlich" ;
@@ -3951,7 +3898,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a41> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1967"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p45> ;
     sch:gender "weiblich" ;
@@ -3962,7 +3908,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a42> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr152>,
         <https://example.org/rechtsextremismus/Prize/pr153>,
         <https://example.org/rechtsextremismus/Prize/pr154>,
@@ -3987,7 +3932,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a43> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr165> ;
     sch:birthDate "1967"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p51> ;
@@ -4002,7 +3946,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a44> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr166>,
         <https://example.org/rechtsextremismus/Prize/pr167>,
         <https://example.org/rechtsextremismus/Prize/pr168>,
@@ -4020,7 +3963,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a45> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1968"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p61> ;
     sch:gender "männlich" ;
@@ -4031,7 +3973,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a46> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1968"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p85> ;
     sch:gender "männlich" ;
@@ -4044,7 +3985,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a47> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1968"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p96> ;
     sch:gender "männlich" ;
@@ -4055,7 +3995,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a48> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr173>,
         <https://example.org/rechtsextremismus/Prize/pr174> ;
     sch:birthDate "1968"^^xsd:gYear ;
@@ -4069,7 +4008,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a5> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr35> ;
     sch:birthDate "1928"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p79> ;
@@ -4084,7 +4022,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Weimarer Republik" .
 
 <https://example.org/rechtsextremismus/Person/a50> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr180>,
         <https://example.org/rechtsextremismus/Prize/pr181> ;
     sch:birthDate "1970"^^xsd:gYear ;
@@ -4101,7 +4038,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a52> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr183> ;
     sch:birthDate "1970"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p52> ;
@@ -4116,7 +4052,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a53> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1970"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p34> ;
     sch:gender "männlich" ;
@@ -4128,7 +4063,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a55> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr186>,
         <https://example.org/rechtsextremismus/Prize/pr187>,
         <https://example.org/rechtsextremismus/Prize/pr188>,
@@ -4157,7 +4091,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a56> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr199>,
         <https://example.org/rechtsextremismus/Prize/pr200>,
         <https://example.org/rechtsextremismus/Prize/pr201>,
@@ -4180,7 +4113,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a57> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1971"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p24> ;
     sch:gender "männlich" ;
@@ -4191,7 +4123,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a58> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1972"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p12> ;
     sch:gender "weiblich" ;
@@ -4204,7 +4135,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a59> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1973"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p48> ;
     sch:gender "männlich" ;
@@ -4215,7 +4145,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a6> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr36>,
         <https://example.org/rechtsextremismus/Prize/pr37>,
         <https://example.org/rechtsextremismus/Prize/pr38> ;
@@ -4234,7 +4163,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a60> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr210> ;
     sch:birthDate "1974"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p90> ;
@@ -4246,7 +4174,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a61> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1974"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p1> ;
     sch:gender "männlich" ;
@@ -4258,7 +4185,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a62> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr211> ;
     sch:birthDate "1974"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p14> ;
@@ -4270,7 +4196,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a63> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr212>,
         <https://example.org/rechtsextremismus/Prize/pr213>,
         <https://example.org/rechtsextremismus/Prize/pr214> ;
@@ -4287,7 +4212,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a65> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1974"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p14> ;
     sch:gender "weiblich" ;
@@ -4297,7 +4221,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a66> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1975"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p38> ;
     sch:gender "männlich" ;
@@ -4308,7 +4231,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a67> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1975"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p45> ;
     sch:gender "männlich" ;
@@ -4318,7 +4240,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a68> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr235> ;
     sch:birthDate "1975"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p50> ;
@@ -4330,7 +4251,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a7> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr39>,
         <https://example.org/rechtsextremismus/Prize/pr40>,
         <https://example.org/rechtsextremismus/Prize/pr41>,
@@ -4348,7 +4268,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a70> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr236> ;
     sch:birthDate "1976"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p24> ;
@@ -4361,7 +4280,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a71> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1976"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p45> ;
     sch:gender "weiblich" ;
@@ -4372,7 +4290,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a72> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1977"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p75> ;
     sch:gender "männlich" ;
@@ -4384,7 +4301,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a73> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr237>,
         <https://example.org/rechtsextremismus/Prize/pr238>,
         <https://example.org/rechtsextremismus/Prize/pr239> ;
@@ -4399,7 +4315,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a74> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr240> ;
     sch:birthDate "1977"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p3> ;
@@ -4412,7 +4327,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a76> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr247>,
         <https://example.org/rechtsextremismus/Prize/pr248> ;
     sch:birthDate "1977"^^xsd:gYear ;
@@ -4425,7 +4339,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a77> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1978"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p67> ;
     sch:gender "männlich" ;
@@ -4437,7 +4350,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a79> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr261> ;
     sch:birthDate "1978"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p31> ;
@@ -4451,7 +4363,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a8> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1941"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p86> ;
     sch:gender "männlich" ;
@@ -4463,7 +4374,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a80> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr262> ;
     sch:birthDate "1979"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p76> ;
@@ -4476,7 +4386,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a81> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1979"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p5> ;
     sch:gender "männlich" ;
@@ -4489,7 +4398,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a82> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr263>,
         <https://example.org/rechtsextremismus/Prize/pr264>,
         <https://example.org/rechtsextremismus/Prize/pr265>,
@@ -4505,7 +4413,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a83> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr267>,
         <https://example.org/rechtsextremismus/Prize/pr268> ;
     sch:birthDate "1981"^^xsd:gYear ;
@@ -4519,7 +4426,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a85> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1982"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p32> ;
     sch:gender "männlich" ;
@@ -4530,7 +4436,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Österreich/Schweiz" .
 
 <https://example.org/rechtsextremismus/Person/a86> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1982"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p34> ;
     sch:gender "weiblich" ;
@@ -4542,7 +4447,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a87> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr270>,
         <https://example.org/rechtsextremismus/Prize/pr271>,
         <https://example.org/rechtsextremismus/Prize/pr272> ;
@@ -4559,7 +4463,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a88> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1982"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p94> ;
     sch:gender "männlich" ;
@@ -4571,7 +4474,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a89> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr273>,
         <https://example.org/rechtsextremismus/Prize/pr274>,
         <https://example.org/rechtsextremismus/Prize/pr275> ;
@@ -4586,7 +4488,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a9> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr43> ;
     sch:birthDate "1942"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p21> ;
@@ -4599,7 +4500,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a90> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1983"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p45> ;
     sch:gender "weiblich" ;
@@ -4611,7 +4511,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ost-Berlin" .
 
 <https://example.org/rechtsextremismus/Person/a91> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1983"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p76> ;
     sch:gender "männlich" ;
@@ -4623,7 +4522,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a92> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr276>,
         <https://example.org/rechtsextremismus/Prize/pr277> ;
     sch:birthDate "1983"^^xsd:gYear ;
@@ -4638,7 +4536,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a93> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1983"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p84> ;
     sch:gender "männlich" ;
@@ -4647,7 +4544,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a94> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr278>,
         <https://example.org/rechtsextremismus/Prize/pr279>,
         <https://example.org/rechtsextremismus/Prize/pr280> ;
@@ -4661,7 +4557,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a95> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1984"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p45> ;
     sch:gender "weiblich" ;
@@ -4673,7 +4568,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a96> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1985"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p60> ;
     sch:gender "weiblich" ;
@@ -4686,7 +4580,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a98> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1986"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p64> ;
     sch:gender "weiblich" ;
@@ -4699,7 +4592,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a99> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1986"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p89> ;
     sch:gender "männlich" ;
@@ -6704,7 +6596,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         wdt:Q176169 .
 
 <https://example.org/rechtsextremismus/Person/a31> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr121> ;
     sch:birthDate "1963"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p34> ;
@@ -6717,7 +6608,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a35> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1964"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p73> ;
     sch:deathDate "2013"^^xsd:gYear ;
@@ -6731,7 +6621,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a49> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr175>,
         <https://example.org/rechtsextremismus/Prize/pr176>,
         <https://example.org/rechtsextremismus/Prize/pr177>,
@@ -6749,7 +6638,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a51> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr182> ;
     sch:birthDate "1970"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p68> ;
@@ -6761,7 +6649,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a54> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr184>,
         <https://example.org/rechtsextremismus/Prize/pr185> ;
     sch:birthDate "1971"^^xsd:gYear ;
@@ -6777,7 +6664,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a69> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:birthDate "1976"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p41> ;
     sch:gender "weiblich" ;
@@ -6788,7 +6674,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a75> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr241>,
         <https://example.org/rechtsextremismus/Prize/pr242>,
         <https://example.org/rechtsextremismus/Prize/pr243>,
@@ -6807,7 +6692,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Ostdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a78> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr249>,
         <https://example.org/rechtsextremismus/Prize/pr250>,
         <https://example.org/rechtsextremismus/Prize/pr251>,
@@ -6830,7 +6714,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a84> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr269> ;
     sch:birthDate "1981"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p91> ;
@@ -6842,7 +6725,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "nicht Deutschland" .
 
 <https://example.org/rechtsextremismus/Person/a97> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr281> ;
     sch:birthDate "1985"^^xsd:gYear ;
     sch:birthPlace <https://example.org/rechtsextremismus/Place/p92> ;
@@ -6950,7 +6832,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         wdt:Q27116259 .
 
 <https://example.org/rechtsextremismus/Person/a25> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr93>,
         <https://example.org/rechtsextremismus/Prize/pr94>,
         <https://example.org/rechtsextremismus/Prize/pr95>,
@@ -6968,7 +6849,6 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     rechtsextremismus:historicalBackground "Westdeutschland" .
 
 <https://example.org/rechtsextremismus/Person/a64> a sch:Person ;
-    sch:additionalProperty [ ] ;
     sch:award <https://example.org/rechtsextremismus/Prize/pr215>,
         <https://example.org/rechtsextremismus/Prize/pr216>,
         <https://example.org/rechtsextremismus/Prize/pr217>,

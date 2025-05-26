@@ -141,8 +141,6 @@ def add_person(row):
     if pd.notnull(row['occupation']):
         for o in row['occupation'].split('❦'):
             g.add((person, schema.hasOccupation, Literal(o.strip())))
-    pv  = BNode()
-    g.add((person, schema.additionalProperty, pv))
     if pd.notnull(row['historical background']):
         for hb in row['historical background'].split(','):
             g.add((person, RECH.historicalBackground, Literal(hb.strip())))
