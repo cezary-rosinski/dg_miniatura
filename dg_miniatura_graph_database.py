@@ -79,7 +79,7 @@ for _, r in df_places.iterrows():
 
 def add_institution(row):
     #PAMIĘTAĆ -- info, że publisher to w relacji dopiero
-    iid = str(r["institution_id"])
+    iid = str(row["institution_id"])
     institution = RECH[f"Organization/{iid}"]
     g.add((institution, RDF.type, schema.Organization))
     g.add((institution, schema.name, Literal(row["searchName"])))
@@ -87,12 +87,12 @@ def add_institution(row):
         g.add((institution, OWL.sameAs, WDT[row["wikidataID"]]))
     if pd.notnull(row["viafid"]):
         g.add((institution, OWL.sameAs, VIAF[row["viafid"]]))
-    if pd.notnull(r["location_id"]):
+    if pd.notnull(row["location_id"]):
         # relation Institution->Place
         place_id = str(row["location_id"])
         g.add((institution, schema.location, RECH[f"Place/{place_id}"]))
     if pd.notnull(row.get("range")):
-        g.add((institution, schema.areaServed, Literal(r["range"])))
+        g.add((institution, schema.areaServed, Literal(row["range"])))
     
 for _, r in df_institutions.iterrows():
     add_institution(r)    
@@ -101,7 +101,7 @@ for _, r in df_institutions.iterrows():
 # create Prize nodes
 
 def add_prize(row):
-    pid = str(r["prize_id"]) 
+    pid = str(row["prize_id"]) 
     prize = RECH[f"Prize/{pid}"]
     g.add((prize, RDF.type, schema.Award))
     g.add((prize, schema.name, Literal(row["prize_name"])))
@@ -114,10 +114,10 @@ for _, r in df_prizes.iterrows():
 
 # 4) Person (authors)
 def add_person(row):
-    pid = str(r["author_id"])
+    pid = str(row["author_id"])
     person = RECH[f"Person/{pid}"]
     g.add((person, RDF.type, schema.Person))
-    g.add((person, schema.name, Literal(r["searchName"])))
+    g.add((person, schema.name, Literal(row["searchName"])))
     if pd.notnull(row["wikidataID"]):
         g.add((person, OWL.sameAs, WDT[row["wikidataID"]]))
     if pd.notnull(row["viafid"]):
@@ -128,11 +128,11 @@ def add_person(row):
     if pd.notnull(row['deathdate']):
         year = str(row['deathdate'])[:4]
         g.add((person, schema.deathDate, Literal(year, datatype=XSD.gYear)))
-    if pd.notnull(r["birthplace"]):
+    if pd.notnull(row["birthplace"]):
         # relation Person->Place
         place_id = str(row["birthplace"])
         g.add((person, schema.birthPlace, RECH[f"Place/{place_id}"]))
-    if pd.notnull(r["deathplace"]):
+    if pd.notnull(row["deathplace"]):
         # relation Person->Place
         place_id = str(row["deathplace"])
         g.add((person, schema.deathPlace, RECH[f"Place/{place_id}"]))
@@ -168,6 +168,9 @@ def add_text(row):
     g.add((text, schema.inLanguage, Literal(row['language'])))
     g.add((text, RECH.whichNovel, Literal(row['debut novel/further novel'])))
     g.add((text, schema.about, Literal(row['subject'])))
+    if pd.notnull(row["place_id"]):
+        for p in row['place_id'].split(';'):
+            g.add((text, FABIO.hasPlaceOfPublication, RECH[f"Place/{p}"]))
     if pd.notnull(row['reason for violence']):
         for rfv in row['reason for violence'].split(','):
             g.add((text, RECH.reasonForViolence, Literal(rfv.strip())))
