@@ -8,7 +8,10 @@ import numpy as np
 from dateutil import parser
 import regex as re
 from my_functions import gsheet_to_df
-import squarify
+import geopandas as gpd
+from shapely.geometry import Point
+import plotly.express as px
+from plotly.offline import plot
 
 #%% 1
 # 1. Wczytaj graf RDF z pliku Turtle
@@ -574,6 +577,138 @@ for title, about_val in about_values.items():
 
 #%% 12
 
+# 3. Definicja przestrzeni nazw
+SCH = rdflib.Namespace('http://schema.org/')
+FABIO = rdflib.Namespace('http://purl.org/spar/fabio/')
+geo = rdflib.Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#")
+
+# 4. Lista wartości sch:about
+about_values = {
+    'Generationelle Perspektive': 'rechte Gewalt in generationeller Perspektive',
+    'Intersektionale Perspektive': 'rechte Gewalt in intersektionaler Perspektive',
+    'Andere': 'andere'
+}
+
+# 6. Wczytanie mapy świata
+world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+
+# 7. Generowanie map
+for title, about_val in about_values.items():
+    # title = 'Generationelle Perspektive'
+    # about_val = 'rechte Gewalt in generationeller Perspektive'
+    # Zbiór współrzędnych
+    coords = []
+    for text in g.subjects(rdflib.RDF.type, SCH.Text):
+        if str(g.value(text, SCH.about)) == about_val:
+            for place in g.objects(text, FABIO.hasPlaceOfPublication):
+                if (place, rdflib.RDF.type, SCH.Place) in g:
+                    lat = float(g.value(place, geo.lat))
+                    lon = float(g.value(place, geo.long))
+                    name = str(g.value(place, SCH.name))
+                    coord = (lat, lon, name)
+                    if coord:
+                        coords.append(coord)
+
+    # Przygotowanie GeoDataFrame
+    df = pd.DataFrame(coords, columns=['latitude', 'longitude', 'name'])
+    counts = df.groupby(['latitude', 'longitude', 'name']).size().reset_index(name='count')
+    
+    fig = px.scatter_mapbox(
+            counts,
+            lat="latitude",
+            lon="longitude",
+            size="count",
+            hover_name="name",
+            # hover_data=["title"],
+            color_discrete_sequence=["red"],
+            # animation_frame="year_fixed",
+            # animation_group='name',
+            zoom=3.75,
+            center={'lat': 50.076301241046366,
+                    'lon': 14.427848170989792}
+            )
+            
+    fig.update_layout(mapbox_style="open-street-map")
+    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+    plot(fig, auto_open=False, filename=f'data/{title}.html')
+
+#%% 13a
+
+# 2. Definicja przestrzeni nazw
+SCH = rdflib.Namespace('http://schema.org/')
+ns_map = dict(g.namespaces())
+RE = rdflib.Namespace(ns_map.get('rechtsextremismus'))
+
+# 3. Zebranie wartości rechtsextremismus:whichNovel dla każdego Text
+novels = []
+for text in g.subjects(rdflib.RDF.type, SCH.Text):
+    if pd.notnull(g.objects(text, SCH.about)):
+        for novel in g.objects(text, RE.whichNovel):
+            if str(novel) != 'nan':
+                novels.append(str(novel))
+
+# 4. Obliczenie udziałów procentowych
+series = pd.Series(novels, name='whichNovel')
+counts = series.value_counts()
+percentages = counts / counts.sum() * 100
+
+# 5. Rysowanie wykresu kołowego
+plt.figure(figsize=(8, 8))
+plt.pie(
+    percentages,
+    labels=[f"{label}\n{counts[label]} ({percentages[label]:.1f}%)" for label in counts.index],
+    startangle=90,
+    autopct=None,
+    labeldistance=1.1,
+    wedgeprops=dict(edgecolor='white')
+)
+plt.title('Aufschlüsselung von Debüt- und Folgeroman', size=20)
+plt.axis('equal')
+plt.tight_layout()
+plt.show()
+
+#%% 13 b i c
+
+# 2. Definicja przestrzeni nazw
+SCH = rdflib.Namespace('http://schema.org/')
+ns_map = dict(g.namespaces())
+RE = rdflib.Namespace(ns_map.get('rechtsextremismus'))
+
+# 3. Definicja dwóch kategorii whichNovel
+categories = {
+    'Debütroman': 'Debütroman',  
+    'weiterer Roman': 'weiterer Roman'
+}
+
+# 4. Funkcja rysująca wykres kołowy rozkładu gatunków dla danej kategorii whichNovel
+def plot_genre_for_novel_type(title, which_val):
+    # Zbiór gatunków dla tekstów spełniających warunek whichNovel
+    genres = []
+    for text in g.subjects(rdflib.RDF.type, SCH.Text):
+        for wn in g.objects(text, RE.whichNovel):
+            if str(wn).lower() == which_val:
+                for genre in g.objects(text, SCH.genre):
+                    genres.append(str(genre))
+    if not genres:
+        print(f"Brak danych dla kategorii: {title}")
+        return
+
+    # Obliczenie udziałów procentowych
+    series = pd.Series(genres, name='genre')
+    counts = series.value_counts()
+
+    # Rysowanie poziomego wykresu słupkowego
+    plt.figure(figsize=(10, 6))
+    counts.sort_values().plot(kind='barh')
+    plt.xlabel('Liczba wystąpień')
+    plt.ylabel('Gatunek')
+    plt.title(f'Artenverteilung für {title}')
+    plt.tight_layout()
+    plt.show()
+
+# 5. Generowanie obu wykresów
+for title, which_val in categories.items():
+    plot_genre_for_novel_type(title, which_val.lower())
 
 
 
