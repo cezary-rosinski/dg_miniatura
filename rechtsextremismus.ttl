@@ -1,5 +1,5 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rechtsextremismus: <https://example.org/rechtsextremismus/> .
 @prefix sch: <http://schema.org/> .
@@ -9,8 +9,8 @@
 <https://example.org/rechtsextremismus/Place/p74> a sch:Place ;
     sch:name "Norderstedt" ;
     owl:sameAs wdt:Q3928 ;
-    geo:lat "53.706388888889"^^xsd:float ;
-    geo:long "10.010277777778"^^xsd:float .
+    geo1:lat "53.706388888889"^^xsd:float ;
+    geo1:long "10.010277777778"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Text/n1> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i23> ;
@@ -834,7 +834,7 @@
 
 <https://example.org/rechtsextremismus/Text/n20> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i23> ;
-    sch:about "andere" ;
+    sch:about "NaN"^^xsd:double ;
     sch:author <https://example.org/rechtsextremismus/Person/a42> ;
     sch:datePublished "2008"^^xsd:gYear ;
     sch:description "Ein Haus an einem märkischen See ist das Zentrum, zwölf Lebensläufe, Geschichten, Schicksale von den Zwanzigerjahren bis heute ranken sich darum. Das Haus und seine Bewohner erleben die Weimarer Republik, das Dritte Reich, den Krieg und dessen Ende, die DDR, die Wende und die Zeit der Nachwende." ;
@@ -857,7 +857,7 @@
 
 <https://example.org/rechtsextremismus/Text/n21> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i53> ;
-    sch:about "andere" ;
+    sch:about "NaN"^^xsd:double ;
     sch:author <https://example.org/rechtsextremismus/Person/a49> ;
     sch:datePublished "2008"^^xsd:gYear ;
     sch:description "Hausmusik, Lektüre, intellektueller Austausch: Das Dresdner Villenviertel, vom real existierenden Sozialismus längst mit Verfallsgrau überzogen, schottet sich ab. Resigniert, aber humorvoll kommentiert man den Niedergang eines Gesellschaftssystems, in dem Bildungsbürger eigentlich nicht vorgesehen sind. Anne und Richard Hoffmann, sie Krankenschwester, er Chirurg, stehen im Konflikt zwischen Anpassung und Aufbegehren: Kann man den Zumutungen des Systems in der Nische, der \"süßen Krankheit Gestern\" der Dresdner Nostalgie entfliehen wie Richards Cousin Niklas Tietze - oder ist der Zeitpunkt gekommen, die Ausreise zu wählen? Christian, ihr ältester Sohn, der Medizin studieren will, bekommt die Härte des Systems in der NVA zu spüren. Sein Weg scheint als Strafgefangener am Ofen eines Chemiewerks zu enden. Sein Onkel Meno Rohde steht zwischen den Welten: Als Kind der \"roten Aristokratie\" im Moskauer Exil hat er Zugang zum seltsamen Bezirk \"Ostrom\", wo die Nomenklatura residiert, die Lebensläufe der Menschen verwaltet werden und deutsches demokratisches Recht gesprochen wird." ;
@@ -882,7 +882,7 @@
 
 <https://example.org/rechtsextremismus/Text/n22> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i51> ;
-    sch:about "andere" ;
+    sch:about "NaN"^^xsd:double ;
     sch:author <https://example.org/rechtsextremismus/Person/a57> ;
     sch:datePublished "2009"^^xsd:gYear ;
     sch:description "Samstag, 5. Dezember 1992. Muckau, ein Dorf südlich von Leipzig. Weder Wende noch Wiedervereinigung haben den Tagebau zum Stillstand gebracht. Obwohl der Zusammenbruch der Braunkohleindustrie absehbar ist, drehen sich die Schaufelräder weiter, haben sich die Bagger bis an die Ortschaft herangefressen, deren Bewohner seit einem Jahr umgesiedelt werden. Die alten Schlegels sind die letzten. Ihr Abschied von Haus und Hof steht kurz bevor. Deshalb ist die Familie zusammengekommen, um Albrechts letztes Schwein zu schlachten. Am frühen Morgen erscheint jedoch kein Schlachter, sondern eine Schlachterin und schlägt die drei Generationen dieser einst systemtragenden ostdeutschen Familie in ihren Bann. Patrick Hofmanns derb-komischer Debütroman schildert das Schicksal einer Familie in einer Region, die wie keine zweite deutsche im 20. Jahrhundert von radikalen gesellschaftlichen, ideologischen, industriellen und landschaftlichen Umwälzungen heimgesucht wurde. Stück für Stück werden mit dem Schwein die deutsche Geschichte und die kommunistische Utopie zerlegt und verarbeitet - ein Auflösungsprozess, der auch vor der Familie nicht Halt macht." ;
@@ -4602,482 +4602,482 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
 <https://example.org/rechtsextremismus/Place/p1> a sch:Place ;
     sch:name "Dan" ;
     owl:sameAs wdt:Q991372 ;
-    geo:lat "33.240277777778"^^xsd:float ;
-    geo:long "35.653055555556"^^xsd:float .
+    geo1:lat "33.240277777778"^^xsd:float ;
+    geo1:long "35.653055555556"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p10> a sch:Place ;
     sch:name "Istanbul" ;
     owl:sameAs wdt:Q406 ;
-    geo:lat "41.01"^^xsd:float ;
-    geo:long "28.960277777778"^^xsd:float .
+    geo1:lat "41.01"^^xsd:float ;
+    geo1:long "28.960277777778"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p100> a sch:Place ;
     sch:name "Višegrad" ;
     owl:sameAs wdt:Q239266 ;
-    geo:lat "43.7825"^^xsd:float ;
-    geo:long "19.2925"^^xsd:float .
+    geo1:lat "43.7825"^^xsd:float ;
+    geo1:long "19.2925"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p101> a sch:Place ;
     sch:name "Tübingen" ;
     owl:sameAs wdt:Q3806 ;
-    geo:lat "48.52"^^xsd:float ;
-    geo:long "9.0555555555556"^^xsd:float .
+    geo1:lat "48.52"^^xsd:float ;
+    geo1:long "9.0555555555556"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p102> a sch:Place ;
     sch:name "Sankt Petersburg" ;
     owl:sameAs wdt:Q656 ;
-    geo:lat "59.95"^^xsd:float ;
-    geo:long "30.316666666667"^^xsd:float .
+    geo1:lat "59.95"^^xsd:float ;
+    geo1:long "30.316666666667"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p11> a sch:Place ;
     sch:name "Kiel" ;
     owl:sameAs wdt:Q1707 ;
-    geo:lat "54.323333333333"^^xsd:float ;
-    geo:long "10.139444444444"^^xsd:float .
+    geo1:lat "54.323333333333"^^xsd:float ;
+    geo1:long "10.139444444444"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p12> a sch:Place ;
     sch:name "Schwäbisch Gmünd" ;
     owl:sameAs wdt:Q4037 ;
-    geo:lat "48.8"^^xsd:float ;
-    geo:long "9.8"^^xsd:float .
+    geo1:lat "48.8"^^xsd:float ;
+    geo1:long "9.8"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p13> a sch:Place ;
     sch:name "Zehdenick" ;
     owl:sameAs wdt:Q184481 ;
-    geo:lat "52.983055555556"^^xsd:float ;
-    geo:long "13.333055555556"^^xsd:float .
+    geo1:lat "52.983055555556"^^xsd:float ;
+    geo1:long "13.333055555556"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p15> a sch:Place ;
     sch:name "Rostock" ;
     owl:sameAs wdt:Q2861 ;
-    geo:lat "54.083333333333"^^xsd:float ;
-    geo:long "12.133333333333"^^xsd:float .
+    geo1:lat "54.083333333333"^^xsd:float ;
+    geo1:long "12.133333333333"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p16> a sch:Place ;
     sch:name "Riesa" ;
     owl:sameAs wdt:Q8775 ;
-    geo:lat "51.308055555556"^^xsd:float ;
-    geo:long "13.293888888889"^^xsd:float .
+    geo1:lat "51.308055555556"^^xsd:float ;
+    geo1:long "13.293888888889"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p17> a sch:Place ;
     sch:name "Innsbruck" ;
     owl:sameAs wdt:Q1735 ;
-    geo:lat "47.268333333333"^^xsd:float ;
-    geo:long "11.393333333333"^^xsd:float .
+    geo1:lat "47.268333333333"^^xsd:float ;
+    geo1:long "11.393333333333"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p2> a sch:Place ;
     sch:name "Bielefeld" ;
     owl:sameAs wdt:Q2112 ;
-    geo:lat "52.016666666667"^^xsd:float ;
-    geo:long "8.5333333333333"^^xsd:float .
+    geo1:lat "52.016666666667"^^xsd:float ;
+    geo1:long "8.5333333333333"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p20> a sch:Place ;
     sch:name "Jaffna" ;
     owl:sameAs wdt:Q215277 ;
-    geo:lat "9.6647222222222"^^xsd:float ;
-    geo:long "80.016666666667"^^xsd:float .
+    geo1:lat "9.6647222222222"^^xsd:float ;
+    geo1:long "80.016666666667"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p21> a sch:Place ;
     sch:name "Szklary Górne" ;
     owl:sameAs wdt:Q7664745 ;
-    geo:lat "51.433333333333"^^xsd:float ;
-    geo:long "16.083333333333"^^xsd:float .
+    geo1:lat "51.433333333333"^^xsd:float ;
+    geo1:long "16.083333333333"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p22> a sch:Place ;
     sch:name "Villingen-Schwenningen" ;
     owl:sameAs wdt:Q3865 ;
-    geo:lat "48.063152"^^xsd:float ;
-    geo:long "8.4929618"^^xsd:float .
+    geo1:lat "48.063152"^^xsd:float ;
+    geo1:long "8.4929618"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p23> a sch:Place ;
     sch:name "Heilbronn" ;
     owl:sameAs wdt:Q715 ;
-    geo:lat "49.140428"^^xsd:float ;
-    geo:long "9.217953"^^xsd:float .
+    geo1:lat "49.140428"^^xsd:float ;
+    geo1:long "9.217953"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p25> a sch:Place ;
     sch:name "Anklam" ;
     owl:sameAs wdt:Q488513 ;
-    geo:lat "53.85"^^xsd:float ;
-    geo:long "13.683333333333334"^^xsd:float .
+    geo1:lat "53.85"^^xsd:float ;
+    geo1:long "13.683333333333334"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p26> a sch:Place ;
     sch:name "Freie Stadt Danzig" ;
     owl:sameAs wdt:Q216173 ;
-    geo:lat "54.4"^^xsd:float ;
-    geo:long "18.66"^^xsd:float .
+    geo1:lat "54.4"^^xsd:float ;
+    geo1:long "18.66"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p27> a sch:Place ;
     sch:name "Heidelberg" ;
     owl:sameAs wdt:Q2966 ;
-    geo:lat "49.412222222222"^^xsd:float ;
-    geo:long "8.71"^^xsd:float .
+    geo1:lat "49.412222222222"^^xsd:float ;
+    geo1:long "8.71"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p28> a sch:Place ;
     sch:name "Jasienica, Lower Silesian Voivodeship" ;
     owl:sameAs wdt:Q6161475 ;
-    geo:lat "50.65861111"^^xsd:float ;
-    geo:long "17.07694444"^^xsd:float .
+    geo1:lat "50.65861111"^^xsd:float ;
+    geo1:long "17.07694444"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p29> a sch:Place ;
     sch:name "Limburg an der Lahn" ;
     owl:sameAs wdt:Q16026 ;
-    geo:lat "50.38333333333333"^^xsd:float ;
-    geo:long "8.066666666666666"^^xsd:float .
+    geo1:lat "50.38333333333333"^^xsd:float ;
+    geo1:long "8.066666666666666"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p3> a sch:Place ;
     sch:name "Dorsten" ;
     owl:sameAs wdt:Q3886 ;
-    geo:lat "51.66"^^xsd:float ;
-    geo:long "6.9641666666667"^^xsd:float .
+    geo1:lat "51.66"^^xsd:float ;
+    geo1:long "6.9641666666667"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p30> a sch:Place ;
     sch:name "Ludwigsburg" ;
     owl:sameAs wdt:Q622 ;
-    geo:lat "48.8975"^^xsd:float ;
-    geo:long "9.1919444444444"^^xsd:float .
+    geo1:lat "48.8975"^^xsd:float ;
+    geo1:long "9.1919444444444"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p31> a sch:Place ;
     sch:name "Bochum" ;
     owl:sameAs wdt:Q2103 ;
-    geo:lat "51.483333333333"^^xsd:float ;
-    geo:long "7.2166666666667"^^xsd:float .
+    geo1:lat "51.483333333333"^^xsd:float ;
+    geo1:long "7.2166666666667"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p32> a sch:Place ;
     sch:name "Linz" ;
     owl:sameAs wdt:Q41329 ;
-    geo:lat "48.30583333333333"^^xsd:float ;
-    geo:long "14.286388888888888"^^xsd:float .
+    geo1:lat "48.30583333333333"^^xsd:float ;
+    geo1:long "14.286388888888888"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p35> a sch:Place ;
     sch:name "Fulda" ;
     owl:sameAs wdt:Q3963 ;
-    geo:lat "50.552777777778"^^xsd:float ;
-    geo:long "9.6775"^^xsd:float .
+    geo1:lat "50.552777777778"^^xsd:float ;
+    geo1:long "9.6775"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p36> a sch:Place ;
     sch:name "Kochel am See" ;
     owl:sameAs wdt:Q256533 ;
-    geo:lat "47.6586"^^xsd:float ;
-    geo:long "11.3682"^^xsd:float .
+    geo1:lat "47.6586"^^xsd:float ;
+    geo1:long "11.3682"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p37> a sch:Place ;
     sch:name "Hermeskeil" ;
     owl:sameAs wdt:Q519344 ;
-    geo:lat "49.657222222222"^^xsd:float ;
-    geo:long "6.9488888888889"^^xsd:float .
+    geo1:lat "49.657222222222"^^xsd:float ;
+    geo1:long "6.9488888888889"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p38> a sch:Place ;
     sch:name "Hagen" ;
     owl:sameAs wdt:Q2871 ;
-    geo:lat "51.359444444444"^^xsd:float ;
-    geo:long "7.475"^^xsd:float .
+    geo1:lat "51.359444444444"^^xsd:float ;
+    geo1:long "7.475"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p39> a sch:Place ;
     sch:name "Datteln" ;
     owl:sameAs wdt:Q14940 ;
-    geo:lat "51.653888888889"^^xsd:float ;
-    geo:long "7.3416666666667"^^xsd:float .
+    geo1:lat "51.653888888889"^^xsd:float ;
+    geo1:long "7.3416666666667"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p4> a sch:Place ;
     sch:name "Zaxo" ;
     owl:sameAs wdt:Q167800 ;
-    geo:lat "37.143611111111"^^xsd:float ;
-    geo:long "42.681911111111"^^xsd:float .
+    geo1:lat "37.143611111111"^^xsd:float ;
+    geo1:long "42.681911111111"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p40> a sch:Place ;
     sch:name "Räckelwitz" ;
     owl:sameAs wdt:Q32721172 ;
-    geo:lat "51.25"^^xsd:float ;
-    geo:long "14.2333"^^xsd:float .
+    geo1:lat "51.25"^^xsd:float ;
+    geo1:long "14.2333"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p41> a sch:Place ;
     sch:name "Konstanz" ;
     owl:sameAs wdt:Q3834 ;
-    geo:lat "47.663333333333"^^xsd:float ;
-    geo:long "9.1752777777778"^^xsd:float .
+    geo1:lat "47.663333333333"^^xsd:float ;
+    geo1:long "9.1752777777778"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p42> a sch:Place ;
     sch:name "Pforzheim" ;
     owl:sameAs wdt:Q3046 ;
-    geo:lat "48.8908846"^^xsd:float ;
-    geo:long "8.7029532"^^xsd:float .
+    geo1:lat "48.8908846"^^xsd:float ;
+    geo1:long "8.7029532"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p43> a sch:Place ;
     sch:name "Hennigsdorf" ;
     owl:sameAs wdt:Q583462 ;
-    geo:lat "52.637777777778"^^xsd:float ;
-    geo:long "13.203611111111"^^xsd:float .
+    geo1:lat "52.637777777778"^^xsd:float ;
+    geo1:long "13.203611111111"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p44> a sch:Place ;
     sch:name "Dortmund" ;
     owl:sameAs wdt:Q1295 ;
-    geo:lat "51.513888888889"^^xsd:float ;
-    geo:long "7.4652777777778"^^xsd:float .
+    geo1:lat "51.513888888889"^^xsd:float ;
+    geo1:long "7.4652777777778"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p49> a sch:Place ;
     sch:name "Spremberg" ;
     owl:sameAs wdt:Q572559 ;
-    geo:lat "51.571666666667"^^xsd:float ;
-    geo:long "14.379444444444"^^xsd:float .
+    geo1:lat "51.571666666667"^^xsd:float ;
+    geo1:long "14.379444444444"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p5> a sch:Place ;
     sch:name "Frankfurt (Oder)" ;
     owl:sameAs wdt:Q4024 ;
-    geo:lat "52.342083333333335"^^xsd:float ;
-    geo:long "14.551666666666666"^^xsd:float .
+    geo1:lat "52.342083333333335"^^xsd:float ;
+    geo1:long "14.551666666666666"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p51> a sch:Place ;
     sch:name "Plön" ;
     owl:sameAs wdt:Q497060 ;
-    geo:lat "54.162222222222"^^xsd:float ;
-    geo:long "10.421388888889"^^xsd:float .
+    geo1:lat "54.162222222222"^^xsd:float ;
+    geo1:long "10.421388888889"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p52> a sch:Place ;
     sch:name "Tönning" ;
     owl:sameAs wdt:Q21018 ;
-    geo:lat "54.317222222222"^^xsd:float ;
-    geo:long "8.9427777777778"^^xsd:float .
+    geo1:lat "54.317222222222"^^xsd:float ;
+    geo1:long "8.9427777777778"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p53> a sch:Place ;
     sch:name "Magdeburg" ;
     owl:sameAs wdt:Q1733 ;
-    geo:lat "52.1315889"^^xsd:float ;
-    geo:long "11.6399609"^^xsd:float .
+    geo1:lat "52.1315889"^^xsd:float ;
+    geo1:long "11.6399609"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p54> a sch:Place ;
     sch:name "Bad Nauheim" ;
     owl:sameAs wdt:Q16105 ;
-    geo:lat "50.36666666666667"^^xsd:float ;
-    geo:long "8.75"^^xsd:float .
+    geo1:lat "50.36666666666667"^^xsd:float ;
+    geo1:long "8.75"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p55> a sch:Place ;
     sch:name "Husum" ;
     owl:sameAs wdt:Q21159 ;
-    geo:lat "54.476944444444"^^xsd:float ;
-    geo:long "9.0511111111111"^^xsd:float .
+    geo1:lat "54.476944444444"^^xsd:float ;
+    geo1:long "9.0511111111111"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p56> a sch:Place ;
     sch:name "Eberswalde" ;
     owl:sameAs wdt:Q9306 ;
-    geo:lat "52.833055555556"^^xsd:float ;
-    geo:long "13.833055555556"^^xsd:float .
+    geo1:lat "52.833055555556"^^xsd:float ;
+    geo1:long "13.833055555556"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p57> a sch:Place ;
     sch:name "Oberbilk" ;
     owl:sameAs wdt:Q8249663 ;
-    geo:lat "51.2161"^^xsd:float ;
-    geo:long "6.80361"^^xsd:float .
+    geo1:lat "51.2161"^^xsd:float ;
+    geo1:long "6.80361"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p58> a sch:Place ;
     sch:name "Kiew" ;
     owl:sameAs wdt:Q1899 ;
-    geo:lat "50.45"^^xsd:float ;
-    geo:long "30.523611111111"^^xsd:float .
+    geo1:lat "50.45"^^xsd:float ;
+    geo1:long "30.523611111111"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p6> a sch:Place ;
     sch:name "Breslau" ;
     owl:sameAs wdt:Q1799 ;
-    geo:lat "51.11"^^xsd:float ;
-    geo:long "17.0325"^^xsd:float .
+    geo1:lat "51.11"^^xsd:float ;
+    geo1:long "17.0325"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p60> a sch:Place ;
     sch:name "Weimar" ;
     owl:sameAs wdt:Q3955 ;
-    geo:lat "50.98111111111111"^^xsd:float ;
-    geo:long "11.329444444444444"^^xsd:float .
+    geo1:lat "50.98111111111111"^^xsd:float ;
+    geo1:long "11.329444444444444"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p61> a sch:Place ;
     sch:name "Rotenburg an der Fulda" ;
     owl:sameAs wdt:Q558631 ;
-    geo:lat "50.995"^^xsd:float ;
-    geo:long "9.7272222222222"^^xsd:float .
+    geo1:lat "50.995"^^xsd:float ;
+    geo1:long "9.7272222222222"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p62> a sch:Place ;
     sch:name "Remscheid" ;
     owl:sameAs wdt:Q3097 ;
-    geo:lat "51.1798706"^^xsd:float ;
-    geo:long "7.1943544"^^xsd:float .
+    geo1:lat "51.1798706"^^xsd:float ;
+    geo1:long "7.1943544"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p64> a sch:Place ;
     sch:name "Wismar" ;
     owl:sameAs wdt:Q7030 ;
-    geo:lat "53.8925"^^xsd:float ;
-    geo:long "11.465"^^xsd:float .
+    geo1:lat "53.8925"^^xsd:float ;
+    geo1:long "11.465"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p65> a sch:Place ;
     sch:name "Weida" ;
     owl:sameAs wdt:Q519751 ;
-    geo:lat "50.766666666667"^^xsd:float ;
-    geo:long "12.066666666667"^^xsd:float .
+    geo1:lat "50.766666666667"^^xsd:float ;
+    geo1:long "12.066666666667"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p66> a sch:Place ;
     sch:name "Spandau" ;
     owl:sameAs wdt:Q158083 ;
-    geo:lat "52.55"^^xsd:float ;
-    geo:long "13.2"^^xsd:float .
+    geo1:lat "52.55"^^xsd:float ;
+    geo1:long "13.2"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p67> a sch:Place ;
     sch:name "Stockelsdorf" ;
     owl:sameAs wdt:Q551818 ;
-    geo:lat "53.883333333333"^^xsd:float ;
-    geo:long "10.65"^^xsd:float .
+    geo1:lat "53.883333333333"^^xsd:float ;
+    geo1:long "10.65"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p68> a sch:Place ;
     sch:name "Wolfratshausen" ;
     owl:sameAs wdt:Q503160 ;
-    geo:lat "47.913333333333"^^xsd:float ;
-    geo:long "11.427777777778"^^xsd:float .
+    geo1:lat "47.913333333333"^^xsd:float ;
+    geo1:long "11.427777777778"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p69> a sch:Place ;
     sch:name "Graz" ;
     owl:sameAs wdt:Q13298 ;
-    geo:lat "47.07083333333333"^^xsd:float ;
-    geo:long "15.438611111111111"^^xsd:float .
+    geo1:lat "47.07083333333333"^^xsd:float ;
+    geo1:long "15.438611111111111"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p70> a sch:Place ;
     sch:name "Celle" ;
     owl:sameAs wdt:Q3933 ;
-    geo:lat "52.625555555556"^^xsd:float ;
-    geo:long "10.0825"^^xsd:float .
+    geo1:lat "52.625555555556"^^xsd:float ;
+    geo1:long "10.0825"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p71> a sch:Place ;
     sch:name "Lübeck" ;
     owl:sameAs wdt:Q2843 ;
-    geo:lat "53.869722222222"^^xsd:float ;
-    geo:long "10.686388888889"^^xsd:float .
+    geo1:lat "53.869722222222"^^xsd:float ;
+    geo1:long "10.686388888889"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p72> a sch:Place ;
     sch:name "Mautern in Steiermark" ;
     owl:sameAs wdt:Q258162 ;
-    geo:lat "47.4"^^xsd:float ;
-    geo:long "14.833333333333"^^xsd:float .
+    geo1:lat "47.4"^^xsd:float ;
+    geo1:long "14.833333333333"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p77> a sch:Place ;
     sch:name "Wittlich" ;
     owl:sameAs wdt:Q559514 ;
-    geo:lat "49.986944444444"^^xsd:float ;
-    geo:long "6.8897222222222"^^xsd:float .
+    geo1:lat "49.986944444444"^^xsd:float ;
+    geo1:long "6.8897222222222"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p78> a sch:Place ;
     sch:name "Bad Salzungen" ;
     owl:sameAs wdt:Q502662 ;
-    geo:lat "50.811666666667"^^xsd:float ;
-    geo:long "10.233333333333"^^xsd:float .
+    geo1:lat "50.811666666667"^^xsd:float ;
+    geo1:long "10.233333333333"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p79> a sch:Place ;
     sch:name "Erfurt" ;
     owl:sameAs wdt:Q1729 ;
-    geo:lat "50.97805555555556"^^xsd:float ;
-    geo:long "11.028888888888888"^^xsd:float .
+    geo1:lat "50.97805555555556"^^xsd:float ;
+    geo1:long "11.028888888888888"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p8> a sch:Place ;
     sch:name "Gera" ;
     owl:sameAs wdt:Q3750 ;
-    geo:lat "50.87818"^^xsd:float ;
-    geo:long "12.08242"^^xsd:float .
+    geo1:lat "50.87818"^^xsd:float ;
+    geo1:long "12.08242"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p80> a sch:Place ;
     sch:name "Laas" ;
     owl:sameAs wdt:Q118352511 ;
-    geo:lat "46.94278"^^xsd:float ;
-    geo:long "13.07694"^^xsd:float .
+    geo1:lat "46.94278"^^xsd:float ;
+    geo1:long "13.07694"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p81> a sch:Place ;
     sch:name "Braunschweig" ;
     owl:sameAs wdt:Q2773 ;
-    geo:lat "52.269166666667"^^xsd:float ;
-    geo:long "10.521111111111"^^xsd:float .
+    geo1:lat "52.269166666667"^^xsd:float ;
+    geo1:long "10.521111111111"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p82> a sch:Place ;
     sch:name "Rheinfelden (Baden)" ;
     owl:sameAs wdt:Q16077 ;
-    geo:lat "47.561111111111"^^xsd:float ;
-    geo:long "7.7916666666667"^^xsd:float .
+    geo1:lat "47.561111111111"^^xsd:float ;
+    geo1:long "7.7916666666667"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p83> a sch:Place ;
     sch:name "Weinheim" ;
     owl:sameAs wdt:Q7050 ;
-    geo:lat "49.556111111111"^^xsd:float ;
-    geo:long "8.6697222222222"^^xsd:float .
+    geo1:lat "49.556111111111"^^xsd:float ;
+    geo1:long "8.6697222222222"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p85> a sch:Place ;
     sch:name "Bad Segeberg" ;
     owl:sameAs wdt:Q496050 ;
-    geo:lat "53.93611111111111"^^xsd:float ;
-    geo:long "10.309722222222222"^^xsd:float .
+    geo1:lat "53.93611111111111"^^xsd:float ;
+    geo1:long "10.309722222222222"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p86> a sch:Place ;
     sch:name "Kupfermühle" ;
     owl:sameAs wdt:Q317658 ;
-    geo:lat "54.83694444"^^xsd:float ;
-    geo:long "9.41416667"^^xsd:float .
+    geo1:lat "54.83694444"^^xsd:float ;
+    geo1:long "9.41416667"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p87> a sch:Place ;
     sch:name "Wuppertal" ;
     owl:sameAs wdt:Q2107 ;
-    geo:lat "51.266666666667"^^xsd:float ;
-    geo:long "7.1833333333333"^^xsd:float .
+    geo1:lat "51.266666666667"^^xsd:float ;
+    geo1:long "7.1833333333333"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p88> a sch:Place ;
     sch:name "Karlsruhe" ;
     owl:sameAs wdt:Q1040 ;
-    geo:lat "49.016666666667"^^xsd:float ;
-    geo:long "8.4"^^xsd:float .
+    geo1:lat "49.016666666667"^^xsd:float ;
+    geo1:long "8.4"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p9> a sch:Place ;
     sch:name "Çayırlı" ;
     owl:sameAs wdt:Q272722 ;
-    geo:lat "39.804444444444"^^xsd:float ;
-    geo:long "40.037222222222"^^xsd:float .
+    geo1:lat "39.804444444444"^^xsd:float ;
+    geo1:long "40.037222222222"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p90> a sch:Place ;
     sch:name "Basel" ;
     owl:sameAs wdt:Q78 ;
-    geo:lat "47.560555555556"^^xsd:float ;
-    geo:long "7.5905555555556"^^xsd:float .
+    geo1:lat "47.560555555556"^^xsd:float ;
+    geo1:long "7.5905555555556"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p91> a sch:Place ;
     sch:name "Sarajevo" ;
     owl:sameAs wdt:Q11194 ;
-    geo:lat "43.85638888888889"^^xsd:float ;
-    geo:long "18.413055555555555"^^xsd:float .
+    geo1:lat "43.85638888888889"^^xsd:float ;
+    geo1:long "18.413055555555555"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p92> a sch:Place ;
     sch:name "Wolgograd" ;
     owl:sameAs wdt:Q914 ;
-    geo:lat "48.70861111111111"^^xsd:float ;
-    geo:long "44.514722222222225"^^xsd:float .
+    geo1:lat "48.70861111111111"^^xsd:float ;
+    geo1:long "44.514722222222225"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p93> a sch:Place ;
     sch:name "Schwerin" ;
     owl:sameAs wdt:Q1709 ;
-    geo:lat "53.62888888888889"^^xsd:float ;
-    geo:long "11.415"^^xsd:float .
+    geo1:lat "53.62888888888889"^^xsd:float ;
+    geo1:long "11.415"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p94> a sch:Place ;
     sch:name "Mainz" ;
     owl:sameAs wdt:Q1720 ;
-    geo:lat "49.99944444444444"^^xsd:float ;
-    geo:long "8.27361111111111"^^xsd:float .
+    geo1:lat "49.99944444444444"^^xsd:float ;
+    geo1:long "8.27361111111111"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p95> a sch:Place ;
     sch:name "Bremen" ;
     owl:sameAs wdt:Q24879 ;
-    geo:lat "53.075833333333335"^^xsd:float ;
-    geo:long "8.807222222222222"^^xsd:float .
+    geo1:lat "53.075833333333335"^^xsd:float ;
+    geo1:long "8.807222222222222"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p96> a sch:Place ;
     sch:name "Hannover" ;
     owl:sameAs wdt:Q1715 ;
-    geo:lat "52.374444444444"^^xsd:float ;
-    geo:long "9.7386111111111"^^xsd:float .
+    geo1:lat "52.374444444444"^^xsd:float ;
+    geo1:long "9.7386111111111"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p99> a sch:Place ;
     sch:name "Thun" ;
     owl:sameAs wdt:Q68978 ;
-    geo:lat "46.759"^^xsd:float ;
-    geo:long "7.63"^^xsd:float .
+    geo1:lat "46.759"^^xsd:float ;
+    geo1:long "7.63"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Prize/pr1> a sch:Award ;
     sch:name "Alfred-Döblin-Preis" ;
@@ -6738,68 +6738,68 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
 <https://example.org/rechtsextremismus/Place/p18> a sch:Place ;
     sch:name "Bonn" ;
     owl:sameAs wdt:Q586 ;
-    geo:lat "50.735277777777775"^^xsd:float ;
-    geo:long "7.102222222222222"^^xsd:float .
+    geo1:lat "50.735277777777775"^^xsd:float ;
+    geo1:long "7.102222222222222"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p24> a sch:Place ;
     sch:name "Borna" ;
     owl:sameAs wdt:Q10744 ;
-    geo:lat "51.116666666667"^^xsd:float ;
-    geo:long "12.5"^^xsd:float .
+    geo1:lat "51.116666666667"^^xsd:float ;
+    geo1:long "12.5"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p33> a sch:Place ;
     sch:name "Leipzig" ;
     owl:sameAs wdt:Q2079 ;
-    geo:lat "51.3406321"^^xsd:float ;
-    geo:long "12.3747329"^^xsd:float .
+    geo1:lat "51.3406321"^^xsd:float ;
+    geo1:long "12.3747329"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p46> a sch:Place ;
     sch:name "Salzburg" ;
     owl:sameAs wdt:Q34713 ;
-    geo:lat "47.8"^^xsd:float ;
-    geo:long "13.045"^^xsd:float .
+    geo1:lat "47.8"^^xsd:float ;
+    geo1:long "13.045"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p47> a sch:Place ;
     sch:name "Göttingen" ;
     owl:sameAs wdt:Q3033 ;
-    geo:lat "51.533888888889"^^xsd:float ;
-    geo:long "9.9355555555556"^^xsd:float .
+    geo1:lat "51.533888888889"^^xsd:float ;
+    geo1:long "9.9355555555556"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p50> a sch:Place ;
     sch:name "Augsburg" ;
     owl:sameAs wdt:Q2749 ;
-    geo:lat "48.36888888888889"^^xsd:float ;
-    geo:long "10.897777777777778"^^xsd:float .
+    geo1:lat "48.36888888888889"^^xsd:float ;
+    geo1:long "10.897777777777778"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p59> a sch:Place ;
     sch:name "Wien" ;
     owl:sameAs wdt:Q1741 ;
-    geo:lat "48.208333333333336"^^xsd:float ;
-    geo:long "16.3725"^^xsd:float .
+    geo1:lat "48.208333333333336"^^xsd:float ;
+    geo1:long "16.3725"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p7> a sch:Place ;
     sch:name "Wiesbaden" ;
     owl:sameAs wdt:Q1721 ;
-    geo:lat "50.0825"^^xsd:float ;
-    geo:long "8.24"^^xsd:float .
+    geo1:lat "50.0825"^^xsd:float ;
+    geo1:long "8.24"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p75> a sch:Place ;
     sch:name "Teheran" ;
     owl:sameAs wdt:Q3616 ;
-    geo:lat "35.68888888888889"^^xsd:float ;
-    geo:long "51.389722222222225"^^xsd:float .
+    geo1:lat "35.68888888888889"^^xsd:float ;
+    geo1:long "51.389722222222225"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p76> a sch:Place ;
     sch:name "Potsdam" ;
     owl:sameAs wdt:Q1711 ;
-    geo:lat "52.4"^^xsd:float ;
-    geo:long "13.066666666667"^^xsd:float .
+    geo1:lat "52.4"^^xsd:float ;
+    geo1:long "13.066666666667"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p84> a sch:Place ;
     sch:name "Halle (Saale)" ;
     owl:sameAs wdt:Q2814 ;
-    geo:lat "51.48277777777778"^^xsd:float ;
-    geo:long "11.969722222222222"^^xsd:float .
+    geo1:lat "51.48277777777778"^^xsd:float ;
+    geo1:long "11.969722222222222"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Organization/i11> a sch:Organization ;
     sch:areaServed "überregional/Konzern" ;
@@ -6880,14 +6880,14 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
 <https://example.org/rechtsextremismus/Place/p19> a sch:Place ;
     sch:name "Reinbek" ;
     owl:sameAs wdt:Q516405 ;
-    geo:lat "53.508888888889"^^xsd:float ;
-    geo:long "10.248333333333"^^xsd:float .
+    geo1:lat "53.508888888889"^^xsd:float ;
+    geo1:long "10.248333333333"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p89> a sch:Place ;
     sch:name "Nürnberg" ;
     owl:sameAs wdt:Q2090 ;
-    geo:lat "49.45388888888889"^^xsd:float ;
-    geo:long "11.0775"^^xsd:float .
+    geo1:lat "49.45388888888889"^^xsd:float ;
+    geo1:long "11.0775"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Organization/i14> a sch:Organization ;
     sch:areaServed "überregional/Konzern" ;
@@ -6906,8 +6906,8 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
 <https://example.org/rechtsextremismus/Place/p97> a sch:Place ;
     sch:name "Stuttgart" ;
     owl:sameAs wdt:Q1022 ;
-    geo:lat "48.7775"^^xsd:float ;
-    geo:long "9.18"^^xsd:float .
+    geo1:lat "48.7775"^^xsd:float ;
+    geo1:long "9.18"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Organization/i12> a sch:Organization ;
     sch:areaServed "überregional/Konzern" ;
@@ -6932,8 +6932,8 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
 <https://example.org/rechtsextremismus/Place/p63> a sch:Place ;
     sch:name "Zürich" ;
     owl:sameAs wdt:Q72 ;
-    geo:lat "47.37444444444444"^^xsd:float ;
-    geo:long "8.54111111111111"^^xsd:float .
+    geo1:lat "47.37444444444444"^^xsd:float ;
+    geo1:long "8.54111111111111"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Organization/i39> a sch:Organization ;
     sch:areaServed "überregional/Konzern" ;
@@ -6952,8 +6952,8 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
 <https://example.org/rechtsextremismus/Place/p48> a sch:Place ;
     sch:name "Dresden" ;
     owl:sameAs wdt:Q1731 ;
-    geo:lat "51.05"^^xsd:float ;
-    geo:long "13.74"^^xsd:float .
+    geo1:lat "51.05"^^xsd:float ;
+    geo1:long "13.74"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Organization/i35> a sch:Organization ;
     sch:areaServed "überregional/Konzern" ;
@@ -6965,14 +6965,14 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
 <https://example.org/rechtsextremismus/Place/p34> a sch:Place ;
     sch:name "Köln" ;
     owl:sameAs wdt:Q365 ;
-    geo:lat "50.942222222222"^^xsd:float ;
-    geo:long "6.9577777777778"^^xsd:float .
+    geo1:lat "50.942222222222"^^xsd:float ;
+    geo1:long "6.9577777777778"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p73> a sch:Place ;
     sch:name "Frankfurt am Main" ;
     owl:sameAs wdt:Q1794 ;
-    geo:lat "50.11055555555556"^^xsd:float ;
-    geo:long "8.682222222222222"^^xsd:float .
+    geo1:lat "50.11055555555556"^^xsd:float ;
+    geo1:long "8.682222222222222"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Organization/i50> a sch:Organization ;
     sch:areaServed "überregional/Konzern" ;
@@ -6984,8 +6984,8 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
 <https://example.org/rechtsextremismus/Place/p14> a sch:Place ;
     sch:name "Hamburg" ;
     owl:sameAs wdt:Q1055 ;
-    geo:lat "53.55"^^xsd:float ;
-    geo:long "10.0"^^xsd:float .
+    geo1:lat "53.55"^^xsd:float ;
+    geo1:long "10.0"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Organization/i53> a sch:Organization ;
     sch:areaServed "überregional/Konzern" ;
@@ -6997,12 +6997,12 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
 <https://example.org/rechtsextremismus/Place/p98> a sch:Place ;
     sch:name "München" ;
     owl:sameAs wdt:Q1726 ;
-    geo:lat "48.1375"^^xsd:float ;
-    geo:long "11.575"^^xsd:float .
+    geo1:lat "48.1375"^^xsd:float ;
+    geo1:long "11.575"^^xsd:float .
 
 <https://example.org/rechtsextremismus/Place/p45> a sch:Place ;
     sch:name "Berlin" ;
     owl:sameAs wdt:Q64 ;
-    geo:lat "52.516666666667"^^xsd:float ;
-    geo:long "13.383333333333"^^xsd:float .
+    geo1:lat "52.516666666667"^^xsd:float ;
+    geo1:long "13.383333333333"^^xsd:float .
 
