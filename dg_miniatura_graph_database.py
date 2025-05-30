@@ -1,6 +1,6 @@
 import sys
-sys.path.insert(1, 'D:\IBL\Documents\IBL-PAN-Python')
-# sys.path.insert(1, 'C:/Users/Cezary/Documents/IBL-PAN-Python')
+# sys.path.insert(1, 'D:\IBL\Documents\IBL-PAN-Python')
+sys.path.insert(1, 'C:/Users/Cezary/Documents/IBL-PAN-Python')
 import pandas as pd
 from rdflib import Graph, Namespace, URIRef, Literal, BNode
 from rdflib.namespace import RDF, RDFS, XSD, FOAF, OWL
@@ -164,7 +164,7 @@ def add_text(row):
         g.add((text, schema.author, RECH[f"Person/{a.strip()}"]))
     g.add((text, dcterms.publisher, RECH[f"Organization/{row['institution_id']}"]))
     g.add((text, schema.datePublished, Literal(row['year'], datatype=XSD.gYear)))
-    g.add((text, schema.gendre, Literal(row['genre'])))
+    g.add((text, schema.genre, Literal(row['genre'])))
     g.add((text, schema.inLanguage, Literal(row['language'])))
     g.add((text, RECH.whichNovel, Literal(row['debut novel/further novel'])))
     g.add((text, schema.about, Literal(row['subject'])))
