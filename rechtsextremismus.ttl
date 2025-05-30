@@ -63,7 +63,8 @@
     sch:author <https://example.org/rechtsextremismus/Person/a59> ;
     sch:datePublished "2015"^^xsd:gYear ;
     sch:description "Sie sind der letzte Jahrgang, der noch alles mitmachen darf - damals in Dresden vom Sommer vor der Wende bis zur Wiedervereinigung: die Konzerte im FDJ-Jugendklub \"X. Weltfestspiele\" oder in der Kirche vom Plattenbaugebiet, wo ein Hippie, den sie \"Kiste\" nennen, weil er so dick ist, mit wachsamem Blick Suppe kocht für die Punks und ihre Pfarrerstöchter. Sie sind die Letzten, die noch \"vormilitärischen Unterricht\" haben. Und sie sind die Ersten, die das dort Erlernte dann im Herbst ྕ erst gegen die Staatsmacht anwenden. Und schließlich gegeneinander. Denn was bleibt dir denn, wenn du zum Fall der Mauer beiträgst, aber am nächsten Tag trotzdem eine Mathe-Arbeit schreiben musst, wenn deine Freundin eine gläubige Kommunistin ist und die Kumpels aus dem Freibad zu Neonazis werden? Peter Richter beschreibt in seinem autobiografischen Roman das chaotische Ende der DDR aus der Sicht eines damals Sechzehnjährigen. Coming of Age im Schatten von Weltgeschichte." ;
-    sch:genre "Autobiographischer Roman, Coming-of-Age" ;
+    sch:genre "Autobiographischer Roman",
+        "Coming-of-Age" ;
     sch:inLanguage "de" ;
     sch:keywords "Coming Of Age",
         "DDR",
@@ -121,7 +122,8 @@
     sch:author <https://example.org/rechtsextremismus/Person/a75> ;
     sch:datePublished "2006"^^xsd:gYear ;
     sch:description "Sie träumen vom Aufstieg ihrer Fußballmannschaft, von einer richtigen Liebe und davon, dass irgendwo ein besseres Leben wartet. Rico, Mark, Paul und Daniel wachsen auf im Leipzig der Nachwendejahre, in einem Viertel, dessen Mittelpunkt die Brauerei ist. Jede Nacht ziehen sie durch die Straßen. Sie feiern, sie randalieren, sie fliehen vor den Glatzen, ihren Eltern und der Zukunft. Sie kämpfen mit Fäusten um Anerkennung und schlagen die Zeit tot. Sie saufen, sie klauen, sind cool und fertig und träumen vom eigenen Leben. Alle ihre Fluchtversuche enden auf den Fluren des Polizeireviers Südost." ;
-    sch:genre "Roman, Coming-of-Age" ;
+    sch:genre "Coming-of-Age",
+        "Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "DDR",
         "Freiheit",
@@ -554,7 +556,8 @@
     sch:author <https://example.org/rechtsextremismus/Person/a91> ;
     sch:datePublished "2023"^^xsd:gYear ;
     sch:description "Mario wurde nicht einmal 14 Jahre alt. Wieso, das erzählt er von seinem Grab aus: Wie zwei Gruppen sich in unterirdischen Katakomben ihr eigenes Reich bauen, um das sie kämpfen bis zum Tod, von Freundschaft und einem phänomenalen Boxkampf zwischen seinem besten Freund Rajko und einer Gang Neonazis. Mit viel schwarzem Humor, aber auch voller Hoffnung und Liebe berichtet Mario von Gewalt, Außenseitertum und dem trostlosen Dasein zwischen Plattenbauten, wo Eltern genau so abwesend sind wie eine Zukunft. Dieser wortgewaltige Roman entfaltet einen un-heimeligen Sog, dem man so nur selten begegnet - vielleicht sogar nie. Genau wie den Erwachsenen im Plattenbau." ;
-    sch:genre "Roman, Jugendbuch" ;
+    sch:genre "Jugendbuch",
+        "Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "Gewalt",
         "Neonazi" ;
@@ -781,7 +784,8 @@
     sch:author <https://example.org/rechtsextremismus/Person/a31> ;
     sch:datePublished "2018"^^xsd:gYear ;
     sch:description "So könnte es kommen, vielleicht schon sehr bald: Die EU gibt es nicht mehr. Überall in Europa haben Nationalisten und Fremdenfeinde das Sagen. Leute ohne deutschen Pass werden aus ihren Wohnungen abgeholt, Staatsbürgerschaften aufgekündigt. Die meisten Deutschen mit fremden Wurzeln befinden sich in Übergangslagern, sie hoffen auf eine internationale Lösung, ein Abkommen mit einem Land, das sie aufnehmen wird. Doch auch die korruptesten Regimes weigern sich. Zu schlecht integrierbar, heißt es. Was sie meinen ist: zu viel aufrührerisches Potential.In Finsterwalde, einer geräumten Provinzstadt, hat man Tausende Schwarze kaserniert. Unter ihnen Marie mit ihren beiden Kindern. Die Versorgung ist spärlich, die Grenzzäune sind streng bewacht, Strukturen müssen erst noch geschaffen werden. Die Devise heißt Überleben. Da geht das Gerücht, in Berlin seien drei schwarze Kinder zurückgeblieben, vergessen von allen. Marie beschließt, einen Weg aus dem Lager zu finden, um die drei vor dem sicheren Tod zu retten..." ;
-    sch:genre "Kriminalroman, Dystopie" ;
+    sch:genre "Dystopie",
+        "Kriminalroman" ;
     sch:inLanguage "de" ;
     sch:keywords "Dystopie",
         "Provinz" ;
@@ -978,7 +982,8 @@
     sch:author <https://example.org/rechtsextremismus/Person/a53> ;
     sch:datePublished "2010"^^xsd:gYear ;
     sch:description "Mit seinem Reportageroman \"Deutschboden\" ist Moritz von Uslar raus aus der deutschen Großstadt und rein in den Alltag einer Kleinstadt in Brandenburg gegangen. Drei Monate lang hat der Reporter in der Kleinstadt Zehdenick, gut eine Autostunde nördlich von Berlin, verbracht, und er kehrt mit einer Geschichte der Gegenwart, die gleichzeitig Reportage und Abenteuerroman ist, zurück." ;
-    sch:genre "Reportageroman, Provinzroman" ;
+    sch:genre "Provinzroman",
+        "Reportageroman" ;
     sch:inLanguage "de" ;
     sch:keywords "Brandenburg",
         "Zehdenick" ;
@@ -1186,7 +1191,8 @@
     sch:description """In einem scheinbar idyllischen Dorf Ende der 80er Jahre schwindet allmählich die DDR, die zuvor überall anwesend war und die Gesellschaft bis ins Private durchdrang. Zusehends tauchen andere auf, andere Gesinnungen, freiheitliche, doch auch nazistische. Mimi erlebt dies als Kind, ihre eigene Familie verändert sich, ist plötzlich gespalten. Und der Jugendfreund Mimis, Oliver, nennt sich plötzlich nicht nur Hitler, sondern agiert auch so. Er befehligt die Dorfnazis,
 bis die Situation eskaliert …
 Manja Präkels beschreibt in ihrem Debütroman den Untergang der DDR und den Aufstieg rechter Gruppen in Brandenburg.""" ;
-    sch:genre "Jugendbuch, Autobiographischer Roman" ;
+    sch:genre "Autobiographischer Roman",
+        "Jugendbuch" ;
     sch:inLanguage "de" ;
     sch:keywords "Brandenburg",
         "DDR",
