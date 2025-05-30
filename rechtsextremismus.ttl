@@ -65,7 +65,8 @@
     sch:author <https://example.org/rechtsextremismus/Person/a59> ;
     sch:datePublished "2015"^^xsd:gYear ;
     sch:description "Sie sind der letzte Jahrgang, der noch alles mitmachen darf - damals in Dresden vom Sommer vor der Wende bis zur Wiedervereinigung: die Konzerte im FDJ-Jugendklub \"X. Weltfestspiele\" oder in der Kirche vom Plattenbaugebiet, wo ein Hippie, den sie \"Kiste\" nennen, weil er so dick ist, mit wachsamem Blick Suppe kocht für die Punks und ihre Pfarrerstöchter. Sie sind die Letzten, die noch \"vormilitärischen Unterricht\" haben. Und sie sind die Ersten, die das dort Erlernte dann im Herbst ྕ erst gegen die Staatsmacht anwenden. Und schließlich gegeneinander. Denn was bleibt dir denn, wenn du zum Fall der Mauer beiträgst, aber am nächsten Tag trotzdem eine Mathe-Arbeit schreiben musst, wenn deine Freundin eine gläubige Kommunistin ist und die Kumpels aus dem Freibad zu Neonazis werden? Peter Richter beschreibt in seinem autobiografischen Roman das chaotische Ende der DDR aus der Sicht eines damals Sechzehnjährigen. Coming of Age im Schatten von Weltgeschichte." ;
-    sch:genre "Autobiographischer Roman / Coming-of-Age" ;
+    sch:genre "Autobiographischer Roman",
+        "Coming-of-Age" ;
     sch:inLanguage "de" ;
     sch:keywords "Coming Of Age",
         "DDR",
@@ -121,7 +122,8 @@
     sch:author <https://example.org/rechtsextremismus/Person/a75> ;
     sch:datePublished "2006"^^xsd:gYear ;
     sch:description "Sie träumen vom Aufstieg ihrer Fußballmannschaft, von einer richtigen Liebe und davon, dass irgendwo ein besseres Leben wartet. Rico, Mark, Paul und Daniel wachsen auf im Leipzig der Nachwendejahre, in einem Viertel, dessen Mittelpunkt die Brauerei ist. Jede Nacht ziehen sie durch die Straßen. Sie feiern, sie randalieren, sie fliehen vor den Glatzen, ihren Eltern und der Zukunft. Sie kämpfen mit Fäusten um Anerkennung und schlagen die Zeit tot. Sie saufen, sie klauen, sind cool und fertig und träumen vom eigenen Leben. Alle ihre Fluchtversuche enden auf den Fluren des Polizeireviers Südost." ;
-    sch:genre "Roman / Coming-of-Age" ;
+    sch:genre "Coming-of-Age",
+        "Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "DDR",
         "Freiheit",
@@ -531,7 +533,8 @@
     sch:author <https://example.org/rechtsextremismus/Person/a91> ;
     sch:datePublished "2023"^^xsd:gYear ;
     sch:description "Mario wurde nicht einmal 14 Jahre alt. Wieso, das erzählt er von seinem Grab aus: Wie zwei Gruppen sich in unterirdischen Katakomben ihr eigenes Reich bauen, um das sie kämpfen bis zum Tod, von Freundschaft und einem phänomenalen Boxkampf zwischen seinem besten Freund Rajko und einer Gang Neonazis. Mit viel schwarzem Humor, aber auch voller Hoffnung und Liebe berichtet Mario von Gewalt, Außenseitertum und dem trostlosen Dasein zwischen Plattenbauten, wo Eltern genau so abwesend sind wie eine Zukunft. Dieser wortgewaltige Roman entfaltet einen un-heimeligen Sog, dem man so nur selten begegnet - vielleicht sogar nie. Genau wie den Erwachsenen im Plattenbau." ;
-    sch:genre "Roman, Jugendbuch" ;
+    sch:genre "Jugendbuch",
+        "Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "Gewalt",
         "Neonazi" ;
@@ -702,7 +705,7 @@
     sch:author <https://example.org/rechtsextremismus/Person/a49> ;
     sch:datePublished "2005"^^xsd:gYear ;
     sch:description "Wiggo Ritter, ein junger Mann mit denkbar besten Voraussetzungen für eine Traumkarriere, ist ins Abseits geraten. Dem Vater, einem erfolgreichen Bankier, wollte er nicht nacheifern, und seine akademische Laufbahn als Philosoph ist gescheitert, weil er keine Kompromisse eingehen kann. Einsam, arbeitslos, doch mit ungebrochenem Stolz fristet er zwischen skurrilen Jobs und so seltenen wie flüchtigen Liebschaften ein Schattendasein. Unverhofft fällt Licht in dieses Dunkel, als Wiggo den charismatischen Geschwistern Mauritz und Manuela begegnet: zwei perfekt getarnten Terroristen, Mitgliedern einer konservativen Organisation, die eine neue Elite inthronisieren will. Ihnen scheint Wiggo, der nichts mehr zu verlieren hat, der ideale Verbündete zu sein. Doch dann verliebt sich dieser Außenseiter ausgerechnet in Manuela - und gefährdet damit nicht allein die gesamte Organisation, sondern vor allem sich selbst." ;
-    sch:genre "politischer Zeitroman" ;
+    sch:genre "Politischer Zeitroman" ;
     sch:inLanguage "de" ;
     sch:keywords "Dresden",
         "Radikalismus",
@@ -745,7 +748,8 @@
     sch:author <https://example.org/rechtsextremismus/Person/a31> ;
     sch:datePublished "2018"^^xsd:gYear ;
     sch:description "So könnte es kommen, vielleicht schon sehr bald: Die EU gibt es nicht mehr. Überall in Europa haben Nationalisten und Fremdenfeinde das Sagen. Leute ohne deutschen Pass werden aus ihren Wohnungen abgeholt, Staatsbürgerschaften aufgekündigt. Die meisten Deutschen mit fremden Wurzeln befinden sich in Übergangslagern, sie hoffen auf eine internationale Lösung, ein Abkommen mit einem Land, das sie aufnehmen wird. Doch auch die korruptesten Regimes weigern sich. Zu schlecht integrierbar, heißt es. Was sie meinen ist: zu viel aufrührerisches Potential.In Finsterwalde, einer geräumten Provinzstadt, hat man Tausende Schwarze kaserniert. Unter ihnen Marie mit ihren beiden Kindern. Die Versorgung ist spärlich, die Grenzzäune sind streng bewacht, Strukturen müssen erst noch geschaffen werden. Die Devise heißt Überleben. Da geht das Gerücht, in Berlin seien drei schwarze Kinder zurückgeblieben, vergessen von allen. Marie beschließt, einen Weg aus dem Lager zu finden, um die drei vor dem sicheren Tod zu retten..." ;
-    sch:genre "Kriminalroman/Thriller, Dystopie" ;
+    sch:genre "Dystopie",
+        "Kriminalroman" ;
     sch:inLanguage "de" ;
     sch:keywords "Dystopie",
         "Provinz" ;
@@ -762,7 +766,7 @@
     sch:author <https://example.org/rechtsextremismus/Person/a3> ;
     sch:datePublished "2006"^^xsd:gYear ;
     sch:description "Herausgegeben von Helmut Braun. Eigentlich heiße ich Joseph Leschinsky, aber da manche Leute Leschinsky zu lang fanden, nannten sie mich Lesche. An Lesche habe ich mich gewöhnt, und dieser Name ist mir geblieben und ersetzt sogar meinen Vornamen, einfach so: Lesche. \"Und Sie wollen in Deutschland bleiben?\" \"Ich habe die Schnauze voll von Amerika.\" Singer spielte mit seinen Kreuzworträtseln, und seine Finger fuhren fast zärtlich über das Papier. \"Sie werden als Jude nicht lange in Deutschland leben können\", sagte er dann. \"Ich habe mir die Sache gründlich überlegt\", sagte Lesche. \"Ich bin deutscher Schriftsteller und brauche die deutsche Sprache. Ich muss sie hören, immer und überall. Außerdem ist Deutschland heute ein demokratisches Land. Der Hitlerspuk ist längst vorüber, und inzwischen ist eine neue Generation herangewachsen.\" \"Der Holocaust wird Sie überall in Deutschland verfolgen. Jedes Haus, jede Straße wird Sie daran erinnern. Und die alten Leute. Es gibt kein Entrinnen. Glauben Sie?s mir.\" \"Man muss es auf einen Versuch ankommen lassen.\" Lesche schlürfte den wässrigen Kaffee. \"Ich habe unlängst in einer jüdischen Zeitung gelesen\", sagte er dann, \"dass die Deutschen in der Hauptstadt ein Holocaustmahnmal errichten wollen. Was halten Sie davon?\" \"Das ist ein schlechter Witz«, sagte Singer. \"Wozu brauchen die Deutschen ein Mahnmal? Ganz Deutschland ist ein Holocaustmahnmal.\" \"Ganz Deutschland?\" \"Ja. Ganz Deutschland.\"" ;
-    sch:genre "autobiographischer Roman" ;
+    sch:genre "Autobiographischer Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "Neonazi" ;
     sch:review " Edgar Hilsenraths Roman ist für Rezensent Dieter Hildebrandt Teil seines \"Versteckspiels\". Das Buch erzähle zwar auf den ersten Blick \"einigermaßen lebensecht\" Hilsenraths Heimkehr nach Deutschland im Jahr 1975 und seine \"harte Landung\" im Westen Berlins. Der Roman beschreibt, wie ein Schriftsteller sich erfolgreich hocharbeitet bis er ins Visier von Neonazis gerät. Schon vor einem Jahr sei die Skizze zum Buch bei einer Ausstellung in der Berliner Akademie vorgestellt worden, doch bei der Lektüre des jetzt erschienenen Romans stellt der Rezensent nicht nur fest, dass sich Titel und Name des Protagonisten verändert haben, sondern dass Hilsenrath wieder einmal den Eindruck vermittle, \"er wolle lieber auf dem falschen Fuß als auf dem richtigen Ich ertappt werden\". Der Rezensent wird das Gefühl nicht los, dass der Autor sich hinter \"traumatischen Tarnungen\" versteckt. So hat er zumindest nach der Lektüre noch viele Fragen, die auch das Nachwort Helmut Brauns nicht auflösen kann. Immerhin gebe der in einem Punkt Entwarnung: Hilsenrath sei nie von Neonazis bedroht worden. " ;
@@ -933,7 +937,8 @@
     sch:author <https://example.org/rechtsextremismus/Person/a53> ;
     sch:datePublished "2010"^^xsd:gYear ;
     sch:description "Mit seinem Reportageroman \"Deutschboden\" ist Moritz von Uslar raus aus der deutschen Großstadt und rein in den Alltag einer Kleinstadt in Brandenburg gegangen. Drei Monate lang hat der Reporter in der Kleinstadt Zehdenick, gut eine Autostunde nördlich von Berlin, verbracht, und er kehrt mit einer Geschichte der Gegenwart, die gleichzeitig Reportage und Abenteuerroman ist, zurück." ;
-    sch:genre "Reportageroman, Provinzroman" ;
+    sch:genre "Provinzroman",
+        "Reportageroman" ;
     sch:inLanguage "de" ;
     sch:keywords "Brandenburg",
         "Zehdenick" ;
@@ -1090,7 +1095,7 @@
     sch:author <https://example.org/rechtsextremismus/Person/a103> ;
     sch:datePublished "2016"^^xsd:gYear ;
     sch:description "Bevor Dmitrij Kapitelman und sein Vater nach Israel aufbrechen, beschränkten sich ihre Ausflüge auf das örtliche Kaufland - damals in den Neunzigern, als sie in einem sächsischen Asylbewerberheim wohnten und man die Nazis noch an den Glatzen erkannte. Heute verkauft der Vater Pelmeni und Krimsekt und ist in Deutschland so wenig heimisch wie zuvor in der Ukraine. Vielleicht, denkt sein Sohn, findet er ja im Heiligen Land Klarheit über seine jüdische Identität. Und er selbst - Kontingentflüchtling, halber Jude, ukrainischer Pass - gleich mit. \"Das Lächeln meines unsichtbaren Vaters\" ist ein sehnsuchtsvoll-komischer Spaziergang auf einem Minenfeld der Paradoxien. Und die anrührende Liebeserklärung eines Sohnes an seinen Vater." ;
-    sch:genre "autobiographischer Roman" ;
+    sch:genre "Autobiographischer Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "Glatze",
         "Jüdische Identität",
@@ -1131,7 +1136,8 @@
     sch:description """In einem scheinbar idyllischen Dorf Ende der 80er Jahre schwindet allmählich die DDR, die zuvor überall anwesend war und die Gesellschaft bis ins Private durchdrang. Zusehends tauchen andere auf, andere Gesinnungen, freiheitliche, doch auch nazistische. Mimi erlebt dies als Kind, ihre eigene Familie verändert sich, ist plötzlich gespalten. Und der Jugendfreund Mimis, Oliver, nennt sich plötzlich nicht nur Hitler, sondern agiert auch so. Er befehligt die Dorfnazis,
 bis die Situation eskaliert …
 Manja Präkels beschreibt in ihrem Debütroman den Untergang der DDR und den Aufstieg rechter Gruppen in Brandenburg.""" ;
-    sch:genre "Jugendbuch, autobiographischer Roman" ;
+    sch:genre "Autobiographischer Roman",
+        "Jugendbuch" ;
     sch:inLanguage "de" ;
     sch:keywords "Brandenburg",
         "DDR",
@@ -1181,7 +1187,7 @@ Manja Präkels beschreibt in ihrem Debütroman den Untergang der DDR und den Auf
     sch:description """Sarajevo in den Neunzigern: Die Stadt steht unter Beschuss. Wie erlebt ein Kind den Krieg? Das Comictauschen wird durch Granatenhagel erschwert, der Strom zum Computerspielen ist ständig knapp, und die amerikanischen Soldaten lassen sich nur mit gestohlenen Sex-Heftchen zum Basketballspielen überreden. Oft gefährlich, aber vor allem aufregend und niemals langweilig. Der junge Ich-Erzähler möchte bleiben, aber seine Eltern halten es nicht mehr aus und hoffen auf einen Neuanfang in Deutschland.
 
 Nach einer verstörenden Flucht in einem Autobus erreicht der Junge mit seiner Familie Rheinland-Pfalz. Seine neuen Freunde sind Neonazis oder wollen zur Polizei, oder beides. Auch seine Schulfreundin Sarah, mit der er zusammen Gewichte stemmt und erste erotische Erfahrungen sammelt, begegnet ihm Jahre später als Polizistin wieder. Als ein Neonazi ihn bei einem Liebesabenteuer nachts aus dem Bett prügelt, nimmt sie für ihn Rache, und weckt dadurch Gespenster seiner traumatischen Vergangenheit.""" ;
-    sch:genre "autobiographischer Roman" ;
+    sch:genre "Autobiographischer Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "Bosnienkrieg",
         "Neonazi",
@@ -1403,7 +1409,7 @@ Nach einer verstörenden Flucht in einem Autobus erreicht der Junge mit seiner F
     sch:author <https://example.org/rechtsextremismus/Person/a78> ;
     sch:datePublished "2019"^^xsd:gYear ;
     sch:description "Herkunft ist ein Buch über meine Heimaten, in der Erinnerung und der Erfindung. Ein Buch über Sprache, Schwarzarbeit, die Stafette der Jugend und viele Sommer. Den Sommer, als mein Großvater meiner Großmutter beim Tanzen derart auf den Fuß trat, dass ich beinahe nie geboren worden wäre. Den Sommer, als ich fast ertrank. Den Sommer, in dem Angela Merkel die Grenzen öffnen ließ und der dem Sommer ähnlich war, als ich über viele Grenzen nach Deutschland floh. \"Herkunft\"  ist ein Abschied von meiner dementen Großmutter. Während ich Erinnerungen sammle, verliert sie ihre. \"Herkunft\" ist traurig, weil Herkunft für mich zu tun hat mit dem, das nicht mehr zu haben ist.  In \"Herkunft\" sprechen die Toten und die Schlangen, und meine Großtante Zagorka macht sich in die Sowjetunion auf, um Kosmonautin zu werden." ;
-    sch:genre "autobiographischer Roman" ;
+    sch:genre "Autobiographischer Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "Ausgrenzung",
         "Bosnienkrieg",
@@ -1629,7 +1635,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     sch:author <https://example.org/rechtsextremismus/Person/a96> ;
     sch:datePublished "2020"^^xsd:gYear ;
     sch:description "Ich habe mehr Privilegien, als je eine Person in meiner Familie hatte. Und trotzdem bin ich am Arsch. Ich werde von mehr Leuten gehasst, als meine Großmutter es sich vorstellen kann. Am Tag der Bundestagswahl versuche ich ihr mit dieser Behauptung 20 Minuten lang auszureden, eine rechte Partei zu wählen. Eine junge Frau besucht ein Theaterstück über die Wende und ist die einzige schwarze Zuschauerin im Publikum. Mit ihrem Freund sitzt sie an einem Badesee in Brandenburg und sieht vier Neonazis kommen. In New York erlebt sie den Wahlsieg Trumps in einem fremden Hotelzimmer. Wütend und leidenschaftlich schaut sie auf unsere sich rasant verändernde Zeit und erzählt dabei auch die Geschichte ihrer Familie: von ihrer Mutter, die Punkerin in der DDR war und nie die Freiheit hatte, von der sie geträumt hat. Von ihrer Großmutter, deren linientreues Leben ihr Wohlstand und Sicherheit brachte. Und von ihrem Zwillingsbruder, der mit siebzehn ums Leben kam." ;
-    sch:genre "autobiographischer Roman" ;
+    sch:genre "Autobiographischer Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "Brandenburg",
         "DDR",
@@ -1789,7 +1795,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     sch:author <https://example.org/rechtsextremismus/Person/a83> ;
     sch:datePublished "2021"^^xsd:gYear ;
     sch:description "Sankt Petersburg/Ludwigsburg 1992. Ein Mädchen reist mit den Eltern, der Großmutter und ihrem Bruder nach Deutschland aus, in die Freiheit. Was sie dafür zurücklässt, sind ihre geliebte Hündin Asta, die Märchen-Telefonnummer und fast alles, was sie mit Djeduschka, Opa, verbindet - letztlich ihre Kindheit. Im Westen merkt die Elfjährige, dass sie jetzt eine andere und \"die Fremde\" ist. Ein Flüchtlingskind im selbstgeschneiderten Parka, das die Wörter so komisch ausspricht, dass andere lachen. Auch für die Eltern ist es schwer, im Sehnsuchtswesten wächst ihre russische Nostalgie; und die stolze Großmutter, die mal einen Betrieb leitete, ist hier einfach eine alte Frau ohne Sprache. Das erst fremde Deutsch kann dem Mädchen helfen - beim Erwachsenwerden, bei der Eroberung jenes erhofften Lebens. Aber die Vorstellungen, was Freiheit ist, was sie erlaubt, unterscheiden sich zwischen Eltern und Tochter immer mehr. Vor allem, als sie selbst eine Familie gründet und Entscheidungen treffen muss. Ein autobiografischer Roman, der zeigt, dass die Identität gerade im Zwiespalt zwischen Stolz und Scham, Eigensinn und Anpassung, Fremdsein und allem Dazwischen stark wird." ;
-    sch:genre "autobiographischer Roman" ;
+    sch:genre "Autobiographischer Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "Flüchtlinge",
         "Freiheit",
@@ -1941,7 +1947,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     sch:author <https://example.org/rechtsextremismus/Person/a88> ;
     sch:datePublished "2022"^^xsd:gYear ;
     sch:description "Schlesenburg wurde sie genannt, unsere Siedlung am Stadtrand, in der im Sommer 89 die Wohnung der Galówka brannte. Sechzig Familien waren wir, fast allesamt aus Polen. Und plötzlich ging die Angst um, jetzt würden hier bei uns Rumänen oder Russlanddeutsche einziehen. Die halbe Burg schaute mit Abscheu auf das Asylbewerberheim, wo sie alle wohnten, und mit zu viel Stolz darauf, dass man es selber hinter sich gelassen hatte. Es war das Jahr, in dem das neue Mädchen in die Siedlung zog, das Jahr, in dem Darius verschwand, in welchem Mutter nur Konsalik las und ich zu spät begriff, dass Vater mit der ausgebrannten Wohnung seine eigenen Pläne hatte...\" Schlesenburg\" erzählt von Flüchtlingen und ihren Hiergeborenen, von Heimweh und einer neuen Heimat." ;
-    sch:genre "autobiographischer Roman" ;
+    sch:genre "Autobiographischer Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "Aussiedler",
         "Flüchtlinge",
@@ -2335,7 +2341,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     sch:author <https://example.org/rechtsextremismus/Person/a70> ;
     sch:datePublished "2002"^^xsd:gYear ;
     sch:description "Jana Hensel war dreizehn, als die Mauer fiel. Von einem Tag auf den anderen war ihre Kindheit zu Ende. Timurtrupp, Milchgeldkassierer, Korbine Früchtchen oder die \"Trommel\": Die vertrauten Dinge des DDR-Alltags verschwanden gleichsam über Nacht - und ein Abenteuer begann. Plötzlich war überall Westen, die Grenze offen, die Geschichte auch. Von der Freiheit erwischt, machte sich eine ganze Generation daran, das veränderte Land neu zu erkunden." ;
-    sch:genre "autobiographischer Roman" ;
+    sch:genre "Autobiographischer Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "DDR",
         "Freiheit",
@@ -2563,7 +2569,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     sch:author <https://example.org/rechtsextremismus/Person/a110> ;
     sch:datePublished "2022"^^xsd:gYear ;
     sch:description "Vom Austeilen und Auf-die-Fresse-Kriegen: eine Nachwendejugend in Mecklenburg-Vorpommern. Hendrik Bolz, geboren 1988, ist in Stralsund aufgewachsen, im nordöstlichsten Winkel Deutschlands, in einer Welt, die, obwohl das Land längst nicht mehr \"DDR\" heißt, wenig mit dem zu tun hat, was im Westen als Normalität durchgeht. Lediglich das RTL-Nachmittagsprogramm, das im Hintergrund zu hören ist, deutet darauf hin: Es sind dieselben Nullerjahre. Während in den Plattenbauten von Knieper West immer mehr Erwachsene die Suche nach einem Platz im neuen System aufgeben, nehmen Hendrik und seine Freunde die Herausforderung an: Sie finden Auswege aus der Langeweile und Fluchtwege, um keine Prügel zu kassieren. Langsam zerfallen die Frontlinien der Baseballschlägerjahre, an die Stelle der Springerstiefel treten Turnschuhe, die Böhsen Onkelz werden von Aggro Berlin abgelöst, die Optionen bleiben die gleichen: Fressen oder Gefressenwerden. Im Kindergarten, in der Schule und im Fußballverein haben sie gelernt, dass ein großer Junge nicht weint und dass der Klügere nur so lange nachgibt, bis er der Dümmere ist. Nun gilt es, härter zu werden, um, wenn es drauf ankommt, dem anderen die Nase zu brechen. Und stumpfer zu werden, um dabei nicht zu zögern. Die Mittel finden sich - Kraftsport, Drogen, Rap. Und bald sind es neue \"Kleine\", die sich verstecken müssen." ;
-    sch:genre "autobiographischer Roman" ;
+    sch:genre "Autobiographischer Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "Baseballschlägerjahre",
         "DDR",
@@ -2596,7 +2602,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     sch:author <https://example.org/rechtsextremismus/Person/a86> ;
     sch:datePublished "2021"^^xsd:gYear ;
     sch:description "Die Protagonistin, eine Schwarze Ich-Erzählerin, wächst am Rande des Ruhrgebiets auf, in den neunziger Jahren. Zu Hause wütet ein gewalttätiger Stiefvater, in der Schule gibt es wenig Unterstützung, dafür viel Ausgrenzung. Auf einem Kindergeburtstag steht beim Klingelstreich plötzlich ein Neonazi in der Tür. Die Protagonistin weiß, wie es ist, jeden Tag mit dem Schlimmsten zu rechnen, bis das Schlimmste zur Selbstverständlichkeit wird. Wo sich für andere Türen öffnen, schließen sie sich für die Ich-Erzählerin mehr und mehr, bis sie selbst davon überzeugt ist, dass sie der Welt nichts zu bieten hat. Sie gerät in eine gewalttätige Beziehung, zementiert die Abhängigkeit mit zwei Schwangerschaften. Erst als es schon fast zu spät ist, gelingt es ihr, sich und die Kinder zu befreien.Kuhnkes Buch zeigt, wie Rassismus sich in die Seelen der betroffenen Menschen webt." ;
-    sch:genre "autobiographischer Roman" ;
+    sch:genre "Autobiographischer Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "Afrodeutsche",
         "Diskriminierung",
@@ -2707,7 +2713,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     sch:author <https://example.org/rechtsextremismus/Person/a20> ;
     sch:datePublished "2020"^^xsd:gYear ;
     sch:description "Mit Abbildungen. Fünfzig Jahre sind vergangen, seit er als Kind mit seiner Familie nach Dresden gezogen ist, das er 1985 wieder verlassen hat. Nun kehrt Kurt Drawert als Stadtschreiber nach Dresden zurück, wo die Mutter lebt, eine Stadt, die ihm vertraut und doch ganz unvertraut ist. Er ist auf der Suche nach etwas, von dem nur er weiß, dass es ihm fehlt. Die Schönheit und die Wunden dieser Stadt, die Risse in der Familie und in der eigenen Biografie, das schwierige Verhältnis zum Vater und den Brüdern, die politisch aufgeladene Stimmung in Dresden, die offenen Fragen nach Tätern und Opfern, in der großen wie in der persönlichen Geschichte, und die Suche nach einer Sprache dafür, sind Themen und Motive in diesem dichten, autobiografischen Roman." ;
-    sch:genre "autobiographischer Roman" ;
+    sch:genre "Autobiographischer Roman" ;
     sch:inLanguage "de" ;
     sch:keywords "DDR",
         "Dresden",

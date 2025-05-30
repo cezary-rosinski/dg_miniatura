@@ -164,7 +164,8 @@ def add_text(row):
         g.add((text, schema.author, RECH[f"Person/{a.strip()}"]))
     g.add((text, dcterms.publisher, RECH[f"Organization/{row['institution_id']}"]))
     g.add((text, schema.datePublished, Literal(row['year'], datatype=XSD.gYear)))
-    g.add((text, schema.genre, Literal(row['genre'])))
+    for a in row['genre'].split(','):
+        g.add((text, schema.genre, Literal(a.strip())))
     g.add((text, schema.inLanguage, Literal(row['language'])))
     g.add((text, RECH.whichNovel, Literal(row['debut novel/further novel'])))
     g.add((text, schema.about, Literal(row['subject'])))
