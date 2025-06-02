@@ -1,6 +1,6 @@
 import sys
-# sys.path.insert(1, 'D:\IBL\Documents\IBL-PAN-Python')
-sys.path.insert(1, 'C:/Users/Cezary/Documents/IBL-PAN-Python')
+sys.path.insert(1, 'D:\IBL\Documents\IBL-PAN-Python')
+# sys.path.insert(1, 'C:/Users/Cezary/Documents/IBL-PAN-Python')
 import rdflib
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -17,7 +17,7 @@ from plotly.offline import plot
 # 1. Wczytaj graf RDF z pliku Turtle
 g = rdflib.Graph()
 g.parse('rechtsextremismus.ttl', format='ttl')
-
+#%%
 # 2. Zdefiniuj przestrzeń nazw Schema.org
 SCH = rdflib.Namespace('http://schema.org/')
 
@@ -575,7 +575,7 @@ def plot_area_served_distribution(title, about_val):
 for title, about_val in about_values.items():
     plot_area_served_distribution(title, about_val)
 
-#%% 12
+#%% 12 a b c dla miejsc wydania
 
 # 3. Definicja przestrzeni nazw
 SCH = rdflib.Namespace('http://schema.org/')
@@ -608,6 +608,68 @@ for title, about_val in about_values.items():
                     coord = (lat, lon, name)
                     if coord:
                         coords.append(coord)
+
+    # Przygotowanie GeoDataFrame
+    df = pd.DataFrame(coords, columns=['latitude', 'longitude', 'name'])
+    counts = df.groupby(['latitude', 'longitude', 'name']).size().reset_index(name='count')
+    
+    fig = px.scatter_mapbox(
+            counts,
+            lat="latitude",
+            lon="longitude",
+            size="count",
+            hover_name="name",
+            # hover_data=["title"],
+            color_discrete_sequence=["red"],
+            # animation_frame="year_fixed",
+            # animation_group='name',
+            zoom=3.75,
+            center={'lat': 50.076301241046366,
+                    'lon': 14.427848170989792}
+            )
+            
+    fig.update_layout(mapbox_style="open-street-map")
+    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+    plot(fig, auto_open=False, filename=f'data/{title}.html')
+
+#%% 12 d e f dla miejsc urodzenia
+
+# 3. Definicja przestrzeni nazw
+SCH = rdflib.Namespace('http://schema.org/')
+FABIO = rdflib.Namespace('http://purl.org/spar/fabio/')
+geo = rdflib.Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#")
+
+# 4. Lista wartości sch:about
+about_values = {
+    'Generationelle Perspektive': 'rechte Gewalt in generationeller Perspektive',
+    'Intersektionale Perspektive': 'rechte Gewalt in intersektionaler Perspektive',
+    'Andere': 'andere'
+}
+
+# 6. Wczytanie mapy świata
+# world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+world = gpd.read_file(
+    "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json"
+)
+
+# 7. Generowanie map
+for title, about_val in about_values.items():
+    # title = 'Generationelle Perspektive'
+    # about_val = 'rechte Gewalt in generationeller Perspektive'
+    # Zbiór współrzędnych
+    coords = []
+    for text in g.subjects(rdflib.RDF.type, SCH.Text):
+        if str(g.value(text, SCH.about)) == about_val:
+            for author in g.objects(text, SCH.author):
+                birthplace = g.objects(author, SCH.birthPlace)
+                for p in birthplace:
+                    if (p, rdflib.RDF.type, SCH.Place) in g:
+                        lat = float(g.value(p, geo.lat))
+                        lon = float(g.value(p, geo.long))
+                        name = str(g.value(p, SCH.name))
+                        coord = (lat, lon, name)
+                        if coord:
+                            coords.append(coord)
 
     # Przygotowanie GeoDataFrame
     df = pd.DataFrame(coords, columns=['latitude', 'longitude', 'name'])
@@ -710,8 +772,133 @@ def plot_genre_for_novel_type(title, which_val):
 for title, which_val in categories.items():
     plot_genre_for_novel_type(title, which_val.lower())
 
+#%% 14 a
+
+# 2. Definicja przestrzeni nazw
+SCH = rdflib.Namespace('http://schema.org/')
+
+# 3. Zbieranie par (rok, słowo kluczowe)
+data = []
+for text in g.subjects(rdflib.RDF.type, SCH.Text):
+    date_lit = g.value(text, SCH.datePublished)
+    if not date_lit:
+        continue
+    # Parsowanie roku publikacji
+    try:
+        year = int(str(date_lit))
+    except:
+        m = re.search(r'(\d{4})', str(date_lit))
+        if m:
+            year = int(m.group(1))
+        else:
+            continue
+    # Dla każdego tekstu pobranie wszystkich słów kluczowych
+    for kw in g.objects(text, SCH.keywords):
+        data.append({'year': year, 'keyword': str(kw)})
+
+# 4. Utworzenie DataFrame
+df = pd.DataFrame(data)
+if not df.empty:
+    # 5. Wybranie top 10 najczęstszych słów kluczowych
+    top_keywords = df['keyword'].value_counts().head(10).index.tolist()
+    df_top = df[df['keyword'].isin(top_keywords)]
+    
+    # 6. Pivot: wiersz = rok, kolumny = keyword, wartość = liczba wystąpień
+    df_counts = df_top.pivot_table(index='year', columns='keyword', aggfunc='size', fill_value=0)
+    
+    # 7. Upewnienie się, że wszystkie lata są uwzględnione w zakresie
+    all_years = range(df_counts.index.min(), df_counts.index.max() + 1)
+    df_counts = df_counts.reindex(all_years, fill_value=0)
+    
+    # 8. Rysowanie wykresu liniowego
+    plt.figure(figsize=(12, 6))
+    for keyword in top_keywords:
+        plt.plot(df_counts.index, df_counts[keyword], marker='o', label=keyword)
+    
+    plt.xlabel('Rok wydania')
+    plt.ylabel('Liczba wystąpień')
+    plt.title('Rozkład top 10 słów kluczowych na przestrzeni lat (krzywe)')
+    plt.legend(title='Keyword', bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.xticks(df_counts.index, rotation=45)
+    plt.tight_layout()
+    plt.show()
+else:
+    print("Brak danych o słowach kluczowych.")
 
 
+#%% 14b
+
+
+# 2. Przestrzeń nazw
+SCH = rdflib.Namespace('http://schema.org/')
+
+# 3. Zbieranie par (rok, słowo kluczowe)
+data = []
+for text in g.subjects(rdflib.RDF.type, SCH.Text):
+    date_lit = g.value(text, SCH.datePublished)
+    if not date_lit:
+        continue
+    # Parsowanie roku publikacji
+    try:
+        year = int(str(date_lit))
+    except:
+        m = re.search(r'(\d{4})', str(date_lit))
+        if m:
+            year = int(m.group(1))
+        else:
+            continue
+    # Pobranie wszystkich słów kluczowych (może być ich wiele)
+    for kw in g.objects(text, SCH.keywords):
+        data.append({'year': year, 'keyword': str(kw)})
+
+# 4. Utworzenie DataFrame
+df = pd.DataFrame(data)
+if df.empty:
+    print("Brak danych o słowach kluczowych.")
+    exit()
+
+# 5. Obliczenie łącznej liczby wystąpień każdego słowa
+counts_all = df['keyword'].value_counts()
+
+
+# --- B) Wariant: small multiples dla top 10 ---
+top10 = counts_all.head(10).index.tolist()
+df_top10 = df[df['keyword'].isin(top10)]
+
+# Pivot: rok vs. keyword dla top10
+df_counts_top10 = df_top10.pivot_table(
+    index='year',
+    columns='keyword',
+    aggfunc='size',
+    fill_value=0
+)
+all_years2 = range(df_counts_top10.index.min(), df_counts_top10.index.max() + 1)
+df_counts_top10 = df_counts_top10.reindex(all_years2, fill_value=0)
+
+# Uporządkowanie paneli: 2 kolumny × 5 wierszy (dla 10 słów)
+fig, axes = plt.subplots(nrows=5, ncols=2, figsize=(14, 16), sharex=True, sharey=False)
+axes = axes.flatten()
+
+for ax, keyword in zip(axes, top10):
+    ax.plot(
+        df_counts_top10.index,
+        df_counts_top10[keyword],
+        marker='o',
+        color='tab:blue',
+        linewidth=2
+    )
+    ax.set_title(keyword, fontsize=11)
+    ax.set_xticks(df_counts_top10.index)
+    ax.tick_params(axis='x', rotation=90)
+    ax.grid(alpha=0.3)
+
+# Jeśli zostało więcej osi (np. gdy mniej niż 10 słów w danych), ukryj puste
+for i in range(len(top10), len(axes)):
+    axes[i].axis('off')
+
+fig.suptitle('Rozkład top 10 słów kluczowych na osobnych panelach', fontsize=16, y=0.92)
+plt.subplots_adjust(hspace=0.4, wspace=0.3)
+plt.show()
 
 
 
