@@ -54,7 +54,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/zoe-jenny/ein-schnelles-leben.html> ;
     rechtsextremismus:reasonForViolence "andere",
         "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n100> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i39> ;
@@ -87,7 +87,7 @@
         "politisch",
         "subkulturell",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n101> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i14> ;
@@ -113,7 +113,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/jakob-arjouni/cherryman-jagt-mr-white.html> ;
     rechtsextremismus:reasonForViolence "physisch",
         "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n102> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i50> ;
@@ -171,7 +171,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/jakob-arjouni/hausaufgaben.html> ;
     rechtsextremismus:reasonForViolence "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n104> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i12> ;
@@ -242,7 +242,7 @@
         "politisch",
         "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n107> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i35> ;
@@ -286,7 +286,7 @@
     sch:title "Im Land der Wölfe" ;
     owl:sameAs <https://www.perlentaucher.de/buch/elsa-koester/im-land-der-woelfe.html> ;
     rechtsextremismus:reasonForViolence "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n109> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i51> ;
@@ -303,7 +303,7 @@
     sch:title "Die Rassistin" ;
     owl:sameAs <https://www.perlentaucher.de/buch/jana-scheerer/die-rassistin.html> ;
     rechtsextremismus:reasonForViolence "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n11> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i22> ;
@@ -321,7 +321,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/robert-brack/lenina-kaempft.html> ;
     rechtsextremismus:reasonForViolence "andere",
         "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n110> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i48> ;
@@ -341,7 +341,7 @@
     sch:title "Die Nacht, die kein Ende nahm : in der Gewalt von Skins" ;
     rechtsextremismus:reasonForViolence "physisch",
         "subkulturell" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n111> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i28> ;
@@ -359,7 +359,7 @@
     sch:title "Mensch, Nazi" ;
     rechtsextremismus:reasonForViolence "physisch",
         "subkulturell" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n112> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i7> ;
@@ -376,7 +376,7 @@
     rechtsextremismus:reasonForViolence "physisch",
         "politisch",
         "subkulturell" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n113> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i21> ;
@@ -507,7 +507,7 @@
         "rassistisch",
         "subkulturell",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n120> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i53> ;
@@ -529,7 +529,7 @@
         "rassistisch",
         "subkulturell",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n121> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i16> ;
@@ -546,7 +546,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/andreas-goetz/wir-sind-die-wahrheit.html> ;
     rechtsextremismus:reasonForViolence "physisch",
         "subkulturell" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n122> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i6> ;
@@ -581,7 +581,7 @@
     rechtsextremismus:reasonForViolence "politisch",
         "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n124> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i9> ;
@@ -596,7 +596,7 @@
     rechtsextremismus:reasonForViolence "politisch",
         "subkulturell",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n125> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i33> ;
@@ -673,7 +673,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/claudia-klischat-donata-rigg/zeitlang.html> ;
     rechtsextremismus:reasonForViolence "politisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n129> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i56> ;
@@ -690,7 +690,7 @@
     sch:title "VIEWS" ;
     owl:sameAs <https://www.perlentaucher.de/buch/marc-uwe-kling/views.html> ;
     rechtsextremismus:reasonForViolence "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n13> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i14> ;
@@ -713,7 +713,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/yade-kara/selam-berlin.html> ;
     rechtsextremismus:reasonForViolence "andere",
         "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n130> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i41> ;
@@ -730,7 +730,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/kathrin-schrocke/weisse-traenen.html> ;
     rechtsextremismus:reasonForViolence "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n14> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i47> ;
@@ -757,7 +757,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/uwe-tellkamp/der-eisvogel.html> ;
     rechtsextremismus:reasonForViolence "physisch",
         "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n15> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i31> ;
@@ -775,7 +775,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/dietmar-dath/fuer-immer-in-honig.html> ;
     rechtsextremismus:reasonForViolence "andere",
         "subkulturell" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n16> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i49> ;
@@ -794,7 +794,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/max-annas/finsterwalde.html> ;
     rechtsextremismus:reasonForViolence "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n17> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i15> ;
@@ -811,7 +811,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/edgar-hilsenrath/berlin-endstation.html> ;
     rechtsextremismus:reasonForViolence "andere",
         "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n18> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i43> ;
@@ -829,7 +829,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/erwin-riess/der-letzte-wunsch-des-don-pasquale.html> ;
     rechtsextremismus:reasonForViolence "physisch",
         "subkulturell" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n19> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i53> ;
@@ -855,7 +855,7 @@
     rechtsextremismus:reasonForViolence "andere",
         "politisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n2> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i2> ;
@@ -991,7 +991,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/moritz-von-uslar/deutschboden.html> ;
     rechtsextremismus:reasonForViolence "andere",
         "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n25> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i3> ;
@@ -1010,7 +1010,7 @@
     rechtsextremismus:reasonForViolence "physisch",
         "politisch",
         "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n26> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i17> ;
@@ -1049,7 +1049,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/ulrich-ritzel/trotzkis-narr.html> ;
     rechtsextremismus:reasonForViolence "physisch",
         "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n28> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i39> ;
@@ -1076,7 +1076,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/sasa-stanisic/vor-dem-fest.html> ;
     rechtsextremismus:reasonForViolence "andere",
         "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n29> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i25> ;
@@ -1118,7 +1118,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/wolfgang-bortlik/halbe-hosen.html> ;
     rechtsextremismus:reasonForViolence "andere",
         "subkulturell" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n30> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i50> ;
@@ -1180,7 +1180,7 @@
     owl:sameAs <https://www.perlentaucher.de/buch/joachim-lottmann/alles-luege.html> ;
     rechtsextremismus:reasonForViolence "politisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n33> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i57> ;
@@ -1233,7 +1233,7 @@ Manja Präkels beschreibt in ihrem Debütroman den Untergang der DDR und den Auf
     owl:sameAs <https://www.perlentaucher.de/buch/pascal-richmann/ueber-deutschland-ueber-alles.html> ;
     rechtsextremismus:reasonForViolence "politisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n35> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i35> ;
@@ -1354,7 +1354,7 @@ Nach einer verstörenden Flucht in einem Autobus erreicht der Junge mit seiner F
     rechtsextremismus:reasonForViolence "physisch",
         "politisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n4> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i37> ;
@@ -1375,7 +1375,7 @@ Nach einer verstörenden Flucht in einem Autobus erreicht der Junge mit seiner F
     owl:sameAs <https://www.perlentaucher.de/buch/niklaus-stoeckli/die-sechste-posaune.html> ;
     rechtsextremismus:reasonForViolence "physisch",
         "subkulturell" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n40> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i53> ;
@@ -1400,7 +1400,7 @@ Nach einer verstörenden Flucht in einem Autobus erreicht der Junge mit seiner F
     owl:sameAs <https://www.perlentaucher.de/buch/friedrich-ani/all-die-unbewohnten-zimmer.html> ;
     rechtsextremismus:reasonForViolence "physisch",
         "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n41> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i29> ;
@@ -1422,7 +1422,7 @@ Nach einer verstörenden Flucht in einem Autobus erreicht der Junge mit seiner F
     rechtsextremismus:reasonForViolence "andere",
         "politisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n42> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i57> ;
@@ -1443,7 +1443,7 @@ Nach einer verstörenden Flucht in einem Autobus erreicht der Junge mit seiner F
     sch:title "Ich bin Özlem" ;
     owl:sameAs <https://www.perlentaucher.de/buch/dilek-guengoer/ich-bin-oezlem.html> ;
     rechtsextremismus:reasonForViolence "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n43> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i49> ;
@@ -1467,7 +1467,7 @@ Nach einer verstörenden Flucht in einem Autobus erreicht der Junge mit seiner F
     owl:sameAs <https://www.perlentaucher.de/buch/max-annas/morduntersuchungskommission.html> ;
     rechtsextremismus:reasonForViolence "physisch",
         "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n44> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i39> ;
@@ -1510,7 +1510,7 @@ Eigenem und Fremden" wieder die Menschen klassifizieren.""" ;
     owl:sameAs <https://www.perlentaucher.de/buch/sasa-stanisic/herkunft.html> ;
     rechtsextremismus:reasonForViolence "politisch",
         "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n45> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i30> ;
@@ -1558,7 +1558,7 @@ Eigenem und Fremden" wieder die Menschen klassifizieren.""" ;
     owl:sameAs <https://www.perlentaucher.de/buch/pia-klemp/lass-uns-mit-den-toten-tanzen.html> ;
     rechtsextremismus:reasonForViolence "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n47> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i36> ;
@@ -1581,7 +1581,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     owl:sameAs <https://www.perlentaucher.de/buch/joerg-uwe-albig/zornfried.html> ;
     rechtsextremismus:reasonForViolence "politisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n48> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i59> ;
@@ -1636,7 +1636,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     owl:sameAs <https://www.perlentaucher.de/buch/lutz-seiler/stern-111.html> ;
     rechtsextremismus:reasonForViolence "physisch",
         "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n5> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i26> ;
@@ -1660,7 +1660,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     rechtsextremismus:reasonForViolence "andere",
         "politisch",
         "subkulturell" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n50> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i12> ;
@@ -1847,7 +1847,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     owl:sameAs <https://www.perlentaucher.de/buch/juli-zeh/ueber-menschen.html> ;
     rechtsextremismus:reasonForViolence "politisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n58> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i14> ;
@@ -1869,7 +1869,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     sch:title "Die Enkelin" ;
     owl:sameAs <https://www.perlentaucher.de/buch/bernhard-schlink/die-enkelin.html> ;
     rechtsextremismus:reasonForViolence "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n59> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i47> ;
@@ -1890,7 +1890,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     owl:sameAs <https://www.perlentaucher.de/buch/lena-gorelik/wer-wir-sind.html> ;
     rechtsextremismus:reasonForViolence "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n6> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i54> ;
@@ -1917,7 +1917,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
         "rassistisch",
         "subkulturell",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n60> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i8> ;
@@ -1993,7 +1993,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     rechtsextremismus:reasonForViolence "rassistisch",
         "sexuell",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n63> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i53> ;
@@ -2027,7 +2027,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     rechtsextremismus:reasonForViolence "physisch",
         "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n64> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i10> ;
@@ -2065,7 +2065,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     sch:title "Jahre mit Martha" ;
     owl:sameAs <https://www.perlentaucher.de/buch/martin-kordic/jahre-mit-martha.html> ;
     rechtsextremismus:reasonForViolence "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n66> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i12> ;
@@ -2096,7 +2096,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
         "rassistisch",
         "sexuell",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n67> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i44> ;
@@ -2117,7 +2117,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     rechtsextremismus:reasonForViolence "physisch",
         "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n68> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i39> ;
@@ -2148,7 +2148,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     owl:sameAs <https://www.perlentaucher.de/buch/simon-urban-juli-zeh/zwischen-welten.html> ;
     rechtsextremismus:reasonForViolence "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n69> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i50> ;
@@ -2186,7 +2186,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     rechtsextremismus:reasonForViolence "physisch",
         "politisch",
         "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n70> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i13> ;
@@ -2232,7 +2232,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     sch:title "Die Heimat" ;
     owl:sameAs <https://www.perlentaucher.de/buch/andreas-maier/die-heimat.html> ;
     rechtsextremismus:reasonForViolence "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n72> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i11> ;
@@ -2303,7 +2303,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     rechtsextremismus:reasonForViolence "physisch",
         "rassistisch",
         "subkulturell" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n75> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i56> ;
@@ -2327,7 +2327,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     sch:title "Zeitlang" ;
     owl:sameAs <https://www.perlentaucher.de/buch/claudia-klischat-donata-rigg/zeitlang.html> ;
     rechtsextremismus:reasonForViolence "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n76> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i27> ;
@@ -2349,7 +2349,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     rechtsextremismus:reasonForViolence "physisch",
         "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n77> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i4> ;
@@ -2372,7 +2372,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     owl:sameAs <https://www.perlentaucher.de/buch/cemile-sahin/kommando-ajax.html> ;
     rechtsextremismus:reasonForViolence "physisch",
         "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n78> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i11> ;
@@ -2406,7 +2406,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     rechtsextremismus:reasonForViolence "politisch",
         "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n79> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i32> ;
@@ -2438,7 +2438,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     rechtsextremismus:reasonForViolence "physisch",
         "politisch",
         "subkulturell" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n8> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i49> ;
@@ -2493,7 +2493,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     rechtsextremismus:reasonForViolence "andere",
         "politisch",
         "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n81> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i50> ;
@@ -2527,7 +2527,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     sch:title "Die Projektoren" ;
     owl:sameAs <https://www.perlentaucher.de/buch/clemens-meyer/die-projektoren.html> ;
     rechtsextremismus:reasonForViolence "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n82> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i50> ;
@@ -2554,7 +2554,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     owl:sameAs <https://www.perlentaucher.de/buch/kathrin-roeggla/laufendes-verfahren.html> ;
     rechtsextremismus:reasonForViolence "physisch",
         "rassistisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n83> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i19> ;
@@ -2772,7 +2772,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
         "politisch",
         "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n9> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i52> ;
@@ -2801,7 +2801,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     rechtsextremismus:reasonForViolence "andere",
         "politisch",
         "subkulturell" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n90> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i35> ;
@@ -2847,7 +2847,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     owl:sameAs <https://www.perlentaucher.de/buch/kurt-drawert/dresden.html> ;
     rechtsextremismus:reasonForViolence "politisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n92> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i53> ;
@@ -2913,7 +2913,7 @@ Jan Brock ist freier Reporter und schreibt für das Feuilleton der Frankfurter N
     rechtsextremismus:reasonForViolence "physisch",
         "politisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n94> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i44> ;
@@ -3006,7 +3006,7 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     owl:sameAs <https://www.perlentaucher.de/buch/juli-zeh/unterleuten.html> ;
     rechtsextremismus:reasonForViolence "andere",
         "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n97> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i20> ;
@@ -3027,7 +3027,7 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     owl:sameAs <https://www.perlentaucher.de/buch/oliver-bottini/im-weissen-kreis.html> ;
     rechtsextremismus:reasonForViolence "physisch",
         "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n98> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i33> ;
@@ -3049,7 +3049,7 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
         "politisch",
         "rassistisch",
         "verbal" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Text/n99> a sch:Text ;
     dcterms:publisher <https://example.org/rechtsextremismus/Organization/i42> ;
@@ -3072,7 +3072,7 @@ Philipp und Tobias wachsen in der Provinz Sachsens auf. Im Sommer flirrt hier di
     owl:sameAs <https://www.perlentaucher.de/buch/hans-ulrich-joerges/der-kobaltkanzler.html> ;
     rechtsextremismus:reasonForViolence "andere",
         "politisch" ;
-    rechtsextremismus:whichNovel "weiterer Roman" .
+    rechtsextremismus:whichNovel "Folgeroman" .
 
 <https://example.org/rechtsextremismus/Organization/i1> a sch:Organization ;
     sch:areaServed "lokal/unabhängig" ;
