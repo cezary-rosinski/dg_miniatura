@@ -1,6 +1,6 @@
 import sys
-# sys.path.insert(1, 'D:\IBL\Documents\IBL-PAN-Python')
-sys.path.insert(1, 'C:/Users/Cezary/Documents/IBL-PAN-Python')
+sys.path.insert(1, 'D:\IBL\Documents\IBL-PAN-Python')
+# sys.path.insert(1, 'C:/Users/Cezary/Documents/IBL-PAN-Python')
 import pandas as pd
 from rdflib import Graph, Namespace, URIRef, Literal, BNode
 from rdflib.namespace import RDF, RDFS, XSD, FOAF, OWL
@@ -168,16 +168,16 @@ def add_text(row):
         g.add((text, schema.genre, Literal(a.strip())))
     g.add((text, schema.inLanguage, Literal(row['language'])))
     g.add((text, RECH.whichNovel, Literal(row['debut novel/further novel'])))
-    g.add((text, schema.about, Literal(row['subject'])))
+    g.add((text, RECH.perspective, Literal(row['subject'])))
     if pd.notnull(row["place_id"]):
         for p in row['place_id'].split(';'):
             g.add((text, FABIO.hasPlaceOfPublication, RECH[f"Place/{p}"]))
     if pd.notnull(row['reason for violence']):
         for rfv in row['reason for violence'].split(','):
-            g.add((text, RECH.reasonForViolence, Literal(rfv.strip())))
+            g.add((text, RECH.contextOfViolence, Literal(rfv.strip())))
     if pd.notnull(row['art of violence']):
         for afv in row['art of violence'].split(','):
-            g.add((text, RECH.reasonForViolence, Literal(afv.strip())))
+            g.add((text, RECH.formOfViolence, Literal(afv.strip())))
     if pd.notnull(row['klappentext']):
         g.add((text, schema.description, Literal(row['klappentext'])))
     if pd.notnull(row['rezensionsnotiz']):
