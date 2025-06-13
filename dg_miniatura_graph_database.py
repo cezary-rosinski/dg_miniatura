@@ -166,9 +166,13 @@ def add_text(row):
     g.add((text, schema.datePublished, Literal(row['year'], datatype=XSD.gYear)))
     for a in row['genre'].split(','):
         g.add((text, schema.genre, Literal(a.strip())))
+    if pd.notnull(row['subgenre']):
+        for a in row['subgenre'].split(','):
+            g.add((text, RECH.subgenre, Literal(a.strip())))
     g.add((text, schema.inLanguage, Literal(row['language'])))
     g.add((text, RECH.whichNovel, Literal(row['debut novel/further novel'])))
-    g.add((text, RECH.perspective, Literal(row['subject'])))
+    for s in row['subject'].split(','):
+        g.add((text, RECH.perspective, Literal(s.strip())))
     if pd.notnull(row["place_id"]):
         for p in row['place_id'].split(';'):
             g.add((text, FABIO.hasPlaceOfPublication, RECH[f"Place/{p}"]))

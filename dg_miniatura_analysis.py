@@ -13,19 +13,21 @@ from shapely.geometry import Point
 import plotly.express as px
 from plotly.offline import plot
 
-#%% 1
+#%%
 # 1. Wczytaj graf RDF z pliku Turtle
 g = rdflib.Graph()
 g.parse('rechtsextremismus.ttl', format='ttl')
-#%%
+#%% 1
 # 2. Zdefiniuj przestrzeń nazw Schema.org
+ns_map = dict(g.namespaces())
 SCH = rdflib.Namespace('http://schema.org/')
+RE = rdflib.Namespace(ns_map.get('rechtsextremismus'))
 
 # 3. Ekstrakcja danych: rok publikacji oraz wartość sch:about
 records = []
 for text in g.subjects(rdflib.RDF.type, SCH.Text):
     year_lit = g.value(text, SCH.datePublished)
-    about_lit = g.value(text, SCH.about)
+    about_lit = g.value(text, RE.perspective)
     if year_lit and about_lit:
         year = int(str(year_lit))
         about = str(about_lit)
@@ -33,7 +35,7 @@ for text in g.subjects(rdflib.RDF.type, SCH.Text):
         if about in [
             'rechte Gewalt in generationeller Perspektive',
             'rechte Gewalt in intersektionaler Perspektive',
-            'andere'
+            'sonstige'
         ]:
             records.append({'year': year, 'about': about})
 
@@ -62,7 +64,7 @@ df_counts.plot(
 
 plt.xlabel('Jahr der Ausgabe', fontsize=12)
 plt.ylabel('Anzahl der Bücher', fontsize=12)
-plt.title('Anzahl der Bücher pro Jahr nach Kategorie der rechten Gewalt', fontsize=14)
+plt.title('Anzahl der Bücher zum Thema rechte Gewalt pro Jahr je nach Perspektive', fontsize=14)
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
@@ -83,7 +85,7 @@ target_about = 'rechte Gewalt in intersektionaler Perspektive'
 backgrounds = []
 
 for text in g.subjects(rdflib.RDF.type, SCH.Text):
-    about_val = g.value(text, SCH.about)
+    about_val = g.value(text, RE.perspective)
     if about_val and str(about_val) == target_about:
         # Dla każdego takiego Text pobierzemy autorów (sch:author)
         for author in g.objects(text, SCH.author):
@@ -102,7 +104,7 @@ counts = df_bg.value_counts()
 plt.figure(figsize=(8, 8))
 counts.plot(kind='pie', autopct='%1.f%%', startangle=90)
 plt.ylabel('')  # usuń etykietę osi Y
-plt.title('Verteilung des historischen Hintergrunds von Autoren, \ndie über rechte Gewalt in intersektionaler Perspektive schreiben')
+plt.title('Historischer Hintergrunds von Autoren, \ndie über rechte Gewalt in intersektionaler Perspektive schreiben')
 plt.tight_layout()
 plt.show()
 
@@ -112,7 +114,7 @@ target_about = 'rechte Gewalt in generationeller Perspektive'
 backgrounds = []
 
 for text in g.subjects(rdflib.RDF.type, SCH.Text):
-    about_val = g.value(text, SCH.about)
+    about_val = g.value(text, RE.perspective)
     if about_val and str(about_val) == target_about:
         # Dla każdego takiego Text pobierzemy autorów (sch:author)
         for author in g.objects(text, SCH.author):
@@ -131,7 +133,7 @@ counts = df_bg.value_counts()
 plt.figure(figsize=(8, 8))
 counts.plot(kind='pie', autopct='%1.f%%', startangle=90)
 plt.ylabel('')  # usuń etykietę osi Y
-plt.title('Verteilung des historischen Hintergrunds von Autoren, \ndie über rechte Gewalt in generationeller Perspektive schreiben')
+plt.title('Historischer Hintergrunds von Autoren, \ndie über rechte Gewalt in generationeller Perspektive schreiben')
 plt.tight_layout()
 plt.show()
 
@@ -147,7 +149,7 @@ target_about = 'rechte Gewalt in intersektionaler Perspektive'
 rows = []
 
 for text in g.subjects(rdflib.RDF.type, SCH.Text):
-    if str(g.value(text, SCH.about)) == target_about:
+    if str(g.value(text, RE.perspective)) == target_about:
         for author in g.objects(text, SCH.author):
             if (author, rdflib.RDF.type, SCH.Person) in g:
                 uri = str(author)
@@ -174,7 +176,7 @@ target_about = 'rechte Gewalt in generationeller Perspektive'
 rows = []
 
 for text in g.subjects(rdflib.RDF.type, SCH.Text):
-    if str(g.value(text, SCH.about)) == target_about:
+    if str(g.value(text, RE.perspective)) == target_about:
         for author in g.objects(text, SCH.author):
             if (author, rdflib.RDF.type, SCH.Person) in g:
                 uri = str(author)
@@ -203,7 +205,7 @@ about2 = 'rechte Gewalt in generationeller Perspektive'
 # 4. Zbudowanie mapy autora -> zestaw kategorii jego tekstów
 author_categories = {}
 for text in g.subjects(rdflib.RDF.type, SCH.Text):
-    about_val = g.value(text, SCH.about)
+    about_val = g.value(text, RE.perspective)
     if about_val and str(about_val) in {about1, about2}:
         for author in g.objects(text, SCH.author):
             if (author, rdflib.RDF.type, SCH.Person) in g:
@@ -236,16 +238,17 @@ RE = rdflib.Namespace(ns_map.get('rechtsextremismus'))
 
 # 3. Mapa tytułów i wartości sch:about
 categories = {
-    'Generationelle Perspektive': 'rechte Gewalt in generationeller Perspektive',
-    'Intersektionale Perspektive': 'rechte Gewalt in intersektionaler Perspektive'
+    'rechter Gewalt in generationeller Perspektive': 'rechte Gewalt in generationeller Perspektive',
+    'rechter Gewalt in intersektionaler Perspektive': 'rechte Gewalt in intersektionaler Perspektive',
+    'rechter Gewalt in sonstiger Perspektive': 'sonstige'
 }
 
 def plot_donut_connectors(title, about_val):
     # Zbieranie wszystkich wartości reasonForViolence (wielokrotne dopuszczalne)
     reasons = []
     for text in g.subjects(rdflib.RDF.type, SCH.Text):
-        if str(g.value(text, SCH.about)) == about_val:
-            reasons.extend(str(r) for r in g.objects(text, RE.reasonForViolence))
+        if str(g.value(text, RE.perspective)) == about_val:
+            reasons.extend(str(r) for r in g.objects(text, RE.contextOfViolence))
 
     # Obliczenie udziału procentowego każdej kategorii
     series = pd.Series(reasons, name='reason')
@@ -279,7 +282,7 @@ def plot_donut_connectors(title, about_val):
         # Punkt przy zewnętrznej krawędzi
         if label == 'sexuell':
             mid = (x * radius, y * radius + 0.3)
-        elif label == 'andere' and title == 'Generationelle Perspektive':
+        elif label == 'andere' and title == 'rechter Gewalt in generationeller Perspektive':
             mid = (x * radius, y * radius + 0.55)
         else: mid = (x * radius, y * radius + 0.2)
 
@@ -299,7 +302,7 @@ def plot_donut_connectors(title, about_val):
         ax.text(end[0], end[1] + 0.03, label, ha=ha, va='bottom', fontsize=9, color='black')
         ax.text(end[0], end[1] - 0.03, f"{pct:.1f}%", ha=ha, va='top', fontsize=9, color='black')
 
-    ax.set_title(f'Die Verteilung der Gründe für Gewalt in Büchern \nzum {about_val}', fontsize=12, pad=15)
+    ax.set_title(f'Ideologische Kontexte von Gewalt in Romanen\nzu {title}', fontsize=12, pad=15)
     ax.axis('equal')
     plt.tight_layout()
     plt.show()
@@ -308,7 +311,7 @@ def plot_donut_connectors(title, about_val):
 for title, val in categories.items():
     plot_donut_connectors(title, val)
 
-#%% 8a
+#%% 8a1 oldest
 
 # 2. Definicja przestrzeni nazw
 SCH = rdflib.Namespace('http://schema.org/')
@@ -379,18 +382,90 @@ df = pd.DataFrame(rows, columns=[
     'Award Name', 'Award URI', 'Award Year',
     'Oldest Book Title', 'Oldest Book URI', 'Oldest Book Year'
 ])
+df['award after last book'] = df[['Award Year', 'Oldest Book Year']].apply(lambda x: x['Award Year'] >= x['Oldest Book Year'], axis=1)
 
-print(df.to_markdown(index=False))
+#%% 8a2 earliest
+
+# 2. Definicja przestrzeni nazw
+SCH = rdflib.Namespace('http://schema.org/')
+
+# Pomocnicza funkcja do wydobywania roku z literału
+def extract_year(literal):
+    try:
+        # Parsowanie daty ISO
+        return parser.parse(str(literal)).year
+    except:
+        # Wyciągnięcie pierwszego czterocyfrowego ciągu
+        m = re.search(r'(\d{4})', str(literal))
+        return int(m.group(1)) if m else None
+
+rows = []
+
+# 3. Iteracja po wszystkich osobach
+for person in g.subjects(rdflib.RDF.type, SCH.Person):
+    person_name = g.value(person, SCH.name)
+    person_uri  = str(person)
+    
+    # 4. Zbieranie wszystkich książek danej osoby z datą publikacji
+    texts = []
+    for text in g.subjects(SCH.author, person):
+        date_lit = g.value(text, SCH.datePublished)
+        year = extract_year(date_lit) if date_lit else None
+        if year:
+            texts.append((text, year))
+    
+    # Pomijamy osoby bez książek
+    if not texts:
+        continue
+    
+    # 5. Wybór najstarszej książki
+    oldest_text, oldest_year = max(texts, key=lambda x: x[1])
+    book_title = g.value(oldest_text, SCH.title)
+    book_uri   = str(oldest_text)
+    
+    # 6. Iteracja po nagrodach danej osoby
+    for award in g.objects(person, SCH.award):
+        award_name = g.value(award, SCH.name)
+        award_uri  = str(award)
+        award_year = None
+        
+        # Przeszukanie wszystkich literałów nagrody w poszukiwaniu roku
+        for _, lit in g.predicate_objects(award):
+            if isinstance(lit, rdflib.Literal):
+                y = extract_year(lit)
+                if y:
+                    award_year = y
+                    break
+        
+        # 7. Dodanie wiersza do wyników
+        rows.append({
+            'Person Name':        str(person_name) if person_name else None,
+            'Person URI':         person_uri,
+            'Award Name':         str(award_name)  if award_name  else None,
+            'Award URI':          award_uri,
+            'Award Year':         award_year,
+            'Earliest Book Title':  str(book_title)  if book_title  else None,
+            'Earliest Book URI':    book_uri,
+            'Earliest Book Year':   oldest_year
+        })
+
+# 8. Utworzenie i wyświetlenie DataFrame
+df = pd.DataFrame(rows, columns=[
+    'Person Name', 'Person URI',
+    'Award Name', 'Award URI', 'Award Year',
+    'Earliest Book Title', 'Earliest Book URI', 'Earliest Book Year'
+])
+df['award after last book'] = df[['Award Year', 'Earliest Book Year']].apply(lambda x: x['Award Year'] >= x['Earliest Book Year'], axis=1)
 
 #%% 8b
 
-oldest = gsheet_to_df('12GU4iIth0yL2cff1s2cUP6yrTmbCPZlNsGxQye84qE8', 'oldest book')
+oldest = gsheet_to_df('19QzjsEqhp9baG1EmWTrg8A8VR1dUhJExyWSWJDvyd6Q', 'oldest book')
 # oldest = oldest.loc[oldest['award after last book'] == 'True']
-earliest = gsheet_to_df('12GU4iIth0yL2cff1s2cUP6yrTmbCPZlNsGxQye84qE8', 'earliest book')
+earliest = gsheet_to_df('19QzjsEqhp9baG1EmWTrg8A8VR1dUhJExyWSWJDvyd6Q', 'earliest book')
 # earliest = earliest.loc[earliest['award after first book'] == 'True']
 # 1. Wczytanie pliku Excel ze wszystkimi arkuszami
-sheets = {'Oldest': oldest,
-          'Earliest': earliest}
+sheets = {'letzten': oldest,
+          'ersten': earliest}
 
 # 2. Przetwarzanie każdego arkusza
 for sheet_name, df in sheets.items():
@@ -409,13 +484,13 @@ for sheet_name, df in sheets.items():
     # 3. Wykres słupkowy
     plt.figure(figsize=(10, 6))
     counts.plot(kind='bar')
-    plt.xlabel('Osoba')
-    plt.ylabel('Liczba nagród')
-    plt.title(f'Top 20 osób z największą liczbą nagród (arkusz: {sheet_name})')
+    plt.xlabel('Person')
+    plt.ylabel('Anzahl der Preise')
+    plt.title(f'Autor:innen mit den meisten Preisverleihungen seit der Veröffentlichung des {sheet_name} in der Datenbank verzeichneten Romans')
     plt.xticks(rotation=90, ha='center')
     plt.tight_layout()
     plt.show()
-
+    
 #%% 9
 
 # 2. Przestrzeń nazw
@@ -428,7 +503,7 @@ for text in g.subjects(rdflib.RDF.type, SCH.Text):
         genres.append(str(genre))
 
 # 4. Obliczamy udziały procentowe
-series = pd.Series(genres, name='genre')
+series = pd.Series(genres, name='Literarische Gattungen')
 counts = series.value_counts()
 percentages = counts / counts.sum() * 100
 
@@ -437,8 +512,8 @@ plt.figure(figsize=(8, max(6, 0.3 * len(percentages))))
 percentages.sort_values().plot(
     kind='barh'
 )
-plt.xlabel('Udział (%)')
-plt.title('Anteil der Arten an der Basis')
+plt.xlabel('Anteil (%)')
+plt.title('Literarische Gattungen von Romanen zu rechter Gewalt, die in der Datenbank verzeichnet sind')
 plt.tight_layout()
 plt.show()
 
@@ -449,9 +524,9 @@ SCH = rdflib.Namespace('http://schema.org/')
 
 # 3. Lista trzech wartości sch:about
 about_values = {
-    'Generationelle Perspektive': 'rechte Gewalt in generationeller Perspektive',
-    'Intersektionale Perspektive': 'rechte Gewalt in intersektionaler Perspektive',
-    'Andere': 'andere'
+    'Literarische Gattungen von Romanen zu rechter Gewalt in generationeller Perspektive': 'rechte Gewalt in generationeller Perspektive',
+    'Literarische Gattungen von Romanen zu rechter Gewalt in intersektionaler Perspektive': 'rechte Gewalt in intersektionaler Perspektive',
+    'Literarische Gattungen von Romanen zu rechter Gewalt ohne generationelle oder intersektionale Perspektive': 'sonstige'
 }
 
 # 4. Parametry wykresu typu "donut"
@@ -464,7 +539,7 @@ def plot_genre_donut(title, about_val):
     # Zbiór wszystkich gatunków dla tekstów o danym sch:about
     genres = []
     for text in g.subjects(rdflib.RDF.type, SCH.Text):
-        if str(g.value(text, SCH.about)) == about_val:
+        if str(g.value(text, RE.perspective)) == about_val:
             for genre in g.objects(text, SCH.genre):
                 genres.append(str(genre))
     if not genres:
@@ -496,9 +571,9 @@ def plot_genre_donut(title, about_val):
         start = (x * start_r, y * start_r)
 
         # mid: na zewnętrznej krawędzi
-        if title == 'Andere' and label not in ['Autobiographischer Roman', 'Kriminalroman']:
-            mid = (x * radius, y * radius + (i/4))
-        elif title == 'Generationelle Perspektive' and label not in ['Autobiographischer Roman', 'Kriminalroman', 'Jugendbuch']:
+        if title == 'Literarische Gattungen von Romanen zu rechter Gewalt ohne generationelle oder intersektionale Perspektive' and label not in ['Autobiographischer Roman', 'Kriminalroman']:
+            mid = (x * radius, y * radius + (i/15))
+        elif title == 'Literarische Gattungen von Romanen zu rechter Gewalt in generationeller Perspektive' and label not in ['Autobiographischer Roman', 'Kriminalroman', 'Jugendbuch']:
             mid = (x * radius, y * radius + (i/8))
         else: mid = (x * radius, y * radius)
 
@@ -515,7 +590,7 @@ def plot_genre_donut(title, about_val):
         # procent
         ax.text(end[0], end[1] - 0.02, f"{pct:.1f}%", ha=ha, va='top', fontsize=9, color='black')
 
-    ax.set_title(f'Beitrag von Büchern zum Thema: \n{about_val}', fontsize=12, pad=15)
+    ax.set_title(title, fontsize=12, pad=15)
     ax.axis('equal')
     plt.tight_layout()
     plt.show()
@@ -532,16 +607,16 @@ DCT = rdflib.Namespace('http://purl.org/dc/terms/')
 
 # 3. Trzy wartości sch:about i ich opisy
 about_values = {
-    'Generationelle Perspektive': 'rechte Gewalt in generationeller Perspektive',
-    'Intersektionale Perspektive': 'rechte Gewalt in intersektionaler Perspektive',
-    'Andere': 'andere'
+    'Verlage, die Prosa zu rechter Gewalt \nin generationeller Perspektive veröffentlichen': 'rechte Gewalt in generationeller Perspektive',
+    'Verlage, die Prosa zu rechter Gewalt \nin intersektionaler Perspektiv veröffentlichen': 'rechte Gewalt in intersektionaler Perspektive',
+    'Verlage, die Prosa zu rechter Gewalt in einer anderen \nals generationelle oder intersektionale Perspektive veröffentlichen': 'sonstige'
 }
 
 def plot_area_served_distribution(title, about_val):
     # Zbiór areaServed dla wydawnictw tekstów o danym sch:about
     areas = []
     for text in g.subjects(rdflib.RDF.type, SCH.Text):
-        if str(g.value(text, SCH.about)) == about_val:
+        if str(g.value(text, RE.perspective)) == about_val:
             for pub in g.objects(text, DCT.publisher):
                 # Sprawdzamy, czy to Organization
                 if (pub, rdflib.RDF.type, SCH.Organization) in g:
@@ -566,7 +641,7 @@ def plot_area_served_distribution(title, about_val):
         labeldistance=1.1,
         wedgeprops=dict(edgecolor='white')
     )
-    plt.title(f'Beteiligung von Verlagsbereichen für das Thema: \n{about_val}', pad=10)
+    plt.title(title, pad=10)
     plt.axis('equal')
     plt.tight_layout()
     plt.show()
@@ -584,13 +659,15 @@ geo = rdflib.Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#")
 
 # 4. Lista wartości sch:about
 about_values = {
-    'Generationelle Perspektive': 'rechte Gewalt in generationeller Perspektive',
-    'Intersektionale Perspektive': 'rechte Gewalt in intersektionaler Perspektive',
-    'Andere': 'andere'
+    'Veröffentlichungsort von Romanen zu rechten Gewalt in einer anderen als generationelle oder intersektionale Perspektive': 'sonstige',
+    'Veröffentlichungsort von Romanen zu rechter Gewalt in generationeller Perspektive': 'rechte Gewalt in generationeller Perspektive',
+    'Veröffentlichungsort von Romanen zu rechter Gewalt in intersektionaler Perspektive': 'rechte Gewalt in intersektionaler Perspektive'
 }
 
 # 6. Wczytanie mapy świata
-world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+world = gpd.read_file(
+    "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json"
+)
 
 # 7. Generowanie map
 for title, about_val in about_values.items():
@@ -599,7 +676,7 @@ for title, about_val in about_values.items():
     # Zbiór współrzędnych
     coords = []
     for text in g.subjects(rdflib.RDF.type, SCH.Text):
-        if str(g.value(text, SCH.about)) == about_val:
+        if str(g.value(text, RE.perspective)) == about_val:
             for place in g.objects(text, FABIO.hasPlaceOfPublication):
                 if (place, rdflib.RDF.type, SCH.Place) in g:
                     lat = float(g.value(place, geo.lat))
@@ -641,9 +718,9 @@ geo = rdflib.Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#")
 
 # 4. Lista wartości sch:about
 about_values = {
-    'Generationelle Perspektive': 'rechte Gewalt in generationeller Perspektive',
-    'Intersektionale Perspektive': 'rechte Gewalt in intersektionaler Perspektive',
-    'Andere': 'andere'
+    'Geburtsort von Autor_innen von Romanen zu rechter Gewalt in einer anderen als generationelle oder intersektionale Perspektive': 'sonstige',
+    'Geburtsort von Autor_innen von Romanen zu rechter Gewalt in generationeller Perspektive': 'rechte Gewalt in generationeller Perspektive',
+    'Geburtsort von Autor_innen von Romanen zu rechter Gewalt in intersektionaler Perspektive': 'rechte Gewalt in intersektionaler Perspektive'
 }
 
 # 6. Wczytanie mapy świata
@@ -659,7 +736,7 @@ for title, about_val in about_values.items():
     # Zbiór współrzędnych
     coords = []
     for text in g.subjects(rdflib.RDF.type, SCH.Text):
-        if str(g.value(text, SCH.about)) == about_val:
+        if str(g.value(text, RE.perspective)) == about_val:
             for author in g.objects(text, SCH.author):
                 birthplace = g.objects(author, SCH.birthPlace)
                 for p in birthplace:
@@ -704,7 +781,7 @@ RE = rdflib.Namespace(ns_map.get('rechtsextremismus'))
 # 3. Zebranie wartości rechtsextremismus:whichNovel dla każdego Text
 novels = []
 for text in g.subjects(rdflib.RDF.type, SCH.Text):
-    if pd.notnull(g.objects(text, SCH.about)):
+    if pd.notnull(g.objects(text, RE.perspective)):
         for novel in g.objects(text, RE.whichNovel):
             if str(novel) != 'nan':
                 novels.append(str(novel))
@@ -724,7 +801,7 @@ plt.pie(
     labeldistance=1.1,
     wedgeprops=dict(edgecolor='white')
 )
-plt.title('Aufschlüsselung von Debüt- und Folgeroman', size=20)
+plt.title('Die in der Datenbank verzeichneten \nDebütromane und Folgeromane zu rechter Gewalt', size=20)
 plt.axis('equal')
 plt.tight_layout()
 plt.show()
@@ -738,8 +815,8 @@ RE = rdflib.Namespace(ns_map.get('rechtsextremismus'))
 
 # 3. Definicja dwóch kategorii whichNovel
 categories = {
-    'Debütroman': 'Debütroman',  
-    'weiterer Roman': 'weiterer Roman'
+    'Literarische Gattungen von Debütromanen zu rechter Gewalt': 'Debütroman',  
+    'Literarische Gattungen von Folgeromanen zu rechter Gewalt': 'Folgeroman'
 }
 
 # 4. Funkcja rysująca wykres kołowy rozkładu gatunków dla danej kategorii whichNovel
@@ -817,7 +894,7 @@ if not df.empty:
     
     plt.xlabel('Rok wydania')
     plt.ylabel('Liczba wystąpień')
-    plt.title('Rozkład top 10 słów kluczowych na przestrzeni lat (krzywe)')
+    plt.title('Die zehn populärsten Schlüsselwörter in Romanen zu rechter Gewalt in den Jahren 1990-2025')
     plt.legend(title='Keyword', bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.xticks(df_counts.index, rotation=45)
     plt.tight_layout()
@@ -896,9 +973,61 @@ for ax, keyword in zip(axes, top10):
 for i in range(len(top10), len(axes)):
     axes[i].axis('off')
 
-fig.suptitle('Rozkład top 10 słów kluczowych na osobnych panelach', fontsize=16, y=0.92)
+fig.suptitle('Die zehn populärsten Schlüsselwörter in Romanen zu rechter Gewalt in den Jahren 1990-2025, einzeln dargestellt', fontsize=16, y=0.92)
 plt.subplots_adjust(hspace=0.4, wspace=0.3)
 plt.show()
+
+#%% 15
+
+# 2. Przestrzenie nazw
+SCH = rdflib.Namespace('http://schema.org/')
+ns_map = dict(g.namespaces())
+RE = rdflib.Namespace(ns_map.get('rechtsextremismus'))
+
+# 3. Perspektywy
+perspectives = {
+    'Berufe von Autor_innen, die über rechte Gewalt in generationeller Perspektive schreiben': 'rechte Gewalt in generationeller Perspektive',
+    'Berufe von Autor_innen, die über rechte Gewalt in intersektionalen Perspektive schreiben': 'rechte Gewalt in intersektionaler Perspektive'
+}
+
+# 4. Rysowanie wykresów
+for title, about_val in perspectives.items():
+    occupations = []
+    for text in g.subjects(rdflib.RDF.type, SCH.Text):
+        # pobierz wszystkie wartości sch:about
+        abouts = [str(o) for o in g.objects(text, RE.perspective)]
+        if about_val in abouts:
+            for author in g.objects(text, SCH.author):
+                if (author, rdflib.RDF.type, SCH.Person) in g:
+                    for occ in g.objects(author, SCH.hasOccupation):
+                        occupations.append(str(occ))
+    if not occupations:
+        print(f"Brak danych o zawodach dla '{title}'")
+        continue
+
+    counts = pd.Series(occupations).value_counts().head(20)
+    plt.figure(figsize=(10, 6))
+    counts.sort_values().plot(
+        kind='barh',
+        color='skyblue',
+        edgecolor='black'
+    )
+    plt.xlabel('Liczba osób')
+    plt.ylabel('Zawód')
+    plt.title(title)
+    plt.tight_layout()
+    plt.show()
+
+
+
+
+
+
+
+
+
+
+
 
 
 
