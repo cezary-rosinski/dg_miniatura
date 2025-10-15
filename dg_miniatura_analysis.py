@@ -1,6 +1,6 @@
 import sys
-sys.path.insert(1, 'D:\IBL\Documents\IBL-PAN-Python')
-# sys.path.insert(1, 'C:/Users/Cezary/Documents/IBL-PAN-Python')
+# sys.path.insert(1, 'D:\IBL\Documents\IBL-PAN-Python')
+sys.path.insert(1, 'C:/Users/Cezary/Documents/IBL-PAN-Python')
 import rdflib
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -892,9 +892,9 @@ if not df.empty:
     for keyword in top_keywords:
         plt.plot(df_counts.index, df_counts[keyword], marker='o', label=keyword)
     
-    plt.xlabel('Rok wydania')
-    plt.ylabel('Liczba wystąpień')
-    plt.title('Die zehn populärsten Schlüsselwörter in Romanen zu rechter Gewalt in den Jahren 1990-2025')
+    plt.xlabel('Year of issue')
+    plt.ylabel('Number of appearances')
+    plt.title('The ten most popular keywords in novels \nabout right-wing violence in the years 1990-2025')
     plt.legend(title='Keyword', bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.xticks(df_counts.index, rotation=45)
     plt.tight_layout()
